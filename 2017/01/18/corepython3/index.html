@@ -1,0 +1,742 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+
+    
+     
+    
+    <link href="/lib/font-awesome/css/loading.css?v=4.4.4" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+
+
+<link href="/lib/font-awesome/css/main.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="-python -core python," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.0.2" />
+
+
+
+
+
+
+<meta name="description" content="Headline: [3]Core python programming摘要:  网络编程">
+<meta name="keywords" content="-python -core python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="(3) python 核心编程">
+<meta property="og:url" content="http://yoursite.com/2017/01/18/corepython3/index.html">
+<meta property="og:site_name" content="IsDux">
+<meta property="og:description" content="Headline: [3]Core python programming摘要:  网络编程">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2017-09-15T07:48:00.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="(3) python 核心编程">
+<meta name="twitter:description" content="Headline: [3]Core python programming摘要:  网络编程">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 'undefined',
+      author: 'Author'
+    }
+  };
+</script>
+<script type="text/javascript" src="http://isdux.github.io/js/src/jquery.js"></script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/01/18/corepython3/"/>
+
+
+  <title> (3) python 核心编程 | IsDux </title>
+</head>
+
+<body itemscope itemtype="//schema.org/WebPage" lang="en">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="container-solar">
+  <div class="solar">
+      <i class="mercury"></i>
+      <i class="venus"></i>
+      <i class="earth"></i>
+      <i class="mars"></i>
+      <i class="belt"></i>
+      <i class="jupiter"></i>
+      <i class="saturn"></i>
+      <i class="uranus"></i>
+      <i class="neptune"></i>
+  </div>
+</div>
+
+<div class="site-meta ">
+  
+
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="site-title">IsDux</span>
+    </a>
+    <div class="site-info">
+      <span class="logo-line-before"><i class="" style="transform: translateX(100%);"></i></span>
+      <span class="site-title-second">MOTTO || The hard part isn’t making the decision. It’s living with it.</span>
+      <span class="logo-line-after"><i class="" style="transform: translateX(-100%);"></i></span> 
+    </div>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule" rel="section">
+            
+            Schedule
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                (3) python 核心编程
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2017-01-18T18:03:54+08:00" content="2017-01-18">
+              2017-01-18
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">tech</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Headline-3-Core-python-programming"><a href="#Headline-3-Core-python-programming" class="headerlink" title="Headline: [3]Core python programming"></a><strong><font color="#5A5AAD">Headline: [3]Core python programming</font></strong></h1><h2 id="摘要-网络编程"><a href="#摘要-网络编程" class="headerlink" title="摘要:  网络编程"></a><font color="#FF5151">摘要: </font> 网络编程</h2><a id="more"></a>
+<p><strong> <font color="red"> 声明: 本篇博文为本人 python 核心编程的读书笔记 </font> </strong></p>
+<h2 id="网络编程"><a href="#网络编程" class="headerlink" title="网络编程"></a>网络编程</h2><h3 id="客户端-服务器架构"><a href="#客户端-服务器架构" class="headerlink" title="客户端/服务器架构"></a>客户端/服务器架构</h3><p>服务器是一系列硬件或软件，为一个或多个客户端(服务的用户)提供所需的“服务”。他存在的唯一目的就是等待客户端的请求，并响应他们(提供服务)，然后等待更多的请求。</p>
+<p>客户端因特定的请求而联系服务器，并发送必要的数据，然后等待服务器的回应，最后完成请求或给出故障的原因。</p>
+<p><strong>注</strong> 服务器无限的运行下去，并不断的处理请求；而客户端会对服务进行一次性请求，然后接收该服务，最后结束他们之间的事务。客户端在一段时间后可能会再次发出其他请求，但这些都被当做不同的事务。</p>
+<h4 id="硬件客户端-服务器架构"><a href="#硬件客户端-服务器架构" class="headerlink" title="硬件客户端/服务器架构"></a>硬件客户端/服务器架构</h4><p>例如：打印机/服务器</p>
+<h4 id="软件客户端-服务器架构"><a href="#软件客户端-服务器架构" class="headerlink" title="软件客户端/服务器架构"></a>软件客户端/服务器架构</h4><p>软件服务器提供的主要服务包括:</p>
+<blockquote>
+<ul>
+<li>程序执行</li>
+<li>数据传输检索</li>
+<li>聚合</li>
+<li>更新</li>
+<li>其他类型的编程</li>
+<li>其他类型的数据操作</li>
+</ul>
+</blockquote>
+<p>常见的服务器有：</p>
+<blockquote>
+<ul>
+<li>web服务器</li>
+<li>数据库服务器</li>
+<li>窗体服务器</li>
+</ul>
+</blockquote>
+<h4 id="银行出纳作为服务器"><a href="#银行出纳作为服务器" class="headerlink" title="银行出纳作为服务器"></a>银行出纳作为服务器</h4><p>for: atm取款机<br>一个永远处于工作状态的服务环境，遵循“先来先服务”的原则。</p>
+<h4 id="客户端-服务器网络编程"><a href="#客户端-服务器网络编程" class="headerlink" title="客户端/服务器网络编程"></a>客户端/服务器网络编程</h4><ol>
+<li>在服务器响应客户端请求之前，首先会创建一个又一个通信端点，它能够使服务器监听请求。</li>
+<li>之后，客户端只需要创建它的单一通信端点，然后建立一个到服务器的连接。</li>
+<li>1,2 完成之后，客户端就可以发出请求，该请求包括任何必要的数据交换。 <em>一旦请求被服务器处理，且客户端收到结果或某种确认信息，此次通信就会被终止</em></li>
+</ol>
+<h3 id="套接字：-通信端点"><a href="#套接字：-通信端点" class="headerlink" title="套接字： 通信端点"></a>套接字： 通信端点</h3><h4 id="套接字"><a href="#套接字" class="headerlink" title="套接字"></a>套接字</h4><p>套接字有两种类型：</p>
+<blockquote>
+<ul>
+<li>基于文件 AF_NNIX<blockquote>
+<ul>
+<li>当两个进程在同一台机器运行时，因为文件系统是一个运行在同一主机上的多个进程之间的共享常量，也就意味着文件系统支持他们的底层基础机构，所以这种类型的套接字就是基于文件的。</li>
+</ul>
+</blockquote>
+</li>
+<li>面向网络 AF_INET<blockquote>
+<ul>
+<li>地址家族/因特网协议</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+<p>另外，还有新引入的对特殊类型linux套接字的支持，AF_NETLINK家族(无连接)，最后还有支持透明的进程间通信(TIPC)协议。</p>
+<p><strong>总的来说，python只支持AF_UNIX, AF_NETLINK, AF_TIPC, AF_INET.</strong></p>
+<h4 id="套接字地址-主机-端口对"><a href="#套接字地址-主机-端口对" class="headerlink" title="套接字地址: 主机-端口对"></a>套接字地址: 主机-端口对</h4><p>有效的端口号范围为 0 ~ 65535 (其中, 小于1024的端口号预留给了系统)</p>
+<h5 id="面向连接的套接字"><a href="#面向连接的套接字" class="headerlink" title="面向连接的套接字"></a>面向连接的套接字</h5><p>这种类型的通信也称为虚拟电路或流套接字–实现这种套接字的主要协议是传输控制协议(TCP), 创建TCP套接字，必须使用 Sock_stream 作为套接字类型，使用因特网协议(ip)来搜索网络中的主机。</p>
+<h5 id="无连接的套接字"><a href="#无连接的套接字" class="headerlink" title="无连接的套接字"></a>无连接的套接字</h5><p>这种类型的通信也称为数据报类型的套接字–通信开始之前无需连接，消息可以整体发送，如使用面向连接的协议。实现这种套接字的主要协议是用户数据报协议(UDP)。 创建UDP套接字，必须使用 Sock_dgram (datagram)作为套接字类型，使用因特网协议(ip)来搜索网络中的主机。</p>
+<h3 id="python-中的网络编程"><a href="#python-中的网络编程" class="headerlink" title="python 中的网络编程"></a>python 中的网络编程</h3><font color="red"> <strong>默认所有程序已经导入  Socket 模块</strong> </font>
+
+<pre><code>import socket
+</code></pre><h4 id="socket-模块函数"><a href="#socket-模块函数" class="headerlink" title="socket() 模块函数"></a>socket() 模块函数</h4><p>传建一个 tcp/udp 套接字:</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> socket <span class="keyword">import</span> AF_INET</div><div class="line"><span class="keyword">from</span> socket <span class="keyword">import</span> socket</div><div class="line"><span class="keyword">from</span> socket <span class="keyword">import</span> SOCK_DGRAM</div><div class="line"><span class="keyword">from</span> socket <span class="keyword">import</span> SOCK_STREAM</div><div class="line"></div><div class="line">tcpSock = socket(AF_INET, SOCK_STREAM)</div><div class="line">udpSock = socket(AF_INET, SOCK_DGRAM)</div></pre></td></tr></table></figure>
+<h4 id="套接字对象-内置-方法"><a href="#套接字对象-内置-方法" class="headerlink" title="套接字对象(内置)方法"></a>套接字对象(内置)方法</h4><p>主要分类为：</p>
+<blockquote>
+<ul>
+<li>服务器套接字方法</li>
+<li>客户端套接字方法</li>
+<li>普通的套接字方法</li>
+<li>面向阻塞的套接字方法</li>
+<li>面向文件的套接字方法</li>
+<li>数据属性</li>
+</ul>
+</blockquote>
+<p><strong>所有的套接字都是通过 socket.socket() 函数来创建的</strong></p>
+<p>核心提示: 多线程处理客户端请求 一般会使用 SocketServer 模块</p>
+<h4 id="创建TCP服务器"><a href="#创建TCP服务器" class="headerlink" title="创建TCP服务器"></a>创建TCP服务器</h4><p>server:</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># coding=utf-8</span></div><div class="line"><span class="string">'''</span></div><div class="line"><span class="string">脚本语言的第一行，目的就是指出:</span></div><div class="line"><span class="string">你想要你的这个文件中的代码用什么可执行程序去运行它</span></div><div class="line"><span class="string">'''</span></div><div class="line"><span class="comment">#!/usr/bin/env python</span></div><div class="line"><span class="keyword">from</span> socket <span class="keyword">import</span> AF_INET</div><div class="line"><span class="comment"># from socket import AF_INET6(IPV6协议)</span></div><div class="line"><span class="keyword">from</span> socket <span class="keyword">import</span> socket</div><div class="line"><span class="keyword">from</span> socket <span class="keyword">import</span> SOCK_STREAM</div><div class="line"><span class="keyword">from</span> time <span class="keyword">import</span> ctime</div><div class="line"><span class="comment"># HOST = ''</span></div><div class="line">HOST = <span class="string">''</span></div><div class="line">PORT = <span class="number">24444</span></div><div class="line">BUFSIZ = <span class="number">1024</span></div><div class="line">ADDR = (HOST, PORT)</div><div class="line">tcpServerSock = socket(AF_INET, SOCK_STREAM)</div><div class="line"><span class="comment"># tcpServerSock = socket(AF_INET6, SOCK_STREAM)</span></div><div class="line">tcpServerSock.bind(ADDR)</div><div class="line">tcpServerSock.listen(<span class="number">5</span>)</div><div class="line"><span class="keyword">while</span> <span class="keyword">True</span>:</div><div class="line">    <span class="keyword">print</span> <span class="string">'waiting for connection...'</span></div><div class="line">    tcpClientSock, addr = tcpServerSock.accept()</div><div class="line">    <span class="keyword">print</span> <span class="string">'...connection from:'</span>, addr</div><div class="line">    <span class="keyword">while</span> <span class="keyword">True</span>:</div><div class="line">        data = tcpClientSock.recv(BUFSIZ)</div><div class="line">        <span class="keyword">if</span> <span class="keyword">not</span> data:</div><div class="line">            <span class="keyword">break</span></div><div class="line">        tcpClientSock.send(<span class="string">'[%s] %s'</span> % (ctime(), data))</div><div class="line">    tcpClientSock.close()</div><div class="line">tcpServerSock.close()</div></pre></td></tr></table></figure>
+<p>client:</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># coding=utf-8</span></div><div class="line"><span class="comment">#!/usr/bin/env python</span></div><div class="line"><span class="keyword">from</span> socket <span class="keyword">import</span> AF_INET</div><div class="line"><span class="keyword">from</span> socket <span class="keyword">import</span> socket</div><div class="line"><span class="keyword">from</span> socket <span class="keyword">import</span> SOCK_STREAM</div><div class="line"><span class="comment"># HOST = ''</span></div><div class="line">HOST = <span class="string">'localhost'</span></div><div class="line">PORT = <span class="number">24444</span></div><div class="line">BUFSIZ = <span class="number">1024</span></div><div class="line">ADDR = (HOST, PORT)</div><div class="line">tcpClientSock = socket(AF_INET, SOCK_STREAM)</div><div class="line">tcpClientSock.connect(ADDR)</div><div class="line"><span class="keyword">while</span> <span class="keyword">True</span>:</div><div class="line">    data = raw_input(<span class="string">'&gt; '</span>)</div><div class="line">    <span class="keyword">if</span> <span class="keyword">not</span> data:</div><div class="line">        <span class="keyword">break</span></div><div class="line">    tcpClientSock.send(data)</div><div class="line">    data = tcpClientSock.recv(BUFSIZ)</div><div class="line">    <span class="keyword">if</span> <span class="keyword">not</span> data:</div><div class="line">        <span class="keyword">break</span></div><div class="line">    <span class="keyword">print</span> data</div><div class="line">tcpClientSock.close()</div></pre></td></tr></table></figure>
+<p><strong>注意</strong> 如果遇到端口号冲突，解决方法:</p>
+<blockquote>
+<p>打开 cmd<br>根据端口号查程序的进程号 </p>
+<blockquote>
+<p>netstat -ano<br>根据程序的进程号查看具体的程序名称<br>tasklist|findstr 进程号<br> 强制、递归 删除本程序及其子进程<br>taskkill -f -t -im 文件名</p>
+</blockquote>
+</blockquote>
+<pre><code>buffer [&apos;bʌfə] 缓冲区，缓冲器，缓冲，减震器
+</code></pre><p><u>其中， bufsiz 意思是 缓冲区大小，官方文档解释如下:</u></p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">socket.recv(bufsize[, flags])</div></pre></td></tr></table></figure>
+<p>Receive data from the socket. The return value is a string representing the data received. The maximum amount of data to be received at once is specified by bufsize. See the Unix manual page recv(2) for the meaning of the optional argument flags; it defaults to zero.</p>
+<p><strong>Note</strong><br>    For best match with hardware and network realities, the value of bufsize should be a relatively small power of 2, for example, 4096.</p>
+<h4 id="创建UDP服务器"><a href="#创建UDP服务器" class="headerlink" title="创建UDP服务器"></a>创建UDP服务器</h4><p>server:</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># coding=utf-8</span></div><div class="line"><span class="comment">#!usr/bin/env python</span></div><div class="line"></div><div class="line"><span class="keyword">from</span> socket <span class="keyword">import</span> socket</div><div class="line"><span class="keyword">from</span> socket <span class="keyword">import</span> AF_INET</div><div class="line"><span class="keyword">from</span> socket <span class="keyword">import</span> SOCK_DGRAM</div><div class="line"><span class="keyword">from</span> time <span class="keyword">import</span> ctime</div><div class="line"></div><div class="line">HOST = <span class="string">''</span></div><div class="line">PORT = <span class="number">22222</span></div><div class="line">BUFSIZ = <span class="number">1024</span></div><div class="line">ADDR = (HOST, PORT)</div><div class="line"></div><div class="line">udpSerSock = socket(AF_INET, SOCK_DGRAM)</div><div class="line">udpSerSock.bind(ADDR)</div><div class="line"></div><div class="line"><span class="keyword">while</span> <span class="keyword">True</span>:</div><div class="line">    <span class="keyword">print</span> <span class="string">'waiting for message...'</span></div><div class="line">    data, addr = udpSerSock.recvfrom(BUFSIZ)</div><div class="line">    udpSerSock.sendto(<span class="string">'[%s] %s'</span> % (ctime(), data), addr)</div><div class="line">    <span class="keyword">print</span> <span class="string">'...received from and returned to:'</span>, addr</div><div class="line"></div><div class="line">udpSerSock.close()</div></pre></td></tr></table></figure>
+<p>client:</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># coding=utf-8</span></div><div class="line"><span class="comment">#!usr/bin/env python</span></div><div class="line"></div><div class="line"><span class="keyword">from</span> socket <span class="keyword">import</span> socket</div><div class="line"><span class="keyword">from</span> socket <span class="keyword">import</span> AF_INET</div><div class="line"><span class="keyword">from</span> socket <span class="keyword">import</span> SOCK_DGRAM</div><div class="line"></div><div class="line">HOST = <span class="string">'localhost'</span></div><div class="line">POST = <span class="number">22222</span></div><div class="line">BUFSIZ = <span class="number">1024</span></div><div class="line">ADDR = (HOST, POST)</div><div class="line"></div><div class="line">udpClientSock = socket(AF_INET, SOCK_DGRAM)</div><div class="line"></div><div class="line"><span class="keyword">while</span> <span class="keyword">True</span>:</div><div class="line">    data = raw_input(<span class="string">"&gt; "</span>)</div><div class="line">    <span class="keyword">if</span> <span class="keyword">not</span> data:</div><div class="line">        <span class="keyword">break</span></div><div class="line">    udpClientSock.sendto(data, ADDR)</div><div class="line">    data, ADDR = udpClientSock.recvfrom(BUFSIZ)</div><div class="line">    <span class="keyword">if</span> <span class="keyword">not</span> data:</div><div class="line">        <span class="keyword">break</span></div><div class="line">    <span class="keyword">print</span> data</div><div class="line"></div><div class="line">udpClientSock.close()</div></pre></td></tr></table></figure>
+<h3 id="SocketServer-模块"><a href="#SocketServer-模块" class="headerlink" title="SocketServer 模块"></a>SocketServer 模块</h3><h2 id="Twisted-框架-了解"><a href="#Twisted-框架-了解" class="headerlink" title="Twisted 框架 (了解)"></a>Twisted 框架 (了解)</h2><p>一个完整的事件驱动的网络框架。不仅能使用，也能开发完整的异步网络应用程序和协议。</p>
+<p>好了，今天的分享就到这里，谢谢大家。</p>
+<div class="title-line" value="5">真孒今将命</div><br><div class="person"><br>    <div class="line0">此致: 敬礼!</div><br>    <div class="line1">送赵法师还蜀因名山奠简</div><br>    <div class="line2">作者: 李隆基</div><br>    <div class="line3">摘自: 《全唐诗》</div><br>    <div class="line4">道家奠灵简, 自昔仰神仙</div><br>    <div class="line5"><font color="red">真孒今将命</font>, 苍生福可传</div><br>    <div class="line6">江山寻故国, 城郭信依然</div><br>    <div class="line7">二室遥相望, 云回洞里天</div><br></div>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/python-core-python/" rel="tag">#-python -core python</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/01/17/corepython2/" rel="next" title="(2) python 核心编程">
+                <i class="fa fa-chevron-left"></i> (2) python 核心编程
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/01/23/corepython4/" rel="prev" title="(4) python 核心编程">
+                (4) python 核心编程 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    <div id="gh-comments">
+        <h6>COMMENTS</h6>
+        <div id="gh-comments-list"></div>
+        <a href="javascript:void(0)" id="gh-load-comments" class="btn" style="display:none">Load more comments</a>
+    </div>
+  </div>
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Alan Cong" />
+          <p class="site-author-name" itemprop="name">Alan Cong</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">31</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">categories</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Headline-3-Core-python-programming"><span class="nav-number">1.</span> <span class="nav-text">Headline: [3]Core python programming</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#摘要-网络编程"><span class="nav-number">1.1.</span> <span class="nav-text">摘要:  网络编程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网络编程"><span class="nav-number">1.2.</span> <span class="nav-text">网络编程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#客户端-服务器架构"><span class="nav-number">1.2.1.</span> <span class="nav-text">客户端/服务器架构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#硬件客户端-服务器架构"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">硬件客户端/服务器架构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#软件客户端-服务器架构"><span class="nav-number">1.2.1.2.</span> <span class="nav-text">软件客户端/服务器架构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#银行出纳作为服务器"><span class="nav-number">1.2.1.3.</span> <span class="nav-text">银行出纳作为服务器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#客户端-服务器网络编程"><span class="nav-number">1.2.1.4.</span> <span class="nav-text">客户端/服务器网络编程</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#套接字：-通信端点"><span class="nav-number">1.2.2.</span> <span class="nav-text">套接字： 通信端点</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#套接字"><span class="nav-number">1.2.2.1.</span> <span class="nav-text">套接字</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#套接字地址-主机-端口对"><span class="nav-number">1.2.2.2.</span> <span class="nav-text">套接字地址: 主机-端口对</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#面向连接的套接字"><span class="nav-number">1.2.2.2.1.</span> <span class="nav-text">面向连接的套接字</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#无连接的套接字"><span class="nav-number">1.2.2.2.2.</span> <span class="nav-text">无连接的套接字</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#python-中的网络编程"><span class="nav-number">1.2.3.</span> <span class="nav-text">python 中的网络编程</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#socket-模块函数"><span class="nav-number">1.2.3.1.</span> <span class="nav-text">socket() 模块函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#套接字对象-内置-方法"><span class="nav-number">1.2.3.2.</span> <span class="nav-text">套接字对象(内置)方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建TCP服务器"><span class="nav-number">1.2.3.3.</span> <span class="nav-text">创建TCP服务器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建UDP服务器"><span class="nav-number">1.2.3.4.</span> <span class="nav-text">创建UDP服务器</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SocketServer-模块"><span class="nav-number">1.2.4.</span> <span class="nav-text">SocketServer 模块</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Twisted-框架-了解"><span class="nav-number">1.3.</span> <span class="nav-text">Twisted 框架 (了解)</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        
+
+<script type="text/javascript" src="http://isdux.github.io/js/src/github-comments.js"></script>
+<script type="text/javascript">
+    var ghcommentid = 0;
+
+    if($(".title-line").attr("value") != null) {
+      ghcommentid = $(".title-line").attr("value");
+      DoGithubComments(ghcommentid);
+    }
+</script>
+
+<div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Alan Cong</span>
+</div>
+
+<div class="powered-by">
+  Alan <a class="theme-link" href="https://isdux.com">Alan</a>
+</div>
+
+
+<div class="theme-info">
+  Alan -
+  <a class="theme-link" href="https://isdux.com">
+    Alan. Alan
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>

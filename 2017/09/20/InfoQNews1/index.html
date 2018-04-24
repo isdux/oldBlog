@@ -1,0 +1,784 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+
+    
+     
+    
+    <link href="/lib/font-awesome/css/loading.css?v=4.4.4" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+
+
+<link href="/lib/font-awesome/css/main.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="-infoq -java -jdk 9," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.0.2" />
+
+
+
+
+
+
+<meta name="description" content="Long Awaited Java 9.0 Releasing Thie WeekInfoQ:  The long awaited next release of Java SE, version 9, is being released on September 21, 2017 and with it come some major changes.">
+<meta name="keywords" content="-infoq -java -jdk 9">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Long Awaited Java 9.0 Releasing Thie Week">
+<meta property="og:url" content="http://yoursite.com/2017/09/20/InfoQNews1/index.html">
+<meta property="og:site_name" content="IsDux">
+<meta property="og:description" content="Long Awaited Java 9.0 Releasing Thie WeekInfoQ:  The long awaited next release of Java SE, version 9, is being released on September 21, 2017 and with it come some major changes.">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2017-09-26T08:40:20.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Long Awaited Java 9.0 Releasing Thie Week">
+<meta name="twitter:description" content="Long Awaited Java 9.0 Releasing Thie WeekInfoQ:  The long awaited next release of Java SE, version 9, is being released on September 21, 2017 and with it come some major changes.">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 'undefined',
+      author: 'Author'
+    }
+  };
+</script>
+<script type="text/javascript" src="http://isdux.github.io/js/src/jquery.js"></script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/09/20/InfoQNews1/"/>
+
+
+  <title> Long Awaited Java 9.0 Releasing Thie Week | IsDux </title>
+</head>
+
+<body itemscope itemtype="//schema.org/WebPage" lang="en">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="container-solar">
+  <div class="solar">
+      <i class="mercury"></i>
+      <i class="venus"></i>
+      <i class="earth"></i>
+      <i class="mars"></i>
+      <i class="belt"></i>
+      <i class="jupiter"></i>
+      <i class="saturn"></i>
+      <i class="uranus"></i>
+      <i class="neptune"></i>
+  </div>
+</div>
+
+<div class="site-meta ">
+  
+
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="site-title">IsDux</span>
+    </a>
+    <div class="site-info">
+      <span class="logo-line-before"><i class="" style="transform: translateX(100%);"></i></span>
+      <span class="site-title-second">MOTTO || The hard part isn’t making the decision. It’s living with it.</span>
+      <span class="logo-line-after"><i class="" style="transform: translateX(-100%);"></i></span> 
+    </div>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule" rel="section">
+            
+            Schedule
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Long Awaited Java 9.0 Releasing Thie Week
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2017-09-20T17:15:54+08:00" content="2017-09-20">
+              2017-09-20
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/infoq/" itemprop="url" rel="index">
+                    <span itemprop="name">infoq</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Long-Awaited-Java-9-0-Releasing-Thie-Week"><a href="#Long-Awaited-Java-9-0-Releasing-Thie-Week" class="headerlink" title="Long Awaited Java 9.0 Releasing Thie Week"></a><strong><font color="#5A5AAD">Long Awaited Java 9.0 Releasing Thie Week</font></strong></h1><h2 id="InfoQ-The-long-awaited-next-release-of-Java-SE-version-9-is-being-released-on-September-21-2017-and-with-it-come-some-major-changes"><a href="#InfoQ-The-long-awaited-next-release-of-Java-SE-version-9-is-being-released-on-September-21-2017-and-with-it-come-some-major-changes" class="headerlink" title="InfoQ:  The long awaited next release of Java SE, version 9, is being released on September 21, 2017 and with it come some major changes."></a><font color="#FF5151">InfoQ: </font> The long awaited next release of Java SE, version 9, is being released on September 21, 2017 and with it come some major changes.</h2><a id="more"></a>
+<p><strong> <font color="red">声明: 本篇博文为本人InfoQ新闻的笔记摘要 </font> </strong></p>
+<h2 id="In-order-to-improve-my-pure-english"><a href="#In-order-to-improve-my-pure-english" class="headerlink" title="In order to improve my pure english."></a>In order to improve my pure english.</h2><p><u>由于本人惨不忍睹的英语，于是开始阅读英文新闻并记录，希望可以坚持，再此标记一下</u></p>
+<p><strong>注:</strong> <u>单词表初期可能会有大量简单的词汇，并有重复，但这里只是为了加深记忆，谢谢</u></p>
+<p>More News Content: <a href="https://www.infoq.com/news/2017/09/Java-9-release-sept-21" target="_blank" rel="external">InfoQNews</a></p>
+<h2 id="sentence"><a href="#sentence" class="headerlink" title="sentence"></a>sentence</h2><h2 id="words"><a href="#words" class="headerlink" title="words"></a>words</h2><pre><code>access [&apos;ækses]    使用，存取，接近，进入，使用权，访问
+advisable   [əd&apos;vaɪzəb(ə)l] 明智的，可取的，适当的，合理的
+announce    [ə&apos;naʊns]   宣布，述说，预示，播报，宣告，[科技]通告
+approach    [ə&apos;prəʊtʃ]  方法，途径，接近，着手处理，靠近，方法
+assemble    [ə&apos;semb(ə)l]    集合，聚集，装配，收集
+attempt [ə&apos;tem(p)t] 企图，试图，尝试，打算
+await   [ə&apos;weɪt]    等候，等待，期待，降临于
+benefit     [&apos;benɪfɪt]  利益，好处，救济金，受益，得益，福利
+boundary    [&apos;baʊnd(ə)rɪ]   边界，分界线，界线，界限，范围，范畴
+characterized   [&apos;kærəktə&apos;raɪz] 描绘…的特性，具有…的特征，塑造人物，表示，表现
+command     [kə&apos;mɑːnd]  命令，指挥，控制，远望
+committee   [kə&apos;mɪtɪ]   委员会，全体委员，组委会
+community   [kəˈmju:nətɪ]   社区，群落，共同体，团体
+compact     [kəm&apos;pækt]  合同，契约，小粉盒，紧凑的，紧密的，压缩
+complexity  [kəm&apos;pleksətɪ]  复杂，复杂性，复杂错综的事物，复杂度
+consequence     [&apos;kɒnsɪkw(ə)ns] 结果，重要性，推论
+sequence    [&apos;siːkw(ə)ns]   序列，顺序，续发事件，顺序，次序，摸进
+considerable    [kən&apos;sɪd(ə)rəb(ə)l] 相当大的，重要的，值得考虑的，可观，长足，相当多的
+cope    [kəʊp]  处理，对付，竞争，长袍，应付
+credit  [&apos;kredɪt]   信誉，信用，贷款，学分，信任，赞颂，金融信用
+cycle   [&apos;saɪk(ə)l] 循环，周期，自行车，整套，一段时间，使循环，使轮转，环
+cyclical    [&apos;sɪklɪk(ə)l]   周期的，循环的，周期性，轮转的，轮生的
+dealing     [&apos;diːlɪŋ]   交易，行为，买卖，生意，往返，分配，交往(商业)
+definitive  [dɪ&apos;fɪnɪtɪv]    限定词，决定性的，最后的，限定的，确定
+describing  [dɪ&apos;skraɪbɪŋ]   描述，表示，形容，叙述，描写
+detection   [dɪ&apos;tekʃ(ə)n]   侦查，探测，发觉，发现，察觉
+dire    [&apos;daɪə] 可怕的，悲惨的，极端的
+directly    [dɪ&apos;rektlɪ; daɪ-]   直接的，立即，马上，正好的，坦率的，一…就
+apport  [ə&apos;pɔ:t]    物体显形，幻想，幻象，隔空取物
+appoint [ə&apos;pɒɪnt]   任命，指定，约定，委派
+disappointment  [dɪsə&apos;pɒɪntm(ə)nt]  失望，沮丧，使人失望的，绝望
+drain   [dreɪn] 排水，流干，喝光，耗尽，使流出，排掉水，下水道，排水管，生命汲取
+driven  [&apos;drɪvn]    被动的，受到驱策的，有紧迫感的，发愤图强的，驾驶，开车
+ecommerce   electronic commerce 电子商务，产品目录，电子商务案例，电子商务理论和实践
+commerce    [&apos;kɒmɜːs]   贸易，商业，商务，商业人员
+effort  [&apos;efət] 努力，成就，力，力点，施力
+enforce     [ɪn&apos;fɔːs; en-]  实施，执行，强迫，强制
+etc [ɪt&apos;setərə, et-]    等等，及其他 ||[拉丁语]et cetera（常读作 and so forth）
+evolution   [,iːvə&apos;luːʃ(ə)n; &apos;ev-]  进化，演变，进化论，进展
+excited     [ɪk&apos;saɪtɪd] 兴奋的，激动的，活跃的，激动，唤起，封印
+executive   [ɪgˈzekjʊtɪv]   行政的，经营的，执行的，经营管理的，总经理，执行委员会，执行者，经理主管人员
+exploration     [eksplə&apos;reɪʃ(ə)n]   探测，探究，踏勘，探索，探险，勘探
+facilitate  [fə&apos;sɪlɪteɪt]   促进，帮助，使容易，使便利
+feature [&apos;fiːtʃə]   特征，特点，特色，容貌，特写或专题节目，起重要作用，特写
+feedback    [&apos;fiːdbæk]  反馈，成果，资料，回复，意见反馈，信息反馈
+flag    [flæg]  标记，衰退，枯萎，插旗，标志，旗子
+foundation  [faʊn&apos;deɪʃ(ə)n] 基础，地基，基金会，根据，创立，粉底，基地
+garbage     [&apos;gɑːbɪdʒ]  垃圾，废物，废料，垃圾合唱团
+gotcha  [&apos;ɡɒtʃə]    明白了（got you）
+heap    [hiːp]  堆，许多，累积，堆积，堆起来，堆内存
+hell    [hel]   地狱，究竟，训斥，黑暗势力，过放荡生活，飞驰，该死，见鬼
+impact  [&apos;ɪmpækt]   影响，效果，碰撞，冲击力，挤入，压紧，撞击，对…产生影响
+inclusion   [ɪn&apos;kluːʒ(ə)n]  包含，内含物
+incremental     [,ɪnkrɪ&apos;mentəl] 增加的，增值的，增量，增量式，间距或增量
+incubator   [&apos;ɪŋkjʊbeɪtə]   孵卵器，保温箱，早产儿保育器，细菌培养器，孵化器
+installations   [ɪnstə&apos;leɪʃ(ə)n]    安装，安置，就职，装置艺术，安装方式
+intend  [ɪn&apos;tend]   打算，想要，意指，有打算
+internal    [ɪn&apos;tɜːn(ə)l]   内脏，本质，内部的，里面的，体内的，内置，内在的，内同步
+jigsaw  [&apos;dʒɪgsɔː]  拼图玩具，线锯，镂花锯，拼图
+shell   [ʃel]   壳，贝壳，炮弹，外形，剥落，剥皮，设定命令行解释器的位置
+keystone    [&apos;kiːstəʊn] 主旨，基本原则，楔石，拱心石，阶梯型变型
+lay [leɪ]   躺下，产卵，搁放，放置，铺放，位置
+laid    [leɪd]  放，铺设，安排，松弛的，从容不迫的，躺下
+Lava    [&apos;lɑːvə]    火山岩浆，熔岩， (人名）拉瓦
+leading     [&apos;liːdɪŋ]   领导的，主要的，行距，铅板，主导，通往
+loop    [luːp]  打环，翻筋斗，弯曲部分，回路，循环
+maintain    [meɪn&apos;teɪn; mən&apos;teɪn]   维持，继续，维修，主张，供养，坚持
+maintainability [mɛn,tenə&apos;bɪləti]   可维护性，可维修性，易维护性
+mark    [mɑːk]  标志，马克，符号，痕迹，分数，打分，做标记于，标志
+member  [&apos;membə]    成员，会员，议员，委员
+mention     [&apos;menʃ(ə)n] 提到，谈到，提及，论及，说起
+modularity  [,mɒdjʊ&apos;lærɪtɪ] 模块性，组合型，模块化，模组化
+modularized [&apos;mɔdjuləraizd, -dʒu-]  模块化的
+oppose  [ə&apos;pəʊz]    反对，对抗，抗争，反对，对抗
+optimize    [&apos;ɒptɪmaɪz] 使最优化，使完善，优化，持乐观态度，优化编辑器，性能优化
+optimized   [&apos;ɒptɪmaɪzd]    最佳化的，尽量充分利用，优化的，最完善的
+orient  [&apos;ɔːrɪənt; &apos;ɒr-]    使适应，确定方向，使朝东，东方的，向东
+oriented    [&apos;ɔːrɪentɪd]    导向的，定向的，以…为方向的，调整，使朝向，确定…的方位，面向对象
+Patrick         帕特里克（男子名）
+performance [pə&apos;fɔːm(ə)ns]  性能，绩效，表演，执行，表现，演出
+persuade    [pə&apos;sweɪd]  说服，劝说，使某人相信，劝某人做(不做)某事，空闲的，有闲的，劝说
+phase   [feɪz]  月相，(月亮的)盈亏，时期，相位，阶段
+positive    [ˈpɒzətɪv]  积极地，正的，阳性的，确定的，肯定的，实际的，正片，正数
+present [prɪˈzent;(for n.)ˈpreznt]  提出，介绍，呈现，赠送，举枪瞄准，现在的，出席的，现在，礼物，瞄准
+previously  [&apos;priviəsli]    以前，预先，仓促的，先前，在以前，早先，从前
+prototype   [&apos;prəʊtətaɪp]   原型，标准，模范，样品
+factor  [&apos;fæktə]    因素，要素，因数，代理人，把…分解成
+refactor    [ri&apos;fæktə]  重构，代码重构，要素，分解
+Reinhart        人名；(英)莱因哈特；(德、荷)赖因哈特
+Reinhold        莱因霍尔德（男子名）
+release [rɪ&apos;liːs]   释放，发射，让与，允许发表，发布，音乐出版物
+rely    [rɪ&apos;laɪ]    依靠，信赖，依仗
+relies      信任，依赖，依赖于，指望
+remain  [rɪ&apos;meɪn]   保持，依然，留下，剩余，逗留，残余，残骸
+removal     [rɪ&apos;muːv(ə)l]   免职，移动，排除，搬迁，消除，除去
+represents  [reprɪ&apos;zent]    代表，表现，描绘，回忆，再赠送，提出异议，表示，表现，象征
+rest    [rest]  使休息，使轻松，把…寄托于，静止，休息，休止符
+restriction [rɪ&apos;strɪkʃ(ə)n] 限制，约束，束缚，限定，局限
+retain  [rɪ&apos;teɪn]   保持，雇，记住，保留，留住，保有
+runtime     [&apos;rʌntæɪm]  执行时间，运行时间，运行环境，执行期
+security    [sɪ&apos;kjʊərətɪ]   安全，保证，证券，抵押品，保密的，保安的
+semblance   [&apos;sembləns] 外貌，假装，类似，相似，伪装
+sense   [sens]  感觉，功能，观念，道理，理智，感觉到，检测，意识
+serverside      服务器端
+ship    [ʃɪp]   运送，乘船，以船运送，上船，乘船旅行，当船员，装运
+significant [sɪg&apos;nɪfɪk(ə)nt]    重大的，有效的，有意义的，值得注意的，意味深长的，象征，有意义的事物
+simply  [&apos;sɪmplɪ]   简单地，仅仅，简直，朴素地，坦白地，无非，仅仅
+single  [&apos;sɪŋg(ə)l] 单一的，单身的，单程的，一个，单程票，未婚
+Solr    读: solar    高度可扩展，并提供了分布式搜索和索引复制的企业级搜索引擎
+spoke   [spəʊk] 说话，为…装轮辐，演说，从某种观点来说，阻挠某人的行动，车条
+stake   [steɪk] 桩，棍子，赌注，火刑，奖金，资助，支持，系…于桩上，大度
+stakeholders    [ˈsteɪkhəʊldə(r)]   利益相关者，赌金保管者，持份者，保证金保存人
+steward [&apos;stjuːəd]  管家，乘务员，工会管事，当服务员，管理，男服务员
+stewardship     [&apos;stjuːədʃɪp]   管理工作，管事人的职位和职责，总管的职务，引领，管家
+stove   [stəʊv] 火炉，窑，温室，用火炉烤，炉子，烘箱，炉灶
+stovepipe   [&apos;stəʊvpaɪp]    大礼帽，火炉烟囱，瘦裤腿的，烟囱形长裤，烟囱
+construct   [kən&apos;strʌkt]    建造，构造，创立，构想，概念
+structure   [&apos;strʌktʃə] 结构，构造，建筑物，组织，构成，建造，鞋型
+sufficient  [sə&apos;fɪʃ(ə)nt]   足够的，充分的，充足的，才情丰富
+technology  [tek&apos;nɒlədʒɪ]   技术，工艺，术语，科技，技术力量
+term    [tɜːm]  术语，学期，期限，条款，项，学期，一届
+tire    [taɪə]  疲劳，厌倦，使…疲劳，使…厌倦，轮胎，头饰
+tireless    [&apos;taɪəlɪs]  不知疲倦的，不疲劳的，孜孜不倦的
+tirelessly  [&apos;taɪrlɪsli]    不知疲倦的，不屈不挠的，不辞辛劳，持久的
+chain   [tʃeɪn] 链，束缚，枷锁，囚禁，用铁链锁住，链条
+toolchain       工具链，工具链组，编译工具
+upgrade     [ʌp&apos;greɪd]  使升级，提升，改良品种，升级，上升，上坡，往上
+virtually   [ˈvəːtʃʊəli]    事实上，几乎，实质上，无形中
+warn    [wɔːn]  警告，提醒，通知，发出警告，发出预告，告诫，警惕，预先通知
+</code></pre><p>好了，今天的分享就到这里，我们明天继续。谢谢大家。</p>
+<div class="title-line" value="25">真孒今将命</div><br><div class="person"><br>    <div class="line0">此致: 敬礼!</div><br>    <div class="line1">送赵法师还蜀因名山奠简</div><br>    <div class="line2">作者: 李隆基</div><br>    <div class="line3">摘自: 《全唐诗》</div><br>    <div class="line4">道家奠灵简, 自昔仰神仙</div><br>    <div class="line5"><font color="red">真孒今将命</font>, 苍生福可传</div><br>    <div class="line6">江山寻故国, 城郭信依然</div><br>    <div class="line7">二室遥相望, 云回洞里天</div><br></div>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/infoq-java-jdk-9/" rel="tag">#-infoq -java -jdk 9</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/18/staticsforbusinessandeconomics2/" rel="next" title="(2) Statics for Business and Economics">
+                <i class="fa fa-chevron-left"></i> (2) Statics for Business and Economics
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/09/25/voanews20170925/" rel="prev" title="VOA NEWS：September 25, 2017">
+                VOA NEWS：September 25, 2017 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    <div id="gh-comments">
+        <h6>COMMENTS</h6>
+        <div id="gh-comments-list"></div>
+        <a href="javascript:void(0)" id="gh-load-comments" class="btn" style="display:none">Load more comments</a>
+    </div>
+  </div>
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Alan Cong" />
+          <p class="site-author-name" itemprop="name">Alan Cong</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">31</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">categories</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Long-Awaited-Java-9-0-Releasing-Thie-Week"><span class="nav-number">1.</span> <span class="nav-text">Long Awaited Java 9.0 Releasing Thie Week</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#InfoQ-The-long-awaited-next-release-of-Java-SE-version-9-is-being-released-on-September-21-2017-and-with-it-come-some-major-changes"><span class="nav-number">1.1.</span> <span class="nav-text">InfoQ:  The long awaited next release of Java SE, version 9, is being released on September 21, 2017 and with it come some major changes.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#In-order-to-improve-my-pure-english"><span class="nav-number">1.2.</span> <span class="nav-text">In order to improve my pure english.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sentence"><span class="nav-number">1.3.</span> <span class="nav-text">sentence</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#words"><span class="nav-number">1.4.</span> <span class="nav-text">words</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        
+
+<script type="text/javascript" src="http://isdux.github.io/js/src/github-comments.js"></script>
+<script type="text/javascript">
+    var ghcommentid = 0;
+
+    if($(".title-line").attr("value") != null) {
+      ghcommentid = $(".title-line").attr("value");
+      DoGithubComments(ghcommentid);
+    }
+</script>
+
+<div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Alan Cong</span>
+</div>
+
+<div class="powered-by">
+  Alan <a class="theme-link" href="https://isdux.com">Alan</a>
+</div>
+
+
+<div class="theme-info">
+  Alan -
+  <a class="theme-link" href="https://isdux.com">
+    Alan. Alan
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>

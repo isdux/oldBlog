@@ -1,0 +1,739 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+
+    
+     
+    
+    <link href="/lib/font-awesome/css/loading.css?v=4.4.4" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+
+
+<link href="/lib/font-awesome/css/main.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="-python -core python," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.0.2" />
+
+
+
+
+
+
+<meta name="description" content="Headline: [6]Core python programming摘要:  数据库编程">
+<meta name="keywords" content="-python -core python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="(6) python 核心编程">
+<meta property="og:url" content="http://yoursite.com/2017/02/14/corepython6/index.html">
+<meta property="og:site_name" content="IsDux">
+<meta property="og:description" content="Headline: [6]Core python programming摘要:  数据库编程">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2017-09-15T07:49:48.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="(6) python 核心编程">
+<meta name="twitter:description" content="Headline: [6]Core python programming摘要:  数据库编程">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 'undefined',
+      author: 'Author'
+    }
+  };
+</script>
+<script type="text/javascript" src="http://isdux.github.io/js/src/jquery.js"></script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/02/14/corepython6/"/>
+
+
+  <title> (6) python 核心编程 | IsDux </title>
+</head>
+
+<body itemscope itemtype="//schema.org/WebPage" lang="en">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="container-solar">
+  <div class="solar">
+      <i class="mercury"></i>
+      <i class="venus"></i>
+      <i class="earth"></i>
+      <i class="mars"></i>
+      <i class="belt"></i>
+      <i class="jupiter"></i>
+      <i class="saturn"></i>
+      <i class="uranus"></i>
+      <i class="neptune"></i>
+  </div>
+</div>
+
+<div class="site-meta ">
+  
+
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="site-title">IsDux</span>
+    </a>
+    <div class="site-info">
+      <span class="logo-line-before"><i class="" style="transform: translateX(100%);"></i></span>
+      <span class="site-title-second">MOTTO || The hard part isn’t making the decision. It’s living with it.</span>
+      <span class="logo-line-after"><i class="" style="transform: translateX(-100%);"></i></span> 
+    </div>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule" rel="section">
+            
+            Schedule
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                (6) python 核心编程
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2017-02-14T21:03:54+08:00" content="2017-02-14">
+              2017-02-14
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">tech</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Headline-6-Core-python-programming"><a href="#Headline-6-Core-python-programming" class="headerlink" title="Headline: [6]Core python programming"></a><strong><font color="#5A5AAD">Headline: [6]Core python programming</font></strong></h1><h2 id="摘要-数据库编程"><a href="#摘要-数据库编程" class="headerlink" title="摘要:  数据库编程"></a><font color="#FF5151">摘要: </font> 数据库编程</h2><a id="more"></a>
+<p><strong> <font color="red"> 声明: 本篇博文为本人 python 核心编程的读书笔记 </font> </strong></p>
+<h2 id="数据库编程"><a href="#数据库编程" class="headerlink" title="数据库编程"></a>数据库编程</h2><h3 id="持久化存储以及数据库系统"><a href="#持久化存储以及数据库系统" class="headerlink" title="持久化存储以及数据库系统"></a>持久化存储以及数据库系统</h3><h4 id="持久化存储"><a href="#持久化存储" class="headerlink" title="持久化存储"></a>持久化存储</h4><p>关于持久化存储，一般有3种基础的存储机制。</p>
+<blockquote>
+<ul>
+<li>文件(json, txt, csv, xml…)</li>
+<li>数据库系统(关系型, 非关系型)</li>
+<li>混合类型(对象关系映射<orm>, API, 文件管理器, 电子表格, 配置文件…)</orm></li>
+</ul>
+</blockquote>
+<h5 id="数据库基本操作和sql"><a href="#数据库基本操作和sql" class="headerlink" title="数据库基本操作和sql"></a>数据库基本操作和sql</h5><p>底层存储：<br>数据库通常使用文件系统作为基本的持久化存储，他们可以是普通的操作系统文件、专用的操作系统文件、甚至是原始的磁盘分区。</p>
+<p>用户接口：<br>通常是命令行借口。</p>
+<p>数据库：<br>关系型数据库管理系统(RDBMS – Relational Database Management System)</p>
+<blockquote>
+<ul>
+<li>MySQL 基于服务器</li>
+<li>SQLite/Gadfly 不运行服务器</li>
+</ul>
+</blockquote>
+<p>组件:<br>数据库存储可以抽象为一个表。每行数据都有一些字段对应于数据库的列。每一列的表定义的集合以及每个表的数据类型放到一起定义了数据库的模式。(schema)</p>
+<h5 id="python-和-数据库"><a href="#python-和-数据库" class="headerlink" title="python 和 数据库"></a>python 和 数据库</h5><p>python 访问关系型数据库：</p>
+<blockquote>
+<ul>
+<li>直接通过数据库接口访问</li>
+<li>使用 ORM(Object Relational Mapping) 访问</li>
+</ul>
+</blockquote>
+<p><strong>其中，ORM访问的方式不需要显示给出SQL命令，也能完成相同的任务。</strong></p>
+<p>数据库常见知识类别:</p>
+<blockquote>
+<ul>
+<li>数据库原理：</li>
+<li>并发性</li>
+<li>模式</li>
+<li>原子性</li>
+<li>完整性</li>
+<li>恢复</li>
+<li>比较法咋的左连接</li>
+<li>触发器</li>
+<li>查询优化</li>
+<li>事务性</li>
+<li>存储过程</li>
+</ul>
+</blockquote>
+<p>完全用 python 编写的简单的 RDBMS (Gadfly)</p>
+<p>在python中数据库是通过适配器的方式进行访问的。适配器是一个python模块，使用它可以与关系数据库的客户端库接口相连。</p>
+<h5 id="python-的-DB-API"><a href="#python-的-DB-API" class="headerlink" title="python 的 DB-API"></a>python 的 DB-API</h5><p>DB-API 是阐明一系列所需对象和数据库访问机制的标准，他可以为不同的数据库适配器和底层数据库系统提供一致性的访问。DB-API 也是强需求驱动的。</p>
+<p>DB-API 模块属性:</p>
+<ul>
+<li>apilevel: 需要适配器兼容的 DB-API 版本</li>
+<li>threadsafety 本模块的线程安全级别</li>
+<li>paramstyle 本模块的SQL语句参数风格</li>
+<li>connect() Connect()函数</li>
+<li>Exception (多种异常)</li>
+</ul>
+<h5 id="Connection-对象"><a href="#Connection-对象" class="headerlink" title="Connection 对象"></a>Connection 对象</h5><p>当以连接(或一个连接池)建立后，可以创建一个游标，向数据库发送请求，然后从数据库中接收回应。</p>
+<p>rollback() 只有在支持事务处理的数据库中才有用。 – 关闭连接而不事先提交变更，将会导致执行隐式回滚</p>
+<h5 id="Cursor-对象"><a href="#Cursor-对象" class="headerlink" title="Cursor 对象"></a>Cursor 对象</h5><p>创建一个数据库适配器，还必须要实现cursor对象，以扮演类似游标的角色。这样，无论数据库系统是支持或不支持游标，都能保证python代码的一致性。</p>
+<h5 id="类型对象与构造函数"><a href="#类型对象与构造函数" class="headerlink" title="类型对象与构造函数"></a>类型对象与构造函数</h5><p>为了与数据库对象一一对应</p>
+<h5 id="关系数据库"><a href="#关系数据库" class="headerlink" title="关系数据库"></a>关系数据库</h5><p><strong>ORM</strong></p>
+<p>目前，知名的Python ORM 是SQLAlchemy 和 SQLObject, 其他的还包括： Strom, PyDO/PyDO2, PDO, Dejavu, Durus, QLime, ForgetSQL等。</p>
+<h5 id="非关系数据库-NoSQL"><a href="#非关系数据库-NoSQL" class="headerlink" title="非关系数据库 / NoSQL"></a>非关系数据库 / NoSQL</h5><blockquote>
+<ul>
+<li>MongoDB</li>
+<li>Redis</li>
+<li>Cassandra</li>
+<li>SimpleDB</li>
+<li>Tokyo Cabinet</li>
+<li>CouchDB</li>
+<li>Bigtable (通过 Google App Engine 的数据库 API)</li>
+<li>对象数据库</li>
+<li>键-值对存储</li>
+<li>文档存储(或数据存储)</li>
+<li>图形数据库</li>
+<li>表格数据库</li>
+<li>列/可扩展记录/宽列数据库</li>
+<li>多值数据库</li>
+</ul>
+</blockquote>
+<h5 id="MongoDB"><a href="#MongoDB" class="headerlink" title="MongoDB"></a>MongoDB</h5><p>MongoDB属于NoSQL数据库，使用文档数据存储(c++编写的文档存储系统)，与其他非关系数据库相比，它介于简单的键-值对存储(如 Redis, Voldemort, Amazon Dynamo等) 与列存储(如 Cassandra, Google Bigtable 和 HBase) 之间。</p>
+<p>特点:</p>
+<blockquote>
+<ul>
+<li>比基于列的存储更简单、约束更少</li>
+<li>比普通的键-值对存储更加灵活</li>
+<li>一般情况下其数据会另存为JSON对象</li>
+<li>允许诸如字符串，数值，列表甚至嵌套等数据类型</li>
+</ul>
+</blockquote>
+<p>好了，今天的分享就到这里，谢谢大家。</p>
+<div class="title-line" value="8">真孒今将命</div><br><div class="person"><br>    <div class="line0">此致: 敬礼!</div><br>    <div class="line1">送赵法师还蜀因名山奠简</div><br>    <div class="line2">作者: 李隆基</div><br>    <div class="line3">摘自: 《全唐诗》</div><br>    <div class="line4">道家奠灵简, 自昔仰神仙</div><br>    <div class="line5"><font color="red">真孒今将命</font>, 苍生福可传</div><br>    <div class="line6">江山寻故国, 城郭信依然</div><br>    <div class="line7">二室遥相望, 云回洞里天</div><br></div>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/python-core-python/" rel="tag">#-python -core python</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/02/08/corepython5/" rel="next" title="(5) python 核心编程">
+                <i class="fa fa-chevron-left"></i> (5) python 核心编程
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/03/03/agilesoftwaredevelop/" rel="prev" title="(1) Agile Software Development">
+                (1) Agile Software Development <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    <div id="gh-comments">
+        <h6>COMMENTS</h6>
+        <div id="gh-comments-list"></div>
+        <a href="javascript:void(0)" id="gh-load-comments" class="btn" style="display:none">Load more comments</a>
+    </div>
+  </div>
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Alan Cong" />
+          <p class="site-author-name" itemprop="name">Alan Cong</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">31</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">categories</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Headline-6-Core-python-programming"><span class="nav-number">1.</span> <span class="nav-text">Headline: [6]Core python programming</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#摘要-数据库编程"><span class="nav-number">1.1.</span> <span class="nav-text">摘要:  数据库编程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据库编程"><span class="nav-number">1.2.</span> <span class="nav-text">数据库编程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#持久化存储以及数据库系统"><span class="nav-number">1.2.1.</span> <span class="nav-text">持久化存储以及数据库系统</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#持久化存储"><span class="nav-number">1.2.1.1.</span> <span class="nav-text">持久化存储</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#数据库基本操作和sql"><span class="nav-number">1.2.1.1.1.</span> <span class="nav-text">数据库基本操作和sql</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#python-和-数据库"><span class="nav-number">1.2.1.1.2.</span> <span class="nav-text">python 和 数据库</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#python-的-DB-API"><span class="nav-number">1.2.1.1.3.</span> <span class="nav-text">python 的 DB-API</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Connection-对象"><span class="nav-number">1.2.1.1.4.</span> <span class="nav-text">Connection 对象</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Cursor-对象"><span class="nav-number">1.2.1.1.5.</span> <span class="nav-text">Cursor 对象</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#类型对象与构造函数"><span class="nav-number">1.2.1.1.6.</span> <span class="nav-text">类型对象与构造函数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#关系数据库"><span class="nav-number">1.2.1.1.7.</span> <span class="nav-text">关系数据库</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#非关系数据库-NoSQL"><span class="nav-number">1.2.1.1.8.</span> <span class="nav-text">非关系数据库 / NoSQL</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#MongoDB"><span class="nav-number">1.2.1.1.9.</span> <span class="nav-text">MongoDB</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        
+
+<script type="text/javascript" src="http://isdux.github.io/js/src/github-comments.js"></script>
+<script type="text/javascript">
+    var ghcommentid = 0;
+
+    if($(".title-line").attr("value") != null) {
+      ghcommentid = $(".title-line").attr("value");
+      DoGithubComments(ghcommentid);
+    }
+</script>
+
+<div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Alan Cong</span>
+</div>
+
+<div class="powered-by">
+  Alan <a class="theme-link" href="https://isdux.com">Alan</a>
+</div>
+
+
+<div class="theme-info">
+  Alan -
+  <a class="theme-link" href="https://isdux.com">
+    Alan. Alan
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>

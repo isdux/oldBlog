@@ -1,0 +1,679 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+
+    
+     
+    
+    <link href="/lib/font-awesome/css/loading.css?v=4.4.4" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+
+
+<link href="/lib/font-awesome/css/main.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="-mining -machinelearn," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.0.2" />
+
+
+
+
+
+
+<meta name="description" content="Headline: [8]Introduction to Machine Learning: (chapter two[2])Supervised Learning:  Vapnik-Chervonenkis Dimension (第二章[2])">
+<meta name="keywords" content="-mining -machinelearn">
+<meta property="og:type" content="article">
+<meta property="og:title" content="(8) Machine Learn Introduction">
+<meta property="og:url" content="http://yoursite.com/2017/01/12/itmlcontent6/index.html">
+<meta property="og:site_name" content="IsDux">
+<meta property="og:description" content="Headline: [8]Introduction to Machine Learning: (chapter two[2])Supervised Learning:  Vapnik-Chervonenkis Dimension (第二章[2])">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://yoursite.com/images/figure2.6.png">
+<meta property="og:updated_time" content="2017-09-15T07:51:58.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="(8) Machine Learn Introduction">
+<meta name="twitter:description" content="Headline: [8]Introduction to Machine Learning: (chapter two[2])Supervised Learning:  Vapnik-Chervonenkis Dimension (第二章[2])">
+<meta name="twitter:image" content="http://yoursite.com/images/figure2.6.png">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 'undefined',
+      author: 'Author'
+    }
+  };
+</script>
+<script type="text/javascript" src="http://isdux.github.io/js/src/jquery.js"></script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/01/12/itmlcontent6/"/>
+
+
+  <title> (8) Machine Learn Introduction | IsDux </title>
+</head>
+
+<body itemscope itemtype="//schema.org/WebPage" lang="en">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="container-solar">
+  <div class="solar">
+      <i class="mercury"></i>
+      <i class="venus"></i>
+      <i class="earth"></i>
+      <i class="mars"></i>
+      <i class="belt"></i>
+      <i class="jupiter"></i>
+      <i class="saturn"></i>
+      <i class="uranus"></i>
+      <i class="neptune"></i>
+  </div>
+</div>
+
+<div class="site-meta ">
+  
+
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="site-title">IsDux</span>
+    </a>
+    <div class="site-info">
+      <span class="logo-line-before"><i class="" style="transform: translateX(100%);"></i></span>
+      <span class="site-title-second">MOTTO || The hard part isn’t making the decision. It’s living with it.</span>
+      <span class="logo-line-after"><i class="" style="transform: translateX(-100%);"></i></span> 
+    </div>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule" rel="section">
+            
+            Schedule
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                (8) Machine Learn Introduction
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2017-01-12T14:03:54+08:00" content="2017-01-12">
+              2017-01-12
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">tech</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Headline-8-Introduction-to-Machine-Learning-chapter-two-2"><a href="#Headline-8-Introduction-to-Machine-Learning-chapter-two-2" class="headerlink" title="Headline: [8]Introduction to Machine Learning: (chapter two[2])"></a><strong><font color="#5A5AAD">Headline: [8]Introduction to Machine Learning: (chapter two[2])</font></strong></h1><h2 id="Supervised-Learning-Vapnik-Chervonenkis-Dimension-第二章-2"><a href="#Supervised-Learning-Vapnik-Chervonenkis-Dimension-第二章-2" class="headerlink" title="Supervised Learning:  Vapnik-Chervonenkis Dimension (第二章[2])"></a><font color="#FF5151">Supervised Learning: </font> Vapnik-Chervonenkis Dimension (第二章[2])</h2><a id="more"></a>
+<p><strong> <font color="red">声明: 本篇博文为本人阅读机器学习导论的读书笔记 </font> </strong></p>
+<h2 id="为什么选择英文版？Why-am-i-rewrite"><a href="#为什么选择英文版？Why-am-i-rewrite" class="headerlink" title="为什么选择英文版？Why am i rewrite?"></a>为什么选择英文版？Why am i rewrite?</h2><p><u>由于本人惨不忍睹的英语，于是首先选择了中文版，可是，昨天突发奇想，反正机器学习也是不会，英语也是不会，不如省事一点一起学，于是，我选择了英文版</u></p>
+<p><strong>注:</strong> <u>前面章节出现的词汇不会重复解释，完成本书词汇表，本书完结时提供</u></p>
+<h2 id="Supervised-Learning"><a href="#Supervised-Learning" class="headerlink" title="Supervised Learning"></a>Supervised Learning</h2><h3 id="Vapnik-Chervonenkis-Dimension"><a href="#Vapnik-Chervonenkis-Dimension" class="headerlink" title="Vapnik-Chervonenkis Dimension"></a>Vapnik-Chervonenkis Dimension</h3><h4 id="课外读物"><a href="#课外读物" class="headerlink" title="课外读物"></a>课外读物</h4><p>1971年，V. Vapnik and A. Chervonenkis在论文“On the uniform convergence of relative frequencies of events to their probabilities”中提出VC维的概念</p>
+<p>More info: <a href="http://www.flickering.cn/machine_learning/2015/04/vc%E7%BB%B4%E7%9A%84%E6%9D%A5%E9%BE%99%E5%8E%BB%E8%84%89/" target="_blank" rel="external">VC维理论的来龙去脉</a></p>
+<pre><code>uniform [&apos;juːnɪfɔːm] 统一的，一致的，相同的，均衡的，始终如一的，制服，使成一样
+</code></pre><h4 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h4><p><u>这一节，自己并不能很好的理解，就先简单介绍，等整本书看完，在回过头来看<strong>“VC维与泛化”</strong></u></p>
+<p>Let us say we have a dataset containing N points. These N points can<br>be labeled in ${2^N}$ ways as positive and negative. Therefore, ${2^N}$ different learning problems can be defined by N data points. If for any of these problems, we can find a hypothesis h ∈ H that separates the positive examples from the negative, then we say H shatters N points. That is, any learning problem definable by N examples can be learned with no error by a hypothesis drawn from H . </p>
+<p><strong>The maximum number of points that can be shattered by H is called the Vapnik-Chervonenkis (VC) dimension of H , is denoted as VC(H), and measures the capacity of H .</strong></p>
+<p><strong>最大数量的(positive)点通过h区分出去叫做预测的vc维，也被表示为VC(H), VC维衡量着H的容量。</strong></p>
+<pre><code>shatter [&apos;ʃætə] 粉碎，打碎，破坏，破掉，使散开，碎片，损坏，乱七八糟的状态
+definable [dɪ&apos;faɪnəbl] 可下定义的，可确定的，可限定的，可解说的
+</code></pre><h5 id="Figure-2-6"><a href="#Figure-2-6" class="headerlink" title="Figure 2.6"></a>Figure 2.6</h5><p><img src="../../../../images/figure2.6.png" alt="Figure 2.6" title="Figure 2.6"></p>
+<pre><code>**Figure 2.6** An axis-aligned rectangle can shatter four points. Only rectangles covering two points are shown.
+</code></pre><p>In figure 2.6, we see that an axis-aligned rectangle can shatter four<br>points in two dimensions. Then VC(H), when H is the hypothesis class<br>of axis-aligned rectangles in two dimensions, is four. In calculating the<br>VC dimension, it is enough that we find four points that can be shattered;<br>it is not necessary that we be able to shatter any four points in two dimensions. For example, four points placed on a line cannot be shattered<br>by rectangles. However, we cannot place five points in two dimensions<br>anywhere such that a rectangle can separate the positive and negative<br>examples for all possible labelings.</p>
+<pre><code>axis-aligned rectangles 轴平行矩形
+axis [&apos;æksɪs] 轴，轴线，轴心国，时间轴，坐标轴
+align [ə&apos;laɪn] 使结盟，使成一行，匹配，排列，排成一行
+aligned [ə&apos;laɪn] 对齐的，均衡的，结盟，使成一直线，对齐尺寸，选项详解
+place [pleɪs] 地方，住所，放置，任命，寄予，名列前茅，取得名次
+placed [pleist] 放置，名列前茅的，安放的，摆在
+</code></pre><p>VC dimension may seem pessimistic. It tells us that using a rectangle<br>as our hypothesis class, we can learn only datasets containing four points<br>and not more. A learning algorithm that can learn datasets of four points<br>is not very useful. However, this is because the VC dimension is independent of the probability distribution from which instances are drawn.</p>
+<p>In real life, the world is smoothly changing, instances close by most of<br>the time have the same labels, and we need not worry about all possible<br>labelings. There are a lot of datasets containing many more data points<br>than four that are learnable by our hypothesis class (figure 2.1). So even<br>hypothesis classes with small VC dimensions are applicable and are preferred over those with large VC dimensions, for example, a lookup table<br>that has infinite VC dimension.</p>
+<pre><code>pessimistic [,pesɪ&apos;mɪstɪk] 悲观的，厌世的，悲观主义，封闭式
+pessimism [&apos;pesɪmɪz(ə)m] 悲观，悲观主义，厌世主义
+lookup [&apos;lʊkʌp] 查找，检查
+</code></pre><p>好了，今天的分享就到这里，我们明天继续。谢谢大家。</p>
+<div class="title-line" value="15">真孒今将命</div><br><div class="person"><br>    <div class="line0">此致: 敬礼!</div><br>    <div class="line1">送赵法师还蜀因名山奠简</div><br>    <div class="line2">作者: 李隆基</div><br>    <div class="line3">摘自: 《全唐诗》</div><br>    <div class="line4">道家奠灵简, 自昔仰神仙</div><br>    <div class="line5"><font color="red">真孒今将命</font>, 苍生福可传</div><br>    <div class="line6">江山寻故国, 城郭信依然</div><br>    <div class="line7">二室遥相望, 云回洞里天</div><br></div>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/mining-machinelearn/" rel="tag">#-mining -machinelearn</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/12/16/itmlcontent5/" rel="next" title="(7) Machine Learn Introduction">
+                <i class="fa fa-chevron-left"></i> (7) Machine Learn Introduction
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/01/12/itmlcontent7/" rel="prev" title="(9) Machine Learn Introduction">
+                (9) Machine Learn Introduction <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    <div id="gh-comments">
+        <h6>COMMENTS</h6>
+        <div id="gh-comments-list"></div>
+        <a href="javascript:void(0)" id="gh-load-comments" class="btn" style="display:none">Load more comments</a>
+    </div>
+  </div>
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Alan Cong" />
+          <p class="site-author-name" itemprop="name">Alan Cong</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">31</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">categories</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Headline-8-Introduction-to-Machine-Learning-chapter-two-2"><span class="nav-number">1.</span> <span class="nav-text">Headline: [8]Introduction to Machine Learning: (chapter two[2])</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Supervised-Learning-Vapnik-Chervonenkis-Dimension-第二章-2"><span class="nav-number">1.1.</span> <span class="nav-text">Supervised Learning:  Vapnik-Chervonenkis Dimension (第二章[2])</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么选择英文版？Why-am-i-rewrite"><span class="nav-number">1.2.</span> <span class="nav-text">为什么选择英文版？Why am i rewrite?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Supervised-Learning"><span class="nav-number">1.3.</span> <span class="nav-text">Supervised Learning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Vapnik-Chervonenkis-Dimension"><span class="nav-number">1.3.1.</span> <span class="nav-text">Vapnik-Chervonenkis Dimension</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#课外读物"><span class="nav-number">1.3.1.1.</span> <span class="nav-text">课外读物</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#正文"><span class="nav-number">1.3.1.2.</span> <span class="nav-text">正文</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Figure-2-6"><span class="nav-number">1.3.1.2.1.</span> <span class="nav-text">Figure 2.6</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        
+
+<script type="text/javascript" src="http://isdux.github.io/js/src/github-comments.js"></script>
+<script type="text/javascript">
+    var ghcommentid = 0;
+
+    if($(".title-line").attr("value") != null) {
+      ghcommentid = $(".title-line").attr("value");
+      DoGithubComments(ghcommentid);
+    }
+</script>
+
+<div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Alan Cong</span>
+</div>
+
+<div class="powered-by">
+  Alan <a class="theme-link" href="https://isdux.com">Alan</a>
+</div>
+
+
+<div class="theme-info">
+  Alan -
+  <a class="theme-link" href="https://isdux.com">
+    Alan. Alan
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>

@@ -1,0 +1,770 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+
+    
+     
+    
+    <link href="/lib/font-awesome/css/loading.css?v=4.4.4" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+
+
+<link href="/lib/font-awesome/css/main.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="-python -core python," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.0.2" />
+
+
+
+
+
+
+<meta name="description" content="Headline: [2]Core python programming摘要:  Re 模块">
+<meta name="keywords" content="-python -core python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="(2) python 核心编程">
+<meta property="og:url" content="http://yoursite.com/2017/01/17/corepython2/index.html">
+<meta property="og:site_name" content="IsDux">
+<meta property="og:description" content="Headline: [2]Core python programming摘要:  Re 模块">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2017-09-15T07:46:38.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="(2) python 核心编程">
+<meta name="twitter:description" content="Headline: [2]Core python programming摘要:  Re 模块">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 'undefined',
+      author: 'Author'
+    }
+  };
+</script>
+<script type="text/javascript" src="http://isdux.github.io/js/src/jquery.js"></script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/01/17/corepython2/"/>
+
+
+  <title> (2) python 核心编程 | IsDux </title>
+</head>
+
+<body itemscope itemtype="//schema.org/WebPage" lang="en">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="container-solar">
+  <div class="solar">
+      <i class="mercury"></i>
+      <i class="venus"></i>
+      <i class="earth"></i>
+      <i class="mars"></i>
+      <i class="belt"></i>
+      <i class="jupiter"></i>
+      <i class="saturn"></i>
+      <i class="uranus"></i>
+      <i class="neptune"></i>
+  </div>
+</div>
+
+<div class="site-meta ">
+  
+
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="site-title">IsDux</span>
+    </a>
+    <div class="site-info">
+      <span class="logo-line-before"><i class="" style="transform: translateX(100%);"></i></span>
+      <span class="site-title-second">MOTTO || The hard part isn’t making the decision. It’s living with it.</span>
+      <span class="logo-line-after"><i class="" style="transform: translateX(-100%);"></i></span> 
+    </div>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule" rel="section">
+            
+            Schedule
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                (2) python 核心编程
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2017-01-17T18:03:54+08:00" content="2017-01-17">
+              2017-01-17
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">tech</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Headline-2-Core-python-programming"><a href="#Headline-2-Core-python-programming" class="headerlink" title="Headline: [2]Core python programming"></a><strong><font color="#5A5AAD">Headline: [2]Core python programming</font></strong></h1><h2 id="摘要-Re-模块"><a href="#摘要-Re-模块" class="headerlink" title="摘要:  Re 模块"></a><font color="#FF5151">摘要: </font> Re 模块</h2><a id="more"></a>
+<p><strong> <font color="red"> 声明: 本篇博文为本人 python 核心编程的读书笔记 </font> </strong></p>
+<h2 id="正则表达式与python语言"><a href="#正则表达式与python语言" class="headerlink" title="正则表达式与python语言"></a>正则表达式与python语言</h2><font color="red"> <strong>默认所有程序已经导入 Re 模块</strong> </font>
+
+<pre><code>import re
+</code></pre><p>python 中的 re 模块支持更强大而且更通用的 Perl 风格(Perl 5 风格)的正则表达式，该模块允许多个线程共享同一个已编译的正则表达式对象，也支持命名子组。</p>
+<h3 id="Re-模块-核心函数和方法"><a href="#Re-模块-核心函数和方法" class="headerlink" title="Re 模块: 核心函数和方法"></a>Re 模块: 核心函数和方法</h3><p>正则表达对象: regex object<br>正则匹配对象: regex match object</p>
+<p>核心提示: 我们发现，调用一个代码对象而不是一个字符串，性能上会有明显的提升。使用预编译的代码对象比直接使用字符串要快，因为解释器在执行字符串形式的代码前，都必须把字符串编译成代码对象。</p>
+<p>由于正则表达式在执行过程中将进行多次比较操作，所以，预编译是必要的。</p>
+<p>re.compile() 提供预编译功能。<br>purge() 函数能够用于清除这些缓存。</p>
+<h3 id="使用-compile-函数编译正则表达式"><a href="#使用-compile-函数编译正则表达式" class="headerlink" title="使用 compile() 函数编译正则表达式"></a>使用 compile() 函数编译正则表达式</h3><h3 id="匹配对象以及-group-和-groups-方法"><a href="#匹配对象以及-group-和-groups-方法" class="headerlink" title="匹配对象以及 group() 和 groups() 方法"></a>匹配对象以及 group() 和 groups() 方法</h3><p>处理正则表达式时，除了正则表达式对象之外，还有另一个对象类型: 匹配对象。<br>匹配对象: 成功调用 match() 或 search() 返回的对象。<br>匹配对象有两个方法: group() 和 groups().</p>
+<p><strong>group()</strong> 要么返回整个匹配对象，要么根据要求返回特定子组。、<br><strong>groups()</strong> 仅返回一个包含唯一或者全部子组的元祖。如果没有子组的要求，那么当group()仍然返回整个匹配时，groups()返回一个空元组。</p>
+<font color="red">Python regex 也允许命名匹配</font>
+
+<h3 id="使用-match-方法匹配字符串"><a href="#使用-match-方法匹配字符串" class="headerlink" title="使用 match() 方法匹配字符串"></a>使用 match() 方法匹配字符串</h3><p>match() 函数试图从字符串的 <strong>起始部分</strong> 对模式进行匹配。如果匹配成功，就返回一个匹配对象；如果匹配失败，就返回 None。匹配对象的 group() 方法能够用于显示那个成功的匹配。</p>
+<p>由于match() 匹配不到会返回 <strong>None</strong>，所以匹配失败时调用 group() 方法，系统会抛出 <strong>AttributeError</strong> 的异常。</p>
+<h3 id="使用-search-在一个字符串中查找模式-搜索与匹配的对比"><a href="#使用-search-在一个字符串中查找模式-搜索与匹配的对比" class="headerlink" title="使用 search() 在一个字符串中查找模式()搜索与匹配的对比"></a>使用 search() 在一个字符串中查找模式()搜索与匹配的对比</h3><p>search() 函数试图在字符串的 <strong>任意位置</strong> 对给定正则表达式模式搜索第一次出现的匹配情况。如果搜索到成功的匹配，就会返回一个匹配对象；否则，返回None.</p>
+<pre><code>m = re.search(&apos;foo&apos;, &apos;oo23foo45foo66&apos;)
+if m is not None:
+    print m.group()
+结果是: foo
+</code></pre><p>搜索成功，匹配失败。</p>
+<h3 id="匹配多个字符串"><a href="#匹配多个字符串" class="headerlink" title="匹配多个字符串"></a>匹配多个字符串</h3><h3 id="匹配任何单个字符"><a href="#匹配任何单个字符" class="headerlink" title="匹配任何单个字符"></a>匹配任何单个字符</h3><h3 id="创建字符集"><a href="#创建字符集" class="headerlink" title="创建字符集"></a>创建字符集</h3><h3 id="重复、特殊字符以及分组"><a href="#重复、特殊字符以及分组" class="headerlink" title="重复、特殊字符以及分组"></a>重复、特殊字符以及分组</h3><p>输入：</p>
+<pre><code>m = re.match(&quot;(a(b))&quot;, &quot;ab&quot;)
+if m is not None:
+    print m.group()
+    print m.group(1)
+    print m.group(2)
+    print m.groups()
+</code></pre><p>输出：</p>
+<pre><code>ab
+ab
+b
+(&apos;ab&apos;, &apos;b&apos;)
+</code></pre><h3 id="匹配字符串的起始和结尾以及单词边界"><a href="#匹配字符串的起始和结尾以及单词边界" class="headerlink" title="匹配字符串的起始和结尾以及单词边界"></a>匹配字符串的起始和结尾以及单词边界</h3><p><u>符号(^) 表示匹配字符串起始部分</u></p>
+<h3 id="使用-findall-和-finditer-查找每一次出现的位置"><a href="#使用-findall-和-finditer-查找每一次出现的位置" class="headerlink" title="使用 findall() 和 finditer() 查找每一次出现的位置"></a>使用 findall() 和 finditer() 查找每一次出现的位置</h3><p>findall() 查询字符串中某个正则表达式全部的非重复出现情况。</p>
+<p><strong>非重复</strong> 示例：</p>
+<pre><code>m = re.findall(&quot;cc&quot;, &quot;ccc&quot;)
+if m is not None:
+    print m
+
+n = re.findall(&quot;cc&quot;, &quot;cccc&quot;)
+if n is not None:
+    print n
+</code></pre><p>输出：</p>
+<pre><code>[&apos;cc&apos;]
+[&apos;cc&apos;, &apos;cc&apos;]
+</code></pre><p>对于一个成功的匹配，每个子组匹配是由 findall() 返回的结果列表中的单一元素；对于多个成功的匹配，每个子组匹配是返回的一个元组中的单一元素，而且每个元组(每个元组都对应一个成功的匹配)是结果列表中的元素。</p>
+<p><em>应用场景：</em> 匹配一个完整电话号码的一部分(例如区号)，完整电子邮件地址的一部分(登录名称)</p>
+<p>finditer(): 与 findall() 类似，但更节省内存。<br>例如：</p>
+<pre><code>s = &apos;this and that&apos;
+print re.findall(r&apos;(th\w+) and (th\w+)&apos;, s, re.I)
+print re.finditer(r&apos;(th\w+) and (th\w+)&apos;, s, re.I).next().group()
+print re.finditer(r&apos;(th\w+) and (th\w+)&apos;, s, re.I).next().group(1)
+print re.finditer(r&apos;(th\w+) and (th\w+)&apos;, s, re.I).next().group(2)
+print [g.groups() for g in re.finditer(r&apos;(th\w+) and (th\w+)&apos;, s, re.I)]
+</code></pre><p>输出：</p>
+<pre><code>[(&apos;this&apos;, &apos;that&apos;)]
+this and that
+this
+that
+[(&apos;this&apos;, &apos;that&apos;)]
+</code></pre><p><u>注意： 使用 <strong>finditer</strong> 函数完成的所有额外工作都旨在获取它的输出来匹配 <strong>findall()</strong> 的输出。</u></p>
+<h3 id="使用-sub-和-subn-搜索和替换"><a href="#使用-sub-和-subn-搜索和替换" class="headerlink" title="使用 sub() 和 subn() 搜索和替换"></a>使用 sub() 和 subn() 搜索和替换</h3><p>输入: 切记范围中不能带 <strong>空格</strong></p>
+<pre><code>m = re.sub(&quot;X&quot;, &quot;Mr. Smith&quot;, &quot;attn: X\n\nDear X,\n&quot;)
+n = re.subn(&quot;X&quot;, &quot;Mr. Smith&quot;, &quot;attn: X\n\nDear X,\n&quot;)
+o = re.sub(r&apos;(\d{1,2})/(\d{1,2})/(\d{2}|\d{4})&apos;, r&apos;\2/\1/\3&apos;, &apos;2/20/91&apos;)
+
+print m
+print n
+print o
+</code></pre><p>输出：</p>
+<pre><code>attn: Mr. Smith
+Dear Mr. Smith,
+(&apos;attn: Mr. Smith\n\nDear Mr. Smith,\n&apos;, 2)
+20/2/91
+</code></pre><h3 id="在限定模式上使用-split-分隔字符串"><a href="#在限定模式上使用-split-分隔字符串" class="headerlink" title="在限定模式上使用 split() 分隔字符串"></a>在限定模式上使用 split() 分隔字符串</h3><h3 id="扩展符号"><a href="#扩展符号" class="headerlink" title="扩展符号"></a>扩展符号</h3><p>输入:</p>
+<pre><code>m = re.findall(r&quot;(?i)yes&quot;, &quot;yes Yes YES good&quot;)
+print m
+</code></pre><p>输出：</p>
+<pre><code>[&apos;yes&apos;, &apos;Yes&apos;, &apos;YES&apos;]
+</code></pre><p>(?:…) 不保存的匹配</p>
+<p>输入：</p>
+<pre><code>m = re.findall(r&quot;http://(?:\w+\.)*(\w+\.com)&quot;, &quot;http://google.com http://www.google.com http://code.google.com&quot;)
+print m
+</code></pre><p>输出：</p>
+<pre><code>[&apos;google.com&apos;, &apos;google.com&apos;, &apos;google.com&apos;]
+</code></pre><p>另外的例子： </p>
+<pre><code>n = re.search(r&quot;\((?P&lt;areacode&gt;\d{3})\) (?P&lt;prefix&gt;\d{3})-(?:\d{4})&quot;, &quot;(800) 555-1212&quot;).groupdict()
+print n
+</code></pre><p>输出：</p>
+<pre><code>{&apos;areacode&apos;: &apos;800&apos;, &apos;prefix&apos;: &apos;555&apos;}
+</code></pre><p>用子组索引替换：</p>
+<pre><code>m = re.subn(r&quot;\((?P&lt;areacode&gt;\d{3})\) (?P&lt;prefix&gt;\d{3})-(?:\d{4})&quot;, &quot;(\g&lt;areacode&gt;) \g&lt;prefix&gt;-xxxx&quot;, &quot;(800) 555-1212&quot;)
+print m
+</code></pre><p>输出：</p>
+<pre><code>(&apos;(800) 555-xxxx&apos;, 1)
+</code></pre><p>关于符号(?P=name):</p>
+<pre><code>m = bool(re.match(r&quot;\((?P&lt;areacode&gt;\d{3})\) (?P&lt;prefix&gt;\d{3})-(\d{4}) (?P=areacode)-(?P=areacode)&quot;, &quot;(800) 555-1212 800-800&quot;))
+
+n = bool(re.match(r&quot;\((?P&lt;areacode&gt;\d{3})\) (?P&lt;prefix&gt;\d{3})-(\d{4}) (?P=areacode)-(?P=areacode)&quot;, &quot;(800) 555-1212 800-900&quot;))
+print &quot;m&quot;, m
+print &quot;n&quot;, n
+</code></pre><p>输出：</p>
+<pre><code>m True
+n False
+</code></pre><p>(?(1)y|x) 例子：</p>
+<pre><code>m = re.search(r&quot;(?:(x)|y)(?(1)y|x)&quot;, &quot;xy&quot;)
+print m.group()
+</code></pre><p>输出：</p>
+<pre><code>xy
+</code></pre><h3 id="杂项："><a href="#杂项：" class="headerlink" title="杂项："></a>杂项：</h3><p>尽量使用原始字符串<br>如：特殊符号和 ASCII</p>
+<p>\b 的两个意义</p>
+<blockquote>
+<ul>
+<li>正则表达式里的特殊符号 边界</li>
+<li>ASCII 码里面的退格符</li>
+</ul>
+</blockquote>
+<h3 id="搜索与匹配……还有贪婪"><a href="#搜索与匹配……还有贪婪" class="headerlink" title="搜索与匹配……还有贪婪"></a>搜索与匹配……还有贪婪</h3><p>? 非贪婪情况，获取尽可能少的。</p>
+<p>好了，今天的分享就到这里，我们明天继续。谢谢大家。</p>
+<div class="title-line" value="4">真孒今将命</div><br><div class="person"><br>    <div class="line0">此致: 敬礼!</div><br>    <div class="line1">送赵法师还蜀因名山奠简</div><br>    <div class="line2">作者: 李隆基</div><br>    <div class="line3">摘自: 《全唐诗》</div><br>    <div class="line4">道家奠灵简, 自昔仰神仙</div><br>    <div class="line5"><font color="red">真孒今将命</font>, 苍生福可传</div><br>    <div class="line6">江山寻故国, 城郭信依然</div><br>    <div class="line7">二室遥相望, 云回洞里天</div><br></div>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/python-core-python/" rel="tag">#-python -core python</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/01/17/corepython1/" rel="next" title="(1) python 核心编程">
+                <i class="fa fa-chevron-left"></i> (1) python 核心编程
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/01/18/corepython3/" rel="prev" title="(3) python 核心编程">
+                (3) python 核心编程 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    <div id="gh-comments">
+        <h6>COMMENTS</h6>
+        <div id="gh-comments-list"></div>
+        <a href="javascript:void(0)" id="gh-load-comments" class="btn" style="display:none">Load more comments</a>
+    </div>
+  </div>
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Alan Cong" />
+          <p class="site-author-name" itemprop="name">Alan Cong</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">31</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">categories</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Headline-2-Core-python-programming"><span class="nav-number">1.</span> <span class="nav-text">Headline: [2]Core python programming</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#摘要-Re-模块"><span class="nav-number">1.1.</span> <span class="nav-text">摘要:  Re 模块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#正则表达式与python语言"><span class="nav-number">1.2.</span> <span class="nav-text">正则表达式与python语言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Re-模块-核心函数和方法"><span class="nav-number">1.2.1.</span> <span class="nav-text">Re 模块: 核心函数和方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用-compile-函数编译正则表达式"><span class="nav-number">1.2.2.</span> <span class="nav-text">使用 compile() 函数编译正则表达式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#匹配对象以及-group-和-groups-方法"><span class="nav-number">1.2.3.</span> <span class="nav-text">匹配对象以及 group() 和 groups() 方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用-match-方法匹配字符串"><span class="nav-number">1.2.4.</span> <span class="nav-text">使用 match() 方法匹配字符串</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用-search-在一个字符串中查找模式-搜索与匹配的对比"><span class="nav-number">1.2.5.</span> <span class="nav-text">使用 search() 在一个字符串中查找模式()搜索与匹配的对比</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#匹配多个字符串"><span class="nav-number">1.2.6.</span> <span class="nav-text">匹配多个字符串</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#匹配任何单个字符"><span class="nav-number">1.2.7.</span> <span class="nav-text">匹配任何单个字符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建字符集"><span class="nav-number">1.2.8.</span> <span class="nav-text">创建字符集</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重复、特殊字符以及分组"><span class="nav-number">1.2.9.</span> <span class="nav-text">重复、特殊字符以及分组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#匹配字符串的起始和结尾以及单词边界"><span class="nav-number">1.2.10.</span> <span class="nav-text">匹配字符串的起始和结尾以及单词边界</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用-findall-和-finditer-查找每一次出现的位置"><span class="nav-number">1.2.11.</span> <span class="nav-text">使用 findall() 和 finditer() 查找每一次出现的位置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用-sub-和-subn-搜索和替换"><span class="nav-number">1.2.12.</span> <span class="nav-text">使用 sub() 和 subn() 搜索和替换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在限定模式上使用-split-分隔字符串"><span class="nav-number">1.2.13.</span> <span class="nav-text">在限定模式上使用 split() 分隔字符串</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#扩展符号"><span class="nav-number">1.2.14.</span> <span class="nav-text">扩展符号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#杂项："><span class="nav-number">1.2.15.</span> <span class="nav-text">杂项：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#搜索与匹配……还有贪婪"><span class="nav-number">1.2.16.</span> <span class="nav-text">搜索与匹配……还有贪婪</span></a></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        
+
+<script type="text/javascript" src="http://isdux.github.io/js/src/github-comments.js"></script>
+<script type="text/javascript">
+    var ghcommentid = 0;
+
+    if($(".title-line").attr("value") != null) {
+      ghcommentid = $(".title-line").attr("value");
+      DoGithubComments(ghcommentid);
+    }
+</script>
+
+<div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Alan Cong</span>
+</div>
+
+<div class="powered-by">
+  Alan <a class="theme-link" href="https://isdux.com">Alan</a>
+</div>
+
+
+<div class="theme-info">
+  Alan -
+  <a class="theme-link" href="https://isdux.com">
+    Alan. Alan
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>

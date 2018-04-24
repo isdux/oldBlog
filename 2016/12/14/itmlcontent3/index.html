@@ -1,0 +1,756 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+
+    
+     
+    
+    <link href="/lib/font-awesome/css/loading.css?v=4.4.4" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+
+
+<link href="/lib/font-awesome/css/main.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="mining,machinelearn," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.0.2" />
+
+
+
+
+
+
+<meta name="description" content="Headline: [5]Introduction to Machine Learning: (chapter one[3])Introduction:  Notes (第一章[3])">
+<meta name="keywords" content="mining,machinelearn">
+<meta property="og:type" content="article">
+<meta property="og:title" content="(5) Machine Learn Introduction">
+<meta property="og:url" content="http://yoursite.com/2016/12/14/itmlcontent3/index.html">
+<meta property="og:site_name" content="IsDux">
+<meta property="og:description" content="Headline: [5]Introduction to Machine Learning: (chapter one[3])Introduction:  Notes (第一章[3])">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2017-09-15T07:51:44.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="(5) Machine Learn Introduction">
+<meta name="twitter:description" content="Headline: [5]Introduction to Machine Learning: (chapter one[3])Introduction:  Notes (第一章[3])">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 'undefined',
+      author: 'Author'
+    }
+  };
+</script>
+<script type="text/javascript" src="http://isdux.github.io/js/src/jquery.js"></script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/12/14/itmlcontent3/"/>
+
+
+  <title> (5) Machine Learn Introduction | IsDux </title>
+</head>
+
+<body itemscope itemtype="//schema.org/WebPage" lang="en">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="container-solar">
+  <div class="solar">
+      <i class="mercury"></i>
+      <i class="venus"></i>
+      <i class="earth"></i>
+      <i class="mars"></i>
+      <i class="belt"></i>
+      <i class="jupiter"></i>
+      <i class="saturn"></i>
+      <i class="uranus"></i>
+      <i class="neptune"></i>
+  </div>
+</div>
+
+<div class="site-meta ">
+  
+
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="site-title">IsDux</span>
+    </a>
+    <div class="site-info">
+      <span class="logo-line-before"><i class="" style="transform: translateX(100%);"></i></span>
+      <span class="site-title-second">MOTTO || The hard part isn’t making the decision. It’s living with it.</span>
+      <span class="logo-line-after"><i class="" style="transform: translateX(-100%);"></i></span> 
+    </div>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule" rel="section">
+            
+            Schedule
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                (5) Machine Learn Introduction
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-12-14T19:56:18+08:00" content="2016-12-14">
+              2016-12-14
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">tech</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Headline-5-Introduction-to-Machine-Learning-chapter-one-3"><a href="#Headline-5-Introduction-to-Machine-Learning-chapter-one-3" class="headerlink" title="Headline: [5]Introduction to Machine Learning: (chapter one[3])"></a><strong><font color="#5A5AAD">Headline: [5]Introduction to Machine Learning: (chapter one[3])</font></strong></h1><h2 id="Introduction-Notes-第一章-3"><a href="#Introduction-Notes-第一章-3" class="headerlink" title="Introduction:  Notes (第一章[3])"></a><font color="#FF5151">Introduction: </font> Notes (第一章[3])</h2><a id="more"></a>
+<p><strong> <font color="red">声明: 本篇博文为本人阅读机器学习导论的读书笔记 </font> </strong></p>
+<h2 id="为什么选择英文版？Why-am-i-rewrite"><a href="#为什么选择英文版？Why-am-i-rewrite" class="headerlink" title="为什么选择英文版？Why  am i rewrite?"></a>为什么选择英文版？Why  am i rewrite?</h2><p><u>由于本人惨不忍睹的英语，于是首先选择了中文版，可是，昨天突发奇想，反正机器学习也是不会，英语也是不会，不如省事一点一起学，于是，我选择了英文版</u></p>
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><h3 id="Notes"><a href="#Notes" class="headerlink" title="Notes"></a>Notes</h3><p><strong>Evolution is the major force that defines our bodily shape as well as our built-in instincts and reflexes.</strong> </p>
+<p><strong>进化就和本能与思维一样是我们个体成长并成形的主要力量。</strong></p>
+<p>We also learn to change our behavior during our lifetime. This helps us cope with changes in the environment that can not be predicted by evolution. </p>
+<p><strong>Organisms that have a short life in a well-defined environment may have all their behavior built-in, but instead of hardwiring into us all sorts of behavior for any circumstance that we could encounter in our life, evolution gave us a large brain and a mechanism to learn, such that we could update ourselves with experience and adapt to different environments.</strong> </p>
+<p><strong>在这个残酷的环境里生物体在自己短暂的一生里有着自己天生的行为，也有比如笔迹等这种根据我们生活中遇到的各种的不同环境而形成的行为，进化给了我们优秀的大脑和学习的机制，我们可以根据经验来调整自己以适应不同的环境。</strong></p>
+<p>When we learn the best strategy in a certain situation, that knowledge is stored in our brain, and when the situation arises again, when we recognize (“cognize” means to know) the situation, we can recall the suitable strategy and act accordingly.</p>
+<pre><code>shape [ʃeɪp] 形状，模型，身材，具体化，形成，塑造，使成形，使符合，成长
+built-in [,bɪlt &apos;ɪn] 嵌入的，固定的，内置
+instinct [&apos;ɪnstɪŋ(k)t] 本能，直觉，天性，充满着的
+reflex [&apos;riːfleks] 反射，反映，映像，回复，习惯性思维，反作用的
+cope [kəʊp] 处理，对付，竞争，长袍
+organism [&apos;ɔːg(ə)nɪz(ə)m] 有机体，生物体，微生物
+handwriting [&apos;hændraɪtɪŋ] 笔迹，书法，书写，手稿，亲手写
+well-defined 定义明确的，界限清楚的
+circumstance [ˈsɜːkəmstəns; ˈsɜːkəmstɑːns; ˈsɜːkəmstæns] 环境，情况，事件，境遇
+counter [&apos;kaʊntə] 柜台，对立面，计数器，筹码，反击，对着干，反驳，相反的，背道而驰的
+encounter [ɪn&apos;kaʊntə; en-] 遭遇，邂逅，遇到，偶然碰见，偶然相遇
+mechanism [&apos;mek(ə)nɪz(ə)m] 机制，原理，途径，进程，机械装置，技巧
+strategy [ˈstrætədʒɪ] 战略，策略，博弈论
+arise [ə&apos;raɪz] 出现，上升，起立，发生，产生
+recognize [&apos;rekəɡnaɪz] 认出，识别，承认，确认，认清，分辨出
+recall [rɪ&apos;kɔːl] 召回，回想起，记起，取消，回忆，撤销
+sort [sɔːt] 种类，方式，品质，分类，协调，交往，将…分类，将…排序
+</code></pre><p>Learning has its limits though; there may be things that we can never learn with the limited capacity of our brains, just like we can never “learn” to grow a third arm, or an eye on the back of our head, even if either would be useful. </p>
+<p><strong>Note that unlike in psychology, cognitive science, or neuroscience, our aim in machine learning is not to understand the processes underlying learning in humans and animals, but to build useful systems, as in any domain of engineering.</strong></p>
+<p><strong>注意到不同于心理学.认知科学.神经科学，我们使用机器学习的目标不是去理解人和动物学习的这个过程，而是构建一个有对于各个领域发展有用的系统。</strong></p>
+<pre><code>psychology [saɪ&apos;kɒlədʒɪ] 心理学，心理状态
+domain [də(ʊ)&apos;meɪn] 领域，域名，产业，地产，定义域，域
+note that 注意，既然
+</code></pre><p>Almost all of science is fitting models to data. Scientists design experiments and make observations and collect data. They then try to extract knowledge by finding out simple models that explain the data they observed. This is called induction and is the process of extracting general rules from a set of particular cases.</p>
+<pre><code>induction [ɪn&apos;dʌkʃ(ə)n] 感应，归纳法，感应现象，入门培训，入职仪式，就职，诱导
+</code></pre><p>We are now at a point that such analysis of data can no longer be done by people, both because the amount of data is huge and because people who can do such analysis are rare and manual analysis is costly. There is thus a growing interest in computer models that can analyze data and extract information automatically from them, that is, learn.</p>
+<pre><code>rare [reə] 稀有的，稀薄的，半熟的，杰出的，极度的，非常好的，非常，极其
+</code></pre><p>The methods we discuss in the coming chapters have their origins in different scientific domains. </p>
+<p><strong>Sometimes the same algorithm was independently invented in more than one field, following a different historical path.</strong></p>
+<p><strong>有时，在不止一个领域里，相同的算法都被分别独立的创造了出来，根据各自领域不同的历史轨迹。</strong></p>
+<pre><code>origin [&apos;ɒrɪdʒɪn] 起源，原点，出身，开端
+invent [ɪn&apos;vent] 发明，创造，虚构，捏造
+</code></pre><p>In statistics, going from particular observations to general descriptions is called inference and learning is called estimation. Classification is called discriminant analysis in statistics (McLachlan 1992; Hastie, Tibshirani, and Friedman 2011). Before computers were cheap and abundant, statisticians could only work with small samples. Statisticians, being mathematicians, worked mostly with simple parametric models that could be analyzed mathematically. In engineering, classification is called pattern recognition and the approach is nonparametric and much more empirical (Duda, Hart, and Stork 2001; Webb and Copey 2011).</p>
+<pre><code>mathematician [mæθəmə&apos;tɪʃn] 数学家，善于数字计算的人，算术的人
+empirical [em&apos;pɪrɪk(ə)l; ɪm-] 经验主义者，完全根据经验的，实证的，主观的
+</code></pre><p>Machine learning is also related to artificial intelligence (Russell and Norvig 2009) because an intelligent system should be able to adapt to changes in its environment. Application areas like vision, speech, and robotics are also tasks that are best learned from sample data. </p>
+<p><strong>In electrical engineering, research in signal processing resulted in adaptive computer vision and speech programs.</strong></p>
+<p>**</p>
+<p><strong>在电力工程里，我们研究的是自适应语音视图系统里电力信号对应的结果。</strong></p>
+<p>Among these, the development of hidden Markov models for speech recognition is especially important.</p>
+<pre><code>Markov 马尔科夫(俄罗斯数学家)
+</code></pre><p>In the late 1980s with advances in VLSI technology and the possibility of building parallel hardware containing thousands of processors, the field of artificial neural networks was reinvented as a possible theory to distribute computation over a large number of processing units (Bishop 1995). </p>
+<p><strong>Over time, it has been realized in the neural network community that most neural network learning algorithms have their basis in statistics—for example, the multilayer perceptron is another class of nonparametric estimator—and claims of brain-like computation have started to fade.</strong></p>
+<p><strong>随着时间的流逝，我们了解到在神经网络社区里，很多的神经网络学习算法的基本原则都可以在统计学中找到，例如，多分子感知器就是用的另外一种无参估计原则，所以模拟人脑来计算的说法已经渐渐消失。</strong></p>
+<pre><code>VLSI very large scale integration 超大规模集成电路
+Scale [skeɪl] 规模，比例，刻度，数值范围，衡量，天平，测量，攀登，依比例决定
+paraller [&apos;pærəlel] 平行线，对比，使…与…平行，平行的，类似的，相同的
+hardware [&apos;hɑːdweə] 计算机硬件，五金器具
+reinvent [ˌri:ɪnˈvent] 重新使用，彻底改造，重复发明(在不知他人已发明的情况下)
+over time 超时，随着时间的过去，久而久之
+realize [&apos;riːəlaɪz] 实现，认识到，了解，变卖，把…变成现钱
+basis [&apos;beɪsɪs] 基础，底部，主要成分，基础原则或原理
+perceptron [pɚ&apos;sɛptrɑn] 感知器，感知器(模拟人类视神经控制系统的图形识别机)
+multilayer [&apos;mʌltɪleɪə] 有多层的，多分子层的，多层次
+estimator [&apos;estɪmeɪtə] 估计量，评价者
+claim [kleɪm] 提出要求，要求，声称，需要，认领，索赔，断言，值得
+fade [feɪd] 褪色，凋谢，逐渐消失，使褪色，平淡的，乏味的，淡出，褪去，消褪
+</code></pre><p>In recent years, kernel-based algorithms, such as support vector machines, have become popular, which, through the use of kernel functions, can be adapted to various applications, especially in bioinformatics and language processing. </p>
+<p><strong>It is common knowledge nowadays that a good representation of data is critical for learning and kernel functions turn out to be a very good way to introduce such expert knowledge.</strong></p>
+<p><strong>众所周知，数据的优质展现在今天对于学习至关重要，核心函数则是介绍专业知识的一种非常棒的方式。</strong></p>
+<pre><code>turn out to 原来是，结果是，最后是
+nowadays [&apos;naʊədeɪz] 现今，时下，当今
+</code></pre><p>Another recent approach is the use of generative models that explain the observed data through the interaction of a set of hidden factors. Generally, graphical models are used to visualize the interaction of the factors and the data, and Bayesian formalism allows us to define our prior information on the hidden factors and the model, as well as to infer the model parameters.</p>
+<pre><code>visual [&apos;vɪʒjʊəl; -zj-] 视觉的，视力的，栩栩如生的
+visualize [&apos;vɪʒuəlaɪz] 形象，形象化，想象，设想，显现，可视化
+formalism [&apos;fɔːm(ə)lɪz(ə)m] 形式主义，形式体系，主义
+prior [&apos;praɪə] 优先的，在先的，在前的，在前，居先，在…之前
+</code></pre><p>Recently, with the reduced cost of storage and connectivity, it has become possible to have very large datasets available over the Internet, and this, coupled with cheaper computation, have made it possible to run learning algorithms on a lot of data. In the past few decades, it was generally believed that for artificial intelligence to be possible, we needed a new paradigm, a new type of thinking, a new model of computation, or a whole new set of algorithms.</p>
+<pre><code>connectivity [kɒnek&apos;tɪvɪtɪ] 连通性，连接
+available [ə&apos;veɪləb(ə)l] 可获得的，可购得的，可找到的，有空的
+couple [&apos;kʌp(ə)l] 对，夫妇，数个，结合，成婚，连接，连合
+paradigm [&apos;pærədaɪm] 范例，范式，词形变化表，典范
+</code></pre><p>Taking into account the recent successes in machine learning in various domains, it may be claimed that what we needed was not new algorithms but a lot of example data and sufficient computing power to run the algorithms on that much data. For example, the roots of support vector machines go to potential functions, linear classifiers, and neighbor-based methods, proposed in the 1950s or the 1960s; it is just that we did not have fast computers or large storage then for these algorithms to show their full potential. </p>
+<p><strong>It may be conjectured that tasks such as machine translation, and even planning, can be solved with such relatively simple learning algorithms but trained on large amounts of example data, or through long runs of trial and error.</strong></p>
+<p><strong>我们可以推断诸如机器学习和做计划这样的任务，或者是有一个大的数量的样本数据，或者是通过长期的训练和错误测试，但是都是使用相对简单的学习算法来训练解决的。</strong></p>
+<p>Recent successes with “deep learning” algorithm supports this claim. </p>
+<p><strong>Intelligence seems not to originate from some outlandish formula, but rather from the patient, almost brute-force use of a simple, straightforward algorithm.</strong></p>
+<p><strong>智慧看起来并不是从冷僻的公式中产生，而是来自他的受动者对简单直接的算法的强力有效使用。</strong></p>
+<pre><code>sufficient [sə&apos;fɪʃ(ə)nt] 足够的，充分的，满足
+root [ruːt] 根，根源，词根，祖先，固定，根源在于
+propose [prə&apos;pəʊz] 建议，打算，计划，求婚
+conjecture [kən&apos;dʒektʃə] 推测，猜想，揣摩
+outlandish [aʊt&apos;lændɪʃ] 古怪的，奇异的，异国风格的，偏僻的
+patient [&apos;peɪʃ(ə)nt] 有耐心的，能容忍的，病人，患者，受动者，承受者
+almost [&apos;ɔːlməʊst] 差不多，几乎
+rather [&apos;rɑːðə] 宁可，宁愿，相当，当然啦
+brute [bruːt] 残忍的，无理性的，畜生，残暴的人
+straightforward [streɪt&apos;fɔːwəd] 简单的，坦率的，明确的，径直地，直截了当地，坦率的
+go to 到，转到，定位
+</code></pre><p>Data mining is the name coined in the business world for the application of machine learning algorithms to large amounts of data (Witten and Frank 2011; Han and Kamber 2011). In computer science, it used to be called knowledge discovery in databases.</p>
+<pre><code>coin [kɒɪn] 铸造(货币)，杜撰，创造，硬币，钱币，楔子
+discover [dɪ&apos;skʌvə] 发觉，发现，暴露
+</code></pre><p>Research in these different communities (statistics, pattern recognition, neural networks, signal processing, control, artificial intelligence, and data mining) followed different paths in the past with different emphases. In this book, the aim is to incorporate these emphases together to give a unified treatment of the problems and the proposed solutions.</p>
+<pre><code>emphasis [&apos;emfəsɪs] 重点，强调，加强语气
+incorporate [ɪn&apos;kɔːpəreɪt] 包含，吸收，体现，把…合并，混合，组成公司，一体化的
+</code></pre><p>好了，今天的分享就到这里，我们明天继续。谢谢大家。</p>
+<div class="title-line" value="12">真孒今将命</div><br><div class="person"><br>    <div class="line0">此致: 敬礼!</div><br>    <div class="line1">送赵法师还蜀因名山奠简</div><br>    <div class="line2">作者: 李隆基</div><br>    <div class="line3">摘自: 《全唐诗》</div><br>    <div class="line4">道家奠灵简, 自昔仰神仙</div><br>    <div class="line5"><font color="red">真孒今将命</font>, 苍生福可传</div><br>    <div class="line6">江山寻故国, 城郭信依然</div><br>    <div class="line7">二室遥相望, 云回洞里天</div><br></div>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/mining/" rel="tag">#mining</a>
+          
+            <a href="/tags/machinelearn/" rel="tag">#machinelearn</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/12/12/itmlcontent2/" rel="next" title="(4) Machine Learn Introduction">
+                <i class="fa fa-chevron-left"></i> (4) Machine Learn Introduction
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/12/15/itmlcontent4/" rel="prev" title="(6) Machine Learn Introduction">
+                (6) Machine Learn Introduction <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    <div id="gh-comments">
+        <h6>COMMENTS</h6>
+        <div id="gh-comments-list"></div>
+        <a href="javascript:void(0)" id="gh-load-comments" class="btn" style="display:none">Load more comments</a>
+    </div>
+  </div>
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Alan Cong" />
+          <p class="site-author-name" itemprop="name">Alan Cong</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">31</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">categories</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Headline-5-Introduction-to-Machine-Learning-chapter-one-3"><span class="nav-number">1.</span> <span class="nav-text">Headline: [5]Introduction to Machine Learning: (chapter one[3])</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction-Notes-第一章-3"><span class="nav-number">1.1.</span> <span class="nav-text">Introduction:  Notes (第一章[3])</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么选择英文版？Why-am-i-rewrite"><span class="nav-number">1.2.</span> <span class="nav-text">为什么选择英文版？Why  am i rewrite?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction"><span class="nav-number">1.3.</span> <span class="nav-text">Introduction</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Notes"><span class="nav-number">1.3.1.</span> <span class="nav-text">Notes</span></a></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        
+
+<script type="text/javascript" src="http://isdux.github.io/js/src/github-comments.js"></script>
+<script type="text/javascript">
+    var ghcommentid = 0;
+
+    if($(".title-line").attr("value") != null) {
+      ghcommentid = $(".title-line").attr("value");
+      DoGithubComments(ghcommentid);
+    }
+</script>
+
+<div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Alan Cong</span>
+</div>
+
+<div class="powered-by">
+  Alan <a class="theme-link" href="https://isdux.com">Alan</a>
+</div>
+
+
+<div class="theme-info">
+  Alan -
+  <a class="theme-link" href="https://isdux.com">
+    Alan. Alan
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>

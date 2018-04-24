@@ -1,0 +1,712 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+
+    
+     
+    
+    <link href="/lib/font-awesome/css/loading.css?v=4.4.4" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+
+
+<link href="/lib/font-awesome/css/main.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="-mining -machinelearn," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.0.2" />
+
+
+
+
+
+
+<meta name="description" content="Headline: [7]Introduction to Machine Learning: (chapter two[1])Supervised Learning:  Learning a Class from Examples (第二章[1])">
+<meta name="keywords" content="-mining -machinelearn">
+<meta property="og:type" content="article">
+<meta property="og:title" content="(7) Machine Learn Introduction">
+<meta property="og:url" content="http://yoursite.com/2016/12/16/itmlcontent5/index.html">
+<meta property="og:site_name" content="IsDux">
+<meta property="og:description" content="Headline: [7]Introduction to Machine Learning: (chapter two[1])Supervised Learning:  Learning a Class from Examples (第二章[1])">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2017-09-15T07:51:54.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="(7) Machine Learn Introduction">
+<meta name="twitter:description" content="Headline: [7]Introduction to Machine Learning: (chapter two[1])Supervised Learning:  Learning a Class from Examples (第二章[1])">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 'undefined',
+      author: 'Author'
+    }
+  };
+</script>
+<script type="text/javascript" src="http://isdux.github.io/js/src/jquery.js"></script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/12/16/itmlcontent5/"/>
+
+
+  <title> (7) Machine Learn Introduction | IsDux </title>
+</head>
+
+<body itemscope itemtype="//schema.org/WebPage" lang="en">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="container-solar">
+  <div class="solar">
+      <i class="mercury"></i>
+      <i class="venus"></i>
+      <i class="earth"></i>
+      <i class="mars"></i>
+      <i class="belt"></i>
+      <i class="jupiter"></i>
+      <i class="saturn"></i>
+      <i class="uranus"></i>
+      <i class="neptune"></i>
+  </div>
+</div>
+
+<div class="site-meta ">
+  
+
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="site-title">IsDux</span>
+    </a>
+    <div class="site-info">
+      <span class="logo-line-before"><i class="" style="transform: translateX(100%);"></i></span>
+      <span class="site-title-second">MOTTO || The hard part isn’t making the decision. It’s living with it.</span>
+      <span class="logo-line-after"><i class="" style="transform: translateX(-100%);"></i></span> 
+    </div>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule" rel="section">
+            
+            Schedule
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                (7) Machine Learn Introduction
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-12-16T19:56:18+08:00" content="2016-12-16">
+              2016-12-16
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">tech</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Headline-7-Introduction-to-Machine-Learning-chapter-two-1"><a href="#Headline-7-Introduction-to-Machine-Learning-chapter-two-1" class="headerlink" title="Headline: [7]Introduction to Machine Learning: (chapter two[1])"></a><strong><font color="#5A5AAD">Headline: [7]Introduction to Machine Learning: (chapter two[1])</font></strong></h1><h2 id="Supervised-Learning-Learning-a-Class-from-Examples-第二章-1"><a href="#Supervised-Learning-Learning-a-Class-from-Examples-第二章-1" class="headerlink" title="Supervised Learning:  Learning a Class from Examples (第二章[1])"></a><font color="#FF5151">Supervised Learning: </font> Learning a Class from Examples (第二章[1])</h2><a id="more"></a>
+<p><strong> <font color="red">声明: 本篇博文为本人阅读机器学习导论的读书笔记 </font> </strong></p>
+<h2 id="为什么选择英文版？Why-am-i-rewrite"><a href="#为什么选择英文版？Why-am-i-rewrite" class="headerlink" title="为什么选择英文版？Why am i rewrite?"></a>为什么选择英文版？Why am i rewrite?</h2><p><u>由于本人惨不忍睹的英语，于是首先选择了中文版，可是，昨天突发奇想，反正机器学习也是不会，英语也是不会，不如省事一点一起学，于是，我选择了英文版</u></p>
+<p><strong>注:</strong> <u>前面章节出现的词汇不会重复解释，完成本书词汇表，本书完结时提供</u></p>
+<h2 id="Supervised-Learning"><a href="#Supervised-Learning" class="headerlink" title="Supervised Learning"></a>Supervised Learning</h2><p>We discuss supervised learning starting from the simplest case, which is learning a class from its positive and negative examples. We generalize and discuss the case of multiple classes, then regression, where the outputs are continuous.</p>
+<pre><code>positive [&apos;pɒzɪtɪv] 积极的，正的，阳性的，确定的，肯定的，绝对的，正数，正片
+negative [&apos;negətɪv] 负的，消极的，阴性的，否定的，负数，拒绝
+generalize [ˈdʒɛnrəˌlaɪz] 概括，推广，使…一般化，形成概念，归纳，总括，总结
+</code></pre><h3 id="Learning-a-Class-from-Examples"><a href="#Learning-a-Class-from-Examples" class="headerlink" title="Learning a Class from Examples"></a>Learning a Class from Examples</h3><p><strong>Note that if $x_1$ and $x_2$ are real-valued, there are infinitely many such h for which this is satisfied, namely, for which the error, E, is 0, but given a future example somewhere close to the boundary between positive and negative examples, different candidate hypotheses may make different predictions.</strong></p>
+<p><strong>注意到如果 $x_1$ 和 $x_2$ 是实数值，这里就会有无限多个让人满意的 h(x)，也就是说，h 的错误估计，E(h | X) == 0, 但是对于将来的样本有时候会接近这个 h 中的错误与正确的样本边界线，不同的候选假设可能产生不同的预测。</strong></p>
+<p><strong>This is the problem of generalization—that is, how well our hypothesis will correctly classify future examples that are not part of the training set.</strong></p>
+<p><strong>这可以概括为一个问题，一个多么好的假设将让我们可以对不属于训练集合一部分的未来数据正确的分类。</strong></p>
+<pre><code>label [&apos;leɪb(ə)l] 标注，贴标签与，标签，商标，签条
+sponsor [&apos;spɒnsə] 赞助人，主办者，保证人，赞助，发起
+conclusion [kən&apos;kluːʒ(ə)n] 结论，结局，推论，结尾
+irrelevant [ɪ&apos;relɪv(ə)nt] 不相干的，不切题的，无关的，无关痛痒的
+seat [siːt] 座位，所在地，职位，使…坐下，可容纳…的，使就职，座椅
+distinguish [dɪ&apos;stɪŋgwɪʃ] 区分，辨别，使杰出，使表现突出，区别，分清
+abscissa [æb&apos;sɪsə] 横坐标，横线，横标
+ordinate [&apos;ɔːdɪnət] 纵坐标，协调，坐标，坐标标注
+coordinate [kəʊ&apos;ɔ:dɪneɪt] 坐标，同等的人或物，并列的，同等的，调整，整合，协调
+cubic [&apos;kjuːbɪk] 立方体的，立方的
+centimeter [ˈsentɪmiːtə(r)] 厘米，公分，百分表
+order [&apos;ɔːdə] 命令，顺序，规则，订单，整理，订货
+hypothesis [haɪ&apos;pɒθɪsɪs] 假设，假说，前提
+rectangle [&apos;rektæŋg(ə)l] 矩形，长方形
+plot [plɒt] 情节，图，阴谋，密谋，绘图，标绘，故事情节
+versus [&apos;vɜːsəs 对，与…相对，对抗，银两
+equation [ɪ&apos;kweɪʒ(ə)n] 方程式，等式，相等，反应式
+quadruple [&apos;kwɒdrʊp(ə)l; kwɒ&apos;druːp(ə)l] 四倍的，四重的，使..成四倍，成为四倍，四倍
+restrict [rɪ&apos;strɪkt] 限制，约束，限定，制约
+reduce [rɪ&apos;djuːs] 减少，降低，使处于，把…分解，缩小，归纳为，简化，缩减
+empirical [em&apos;pɪrɪk(ə)l; ɪm-] 经验主义的，完全根据经验的，实证的，主观的
+proportion [prə&apos;pɔːʃ(ə)n] 比例，占比，部分，面积，均衡，分摊，比重
+infinite [&apos;ɪnfɪnət] 无限的，无穷的，无数的，极大的，无限的东西，极其
+real-valued 实值的，实值离散，实值特征，实数值
+somewhere [&apos;sʌmweə] 到某处，在某处，某个地方，冥冥之中
+boundary [&apos;baʊnd(ə)rɪ] 边界，范围，分界线，土地界标
+candidate [&apos;kændɪdeɪt; -dət] 候选人，候补者，应试者
+</code></pre><p>Actually, depending on X and H , there may be several $S<em>{i}$ and $G</em>{j}$ which<br>respectively make up the S-set and the G-set. </p>
+<p><strong>Every member of the S-set is consistent with all the instances, and there are no consistent hypotheses that are more specific. Similarly, every member of the G-set is consistent with all the instances, and there are no consistent hypotheses that are more general.</strong></p>
+<p><strong>每一个S集合的成员对于所有的实例都是一致的，但却有一个非常特殊的不同的预测(S-范围最小)。同样的，每一个G集合的成员对于所有的实例都是一致的，但却有一个非常普通的不同的预测(G-范围最大)。</strong></p>
+<p><strong>These two make up the boundary sets and any hypothesis between them is consistent and is part of the version space.</strong></p>
+<p><strong>这两个特殊的存在产生了一个边界集合，其他任何的预测都是在这个范围之内，这两个边界之间的部分(边界集合)就是版本空间。</strong> </p>
+<pre><code>evalueate [ɪ&apos;væljʊeɪt] 评价，估价，估值，求…的值
+tight [taɪt] 紧的，密封的，绷紧的，麻烦的，严厉的，没空的，吝啬的，彻底的
+induce [ɪn&apos;djuːs] 诱导，引起，引诱，感应
+consist [kən&apos;sɪst] 由…组成，在于，符合
+consistent [kən&apos;sɪst(ə)nt] 始终如一的，一致的，坚持的，一贯，一致性
+</code></pre><p>There is an algorithm called candidate elimination that incrementally updates the S- and G-sets as it sees training instances one by one; see Mitchell 1997.</p>
+<pre><code>incrementally [,inkri&apos;məntəli] 递增的，增值的，增加的，增量
+eliminate [ɪ&apos;lɪmɪneɪt] 消除，排除，淘汰，消灭
+candidate elimination 候选消除
+intuitive [ɪn&apos;tjuːɪtɪv] 直觉的，凭直觉获知的，敏悟，直观性，直觉性
+doubt [daʊt] 怀疑，疑问，疑惑，不信，恐怕，拿不准
+due [djuː] 到期的，预期的，应付的，应得的，应付款，应得之物
+due to 由于，应归于，因为，归功于
+flexible [&apos;fleksɪb(ə)l] 灵活的，柔韧的，易弯曲的，有弹性的，多变的，弹性的
+</code></pre><p><strong>We choose the hypothesis with the largest margin, for best separation. The shaded instances are those that define (or support) the margin; other instances can be removed without affecting h.</strong></p>
+<p><strong>我们选择一个拥有最大边距的预测，来最好的分类。图中阴影部分的实例定义(支持)了边距，其他的不影响h的实例将被删除。</strong></p>
+<pre><code>shade [ʃeɪd] 树荫，阴影，遮盖，掩盖，渐变
+affect [ə&apos;fekt] 影响，感染，感动，假装，喜欢，情感
+</code></pre><p>好了，今天的分享就到这里，我们明天继续。谢谢大家。</p>
+<div class="title-line" value="14">真孒今将命</div><br><div class="person"><br>    <div class="line0">此致: 敬礼!</div><br>    <div class="line1">送赵法师还蜀因名山奠简</div><br>    <div class="line2">作者: 李隆基</div><br>    <div class="line3">摘自: 《全唐诗》</div><br>    <div class="line4">道家奠灵简, 自昔仰神仙</div><br>    <div class="line5"><font color="red">真孒今将命</font>, 苍生福可传</div><br>    <div class="line6">江山寻故国, 城郭信依然</div><br>    <div class="line7">二室遥相望, 云回洞里天</div><br></div>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/mining-machinelearn/" rel="tag">#-mining -machinelearn</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/12/15/itmlcontent4/" rel="next" title="(6) Machine Learn Introduction">
+                <i class="fa fa-chevron-left"></i> (6) Machine Learn Introduction
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/01/12/itmlcontent6/" rel="prev" title="(8) Machine Learn Introduction">
+                (8) Machine Learn Introduction <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    <div id="gh-comments">
+        <h6>COMMENTS</h6>
+        <div id="gh-comments-list"></div>
+        <a href="javascript:void(0)" id="gh-load-comments" class="btn" style="display:none">Load more comments</a>
+    </div>
+  </div>
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Alan Cong" />
+          <p class="site-author-name" itemprop="name">Alan Cong</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">31</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">categories</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Headline-7-Introduction-to-Machine-Learning-chapter-two-1"><span class="nav-number">1.</span> <span class="nav-text">Headline: [7]Introduction to Machine Learning: (chapter two[1])</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Supervised-Learning-Learning-a-Class-from-Examples-第二章-1"><span class="nav-number">1.1.</span> <span class="nav-text">Supervised Learning:  Learning a Class from Examples (第二章[1])</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么选择英文版？Why-am-i-rewrite"><span class="nav-number">1.2.</span> <span class="nav-text">为什么选择英文版？Why am i rewrite?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Supervised-Learning"><span class="nav-number">1.3.</span> <span class="nav-text">Supervised Learning</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Learning-a-Class-from-Examples"><span class="nav-number">1.3.1.</span> <span class="nav-text">Learning a Class from Examples</span></a></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        
+
+<script type="text/javascript" src="http://isdux.github.io/js/src/github-comments.js"></script>
+<script type="text/javascript">
+    var ghcommentid = 0;
+
+    if($(".title-line").attr("value") != null) {
+      ghcommentid = $(".title-line").attr("value");
+      DoGithubComments(ghcommentid);
+    }
+</script>
+
+<div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Alan Cong</span>
+</div>
+
+<div class="powered-by">
+  Alan <a class="theme-link" href="https://isdux.com">Alan</a>
+</div>
+
+
+<div class="theme-info">
+  Alan -
+  <a class="theme-link" href="https://isdux.com">
+    Alan. Alan
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>

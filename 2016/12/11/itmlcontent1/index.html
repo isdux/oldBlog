@@ -1,0 +1,774 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+
+    
+     
+    
+    <link href="/lib/font-awesome/css/loading.css?v=4.4.4" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+
+
+<link href="/lib/font-awesome/css/main.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="mining,machinelearn," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.0.2" />
+
+
+
+
+
+
+<meta name="description" content="Headline: [3]Introduction to Machine Learning: (chapter one[1])Introduction:  What is machine learning? (第一章[1])">
+<meta name="keywords" content="mining,machinelearn">
+<meta property="og:type" content="article">
+<meta property="og:title" content="(3) Machine Learn Introduction">
+<meta property="og:url" content="http://yoursite.com/2016/12/11/itmlcontent1/index.html">
+<meta property="og:site_name" content="IsDux">
+<meta property="og:description" content="Headline: [3]Introduction to Machine Learning: (chapter one[1])Introduction:  What is machine learning? (第一章[1])">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2017-09-15T07:50:18.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="(3) Machine Learn Introduction">
+<meta name="twitter:description" content="Headline: [3]Introduction to Machine Learning: (chapter one[1])Introduction:  What is machine learning? (第一章[1])">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 'undefined',
+      author: 'Author'
+    }
+  };
+</script>
+<script type="text/javascript" src="http://isdux.github.io/js/src/jquery.js"></script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/12/11/itmlcontent1/"/>
+
+
+  <title> (3) Machine Learn Introduction | IsDux </title>
+</head>
+
+<body itemscope itemtype="//schema.org/WebPage" lang="en">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="container-solar">
+  <div class="solar">
+      <i class="mercury"></i>
+      <i class="venus"></i>
+      <i class="earth"></i>
+      <i class="mars"></i>
+      <i class="belt"></i>
+      <i class="jupiter"></i>
+      <i class="saturn"></i>
+      <i class="uranus"></i>
+      <i class="neptune"></i>
+  </div>
+</div>
+
+<div class="site-meta ">
+  
+
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="site-title">IsDux</span>
+    </a>
+    <div class="site-info">
+      <span class="logo-line-before"><i class="" style="transform: translateX(100%);"></i></span>
+      <span class="site-title-second">MOTTO || The hard part isn’t making the decision. It’s living with it.</span>
+      <span class="logo-line-after"><i class="" style="transform: translateX(-100%);"></i></span> 
+    </div>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule" rel="section">
+            
+            Schedule
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                (3) Machine Learn Introduction
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-12-11T10:11:44+08:00" content="2016-12-11">
+              2016-12-11
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">tech</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Headline-3-Introduction-to-Machine-Learning-chapter-one-1"><a href="#Headline-3-Introduction-to-Machine-Learning-chapter-one-1" class="headerlink" title="Headline: [3]Introduction to Machine Learning: (chapter one[1])"></a><strong><font color="#5A5AAD">Headline: [3]Introduction to Machine Learning: (chapter one[1])</font></strong></h1><h2 id="Introduction-What-is-machine-learning-第一章-1"><a href="#Introduction-What-is-machine-learning-第一章-1" class="headerlink" title="Introduction:  What is machine learning? (第一章[1])"></a><font color="#FF5151">Introduction: </font> What is machine learning? (第一章[1])</h2><a id="more"></a>
+<p><strong> <font color="red">声明: 本篇博文为本人阅读机器学习导论的读书笔记 </font> </strong></p>
+<h2 id="为什么选择英文版？Why-am-i-rewrite"><a href="#为什么选择英文版？Why-am-i-rewrite" class="headerlink" title="为什么选择英文版？Why  am i rewrite?"></a>为什么选择英文版？Why  am i rewrite?</h2><p><u>由于本人惨不忍睹的英语，于是首先选择了中文版，可是，昨天突发奇想，反正机器学习也是不会，英语也是不会，不如省事一点一起学，于是，我选择了英文版</u></p>
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><h3 id="What-is-machine-learning"><a href="#What-is-machine-learning" class="headerlink" title="What is machine learning?"></a>What is machine learning?</h3><p><strong>从今天起，只在每一段下附上单词表，重点介绍机器学习</strong></p>
+<p>This is the age of “big data”. Once upon a time, only companies had data. There used to be computer centers where that data was stored and processed. First with the arrival of personal computers and later with the widespread use of wireless communication, we all bacame producers of data. Every time we buy a product, every time we rent a movie, visit a web page, write a blog, or post on the social media, even when we just walk or driver around, we are generating data.</p>
+<pre><code>widespread [ˈwʌɪdsprɛd] 普遍的，广泛的，分布广的
+wire [waɪə] 电线，金属丝，电报，拍电报，给…装电线，打电报
+wireless [ˈwʌɪəlɪs] 无线的，无线电的，无线电
+communicate [kə&apos;mjuːnɪkeɪt] 通讯，传达，相通，交流，感染，显露
+rent [rent] 租金，出租，租用，租借
+social [&apos;səʊʃ(ə)l] 社会的，社交的，群居的，联谊会，联欢会
+media [&apos;miːdɪə] 媒体，煤质，血管中层，浊塞音，中脉 
+medium [&apos;miːdɪəm] 中间的，中等的，半生熟的，方法，媒体，媒介, 复数 media
+</code></pre><p>Each of us is not only a generator but also a consumer of data. We want to have products and services specialized for us. We want our needs to be understood and interests to be predicted.</p>
+<pre><code>consumer [kən&apos;sjuːmə] 消费者，用户，顾客
+specialize [&apos;spɛʃəlaɪz] 专门从事，详细说明，特化，使专门化，详细说明
+supermarket chain 连锁超市
+predict [prɪ&apos;dɪkt] 预报，预言，预知，作出预言
+</code></pre><p>Think, for example, of a supermarket chain that is selling thousands of goods to millions of customers either at hundreds of brick-and-mortar stores all over a country or through a virtual store over the web. The details of each transaction are stored: data, customer id, goods bought and their amount, total money spent, and so forth. This typically amounts to a lot of data every day. What the supermarket chain wants is to be able to predict which customer is likely to buy which product, to maximize sales and profit. Similarly each customer wants to find the set of products best matching his/her needs.<br>This task is not evident. We do not know exactly which people are likely to buy this ice cream flavor or the next book of this author,see this new movie, visit this city, or click this link. Customer behavior changes in time and by geographic location. But we know that it is not completely random. People do not go to supermarkets and buy things at random. When they buy beer, they buy chips; they buy ice cream in summer and spices for Glühwein in winter. There are certain patterns in the data.</p>
+<pre><code>brick [brɪk] 砖，砖块，砖形物，心肠好的人，用砖砌
+mortar [&apos;mɔːtə] 迫击炮，臼，研钵，灰泥浆，灰泥
+brick-and-mortar [,braikənd&apos;mɔ:tə] (有)实体的，砖瓦加水泥(常用来比喻传统企业)
+either [&apos;aɪðə; &apos;iː-] 两者之中任一的，两者之中每一的，任何一个
+neither [ˈnaɪðə; ˈniːðə] 也不，既不，两个都不，既不……也不
+virtual [ˈvɜ:tʃuəl] 虚拟的，实质上的，事实上的
+through [θruː] 通过，穿过，凭借，彻底，从头至尾，直达的，完结的，过境的
+forth [fɔːθ] 向前，向外，自…以后
+so forth 等等
+typically [&apos;tɪpɪkəlɪ] 代表性的，作为特色地，通常的
+amount to 相当于，总计为
+profit [&apos;prɒfɪt] 利润，利益，获利，有益，有益于
+evident [&apos;evɪd(ə)nt] 明显的，明白的
+exactly [ɪg&apos;zæk(t)lɪ; eg-] 恰好的，正是，精确的，正确的
+geography [dʒɪ&apos;ɒgrəfɪ] 地理，地形
+spice [spaɪs] 香料味，调料味，情趣，调味品，加香料
+Glühwein 德国热红酒
+</code></pre><p>To solve a problem on a computer, we need an algorithm. An algorithm is a sequence of instructions that should be carried out to transform the input to output. For example, one can devise an algorithm for sorting. The input is a set of numbers and the output is their ordered list. For the same task, there maybe various algorithms and we maybe interested in finding the most efficient one, requiring the least number of instructions or memory or both.</p>
+<pre><code>sequence [&apos;siːkw(ə)ns] 序列，顺序，续发事件，按顺序排好
+instruction [ɪn&apos;strʌkʃ(ə)n] 指令，命令，指示，教导，用法说明
+devise [dɪ&apos;vaɪz] 设计，想出，发明，图谋，遗赠
+carry [&apos;kærɪ] 拿，扛，携带，支持，搬运，运载
+carry out 执行，实行，贯彻，实现，完成
+efficient [ɪ&apos;fɪʃ(ə)nt] 有效率的，有能力的，生效的
+memory [&apos;mem(ə)rɪ] 记忆，记忆力，内存，存储器，回忆
+</code></pre><p>For some tasks, however, we do not have an algorithm. Predicting customer behavior is one; another is to tell spam emails from legitimate ones. We know what the input is: an email document that in the simplest case is a file of characters. We know what the output should be: a yes/no output indicating whether the message is spam or not. But we do not know how to transform the input to the output. What is considered spam changes in time and from individual to individual.</p>
+<pre><code>spam [spæm] 刷屏
+spam email 垃圾邮件
+legitimate [lɪ&apos;dʒɪtɪmət] 合法的，正当的，合理的，正统的，使合法，认为正当
+simplest [&apos;sɪmplɪst] 最简单的，单纯的
+consider [kən&apos;sɪdə] 考虑，认为，考虑到，细想
+individual [ɪndɪ&apos;vɪdjʊ(ə)l] 个人的，个别的，独特的，个体
+from individual to individual 因人而异
+</code></pre><p>What we lack in knowledge, we make up for in data. We can easily compile thousands of example messages, some of which we know to be spam and some of which are not, and what we want is to “learn” what constitutes spam from them. In other words, we would like the computer(machine) to extract automatically the algorithm for this task. There is no need to learn to sort numbers since we already have algorithms for that, but there are many applications for which we do not have an algorithm but have lots of data.</p>
+<pre><code>lack [læk] 缺乏，不足，没有，需要
+make up 补偿，弥补，组成，补足，化妆，编造
+constitute [&apos;kɒnstɪtjuːt] 组成，构成，建立，任命
+in other words 换句话说
+automatically [ɔːtə&apos;mætɪklɪ] 自动的，机械的，无意识的，不经思索的
+sort [sɔːt] 种类，方式，品质，分类，协调，交往，将…分类，将…排序，挑选出某物
+</code></pre><p>We may not be able to identify the process completely, but we believe we can construct a good and useful approximation. That approximation may not explain everything, but may still be able to account for some part of the data. We believe that though identifying the complete process may not be possible, we can still detect certain patterns or reqularities. This is the niche of machine learning. Such patterns may help us understand the process, or we can use those patterns to make predictions: </p>
+<p><strong>Assuming that the future, at least the near future, will not be much different from the past when the sample data was collected, the future predictions can also be expected to be right.</strong></p>
+<p><strong>假设将来，至少是不久的将来，数据的情况和我们已经收集的样本数据没有太大的不同，那么我们对于未来的预测则有望是正确的</strong></p>
+<pre><code>identify [aɪ&apos;dentɪfaɪ] 确定，鉴定，识别，辨认出，使参与，把…看成一样，认同，一致，认出
+construct [kən&apos;strʌkt] 建造，构造，创立，构想，概念
+account [ə&apos;kaʊnt] 账户，解释，账目，账单，理由，描述，认为
+niche [niːʃ; nɪtʃ] 合适的职业，有利可图的市场(形式)
+expected [ɪk&apos;spektɪd] 预期的，预料的，预期，盼望
+</code></pre><p>Application of machine learning methods to large databases is called<br>data mining. </p>
+<p><strong>The analogy is that a large volume of earth and raw material is extracted from a mine, which when processed leads to a small amount of very precious material; similarly, in data mining, a large volume of data is processed to construct a simple model with valuable use, for example, having high predictive accuracy.</strong></p>
+<p><strong>类似与我们从矿藏中开采提取出大量的土壤和原材料，经过加工后产生少量非常珍贵的材料一样;在数据挖掘中，我们处理大量数据来构造有价值的简单模型，例如，高精度预测模型。</strong></p>
+<p>Its application areas are abundant: In addition to retail, in finance banks analyze their past data to build models to use in credit applications, fraud detection, and the stock market. In manufacturing, learning models are used for optimization, control, and troubleshooting. In medicine, learning programs are used for medical diagnosis. In telecommunications, call patterns are analyzed for network optimization and maximizing the quality of service.</p>
+<pre><code>volume [&apos;vɒljuːm] 量，体积，卷，音量，大量，册，大量的，把…收集成卷
+material [mə&apos;tɪərɪəl] 重要的，物质的，实质性的，肉体的，材料，原料，物资，布料
+row [rɔː] 生的，未加工的，无经验的，不成熟的，刺痛的，擦伤处
+mine [maɪn] 矿，矿藏，矿山，开采，采掘，埋设地雷，布雷
+precious [&apos;preʃəs] 宝贵的，珍贵的，娇柔造作的
+lead to 导致，通向，产出
+analogy [ə&apos;nælədʒɪ]  类比，类推，类似
+retail [&apos;riːteɪl] 零售，转述，以零售方式
+credit [&apos;kredɪt] 信用，信誉，贷款，学分，信任，声望，赞颂
+abundant [ə&apos;bʌnd(ə)nt] 丰富的，充裕的，盛产
+fraud [frɔːd] 欺骗，骗子，轨迹
+stock [stɒk] 股份，股票，库存，血统，存货的，囤积，办货
+optimization [,ɒptɪmaɪ&apos;zeɪʃən] 最佳化，最优化
+troubleshoot [&apos;trʌblʃuːt] 寻找故障，故障排解，充当故障检修员
+diagnosis [,daɪəg&apos;nəʊsɪs] 诊断
+maximize [&apos;mæksɪmaɪz] 取…最大值,对…极为重视,达到最大值
+</code></pre><p>In science, large amounts of data in physics, astronomy, and biology can<br>only be analyzed fast enough by computers. The World Wide Web is huge;<br>it is constantly growing, and searching for relevant information cannot be<br>done manually.</p>
+<pre><code>huge [hjuːdʒ] 巨大的，庞大的，无限的
+constant [&apos;kɒnst(ə)nt] 不变的，恒定的，经常地，常数，恒量
+relevant [ˈreləvənt] 相关的，切题的，中肯的，有重大关系的，有意义的，目的明确的
+manual [&apos;mænjʊ(ə)l] 手工的，体力的，手册，指南
+</code></pre><p>But machine learning is not just a database problem; it is also a part of artificial intelligence. To be intelligent, a system that is in a changing environment should have the ability to learn. If the system can learn and adapt to such changes, the system designer need not foresee and provide<br>solutions for all possible situations.</p>
+<pre><code>artificial [ɑːtɪ&apos;fɪʃ(ə)l] 人造的，伪造的，虚伪的，非原产地的，武断的
+intelligent [ɪn&apos;telɪdʒ(ə)nt] 智能的，聪明的，理解力强的
+foresee [fɔː&apos;siː] 预见，预知
+</code></pre><p>Machine learning also helps us find solutions to many problems in vision, speech recognition, and robotics. Let us take the example of recognizing faces: This is a task we do effortlessly; every day we recognize family member sand friends by looking at their faces or from their photographs, despite differences in pose, lighting, hair style, and so forth. But we do it unconsciously and are unable to explain how we do it. Because we are not able to explain our expertise, we can not write the computer program. At the same time, we know that a face image is not just a random collection of pixels; a face has structure. It is symmetric. There are the eyes, the nose, the mouth, located in certain places on the face.</p>
+<pre><code>vision [&apos;vɪʒ(ə)n] 视力，美景，眼力，幻象，想象力，幻视，显现，梦见
+speech [spiːtʃ] 演讲，讲话，[语] 语音，演说
+robotic [ro&apos;botɪk] 机器人的，像机器人的，自动的，机器人学
+effortlessly [&apos;efətlisli] 轻松地，毫不费劲地
+member [&apos;membə] 会员，成员，议员
+despite [dɪ&apos;spaɪt] 尽管，不管，轻视，憎恨，侮辱
+pose [pəʊz] 造成，形成，摆姿势，妆模作样，提出…讨论，摆姿势，姿势，姿态
+consciously [&apos;kɑnʃəsli] 自觉的，有意识的
+unconsciously [ʌn&apos;kɑnʃəsli] 不知不觉得，无意识的
+expertise [,ekspɜː&apos;tiːz] 专门知识，专门技术，专家的意见
+pixel [&apos;pɪks(ə)l; -sel] 像素
+symmetric [sɪ&apos;metrɪk] 对称的，匀称的
+</code></pre><p>Each person’s face is a pattern composed of a particular combination<br>of these. By analyzing sample face images of a person, a learning program captures the pattern specific to that person and then recognizes by checking for this pattern in a given image. This is one example of pattern recognition.</p>
+<pre><code>compose [kəm&apos;pəʊz] 构成，写作，使平静，排…的版，组成，作曲，排字
+combination [kɒmbɪ&apos;neɪʃ(ə)n] 结合，组合，联合，化合
+capture [&apos;kæptʃə] 俘获，夺得，捕获，战利品，俘虏
+</code></pre><p>Machine learning is programming computers to optimize a performance<br>criterion using example data or past experience. We have a model defined<br>up to some parameters, and learning is the execution of a computer program to optimize the parameters of the model using the training data or past experience. The model may be predictive to make predictions in the future, or descriptive to gain knowledge from data, or both.</p>
+<pre><code>performance [pə&apos;fɔːm(ə)ns] 性能，绩效，表演，执行，表现
+criteria [kraɪ&apos;tɪərɪə] 标准，条件 criterion
+define up to 定义了
+execution [,eksɪ&apos;kjuːʃ(ə)n] 执行，实行，完成，死刑
+</code></pre><p>Machine learning uses the theory of statistics in building mathematical<br>models, because the core task is making inference from a sample. The<br>role of computer science is twofold: First, in training, we need efficient<br>algorithms to solve the optimization problem, as well as to store and process the massive amount of data we generally have. Second, once a model is learned, its representation and algorithmic solution for inference needs to be efficient as well. In certain applications, the efficiency of the learning or inference algorithm, namely, its space and time complexity, may be as important as its predictive accuracy.</p>
+<pre><code>massive [&apos;mæsɪv] 大量的，巨大的，厚重的，魁伟的，海量的
+</code></pre><p>Let us now discuss some example applications in more detail to gain more in sight into the types and uses of machine learning.</p>
+<pre><code>sight [saɪt] 视力，景象，眼界，见解，看见，瞄准，观看，见票即付的
+</code></pre><p>好了，今天的分享就到这里，我们明天继续。谢谢大家。</p>
+<div class="title-line" value="10">真孒今将命</div><br><div class="person"><br>    <div class="line0">此致: 敬礼!</div><br>    <div class="line1">送赵法师还蜀因名山奠简</div><br>    <div class="line2">作者: 李隆基</div><br>    <div class="line3">摘自: 《全唐诗》</div><br>    <div class="line4">道家奠灵简, 自昔仰神仙</div><br>    <div class="line5"><font color="red">真孒今将命</font>, 苍生福可传</div><br>    <div class="line6">江山寻故国, 城郭信依然</div><br>    <div class="line7">二室遥相望, 云回洞里天</div><br></div>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/mining/" rel="tag">#mining</a>
+          
+            <a href="/tags/machinelearn/" rel="tag">#machinelearn</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/12/10/itmlPreface/" rel="next" title="(2) Machine Learn Introduction">
+                <i class="fa fa-chevron-left"></i> (2) Machine Learn Introduction
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/12/12/itmlcontent2/" rel="prev" title="(4) Machine Learn Introduction">
+                (4) Machine Learn Introduction <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    <div id="gh-comments">
+        <h6>COMMENTS</h6>
+        <div id="gh-comments-list"></div>
+        <a href="javascript:void(0)" id="gh-load-comments" class="btn" style="display:none">Load more comments</a>
+    </div>
+  </div>
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Alan Cong" />
+          <p class="site-author-name" itemprop="name">Alan Cong</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">31</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">categories</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Headline-3-Introduction-to-Machine-Learning-chapter-one-1"><span class="nav-number">1.</span> <span class="nav-text">Headline: [3]Introduction to Machine Learning: (chapter one[1])</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction-What-is-machine-learning-第一章-1"><span class="nav-number">1.1.</span> <span class="nav-text">Introduction:  What is machine learning? (第一章[1])</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么选择英文版？Why-am-i-rewrite"><span class="nav-number">1.2.</span> <span class="nav-text">为什么选择英文版？Why  am i rewrite?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction"><span class="nav-number">1.3.</span> <span class="nav-text">Introduction</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#What-is-machine-learning"><span class="nav-number">1.3.1.</span> <span class="nav-text">What is machine learning?</span></a></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        
+
+<script type="text/javascript" src="http://isdux.github.io/js/src/github-comments.js"></script>
+<script type="text/javascript">
+    var ghcommentid = 0;
+
+    if($(".title-line").attr("value") != null) {
+      ghcommentid = $(".title-line").attr("value");
+      DoGithubComments(ghcommentid);
+    }
+</script>
+
+<div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Alan Cong</span>
+</div>
+
+<div class="powered-by">
+  Alan <a class="theme-link" href="https://isdux.com">Alan</a>
+</div>
+
+
+<div class="theme-info">
+  Alan -
+  <a class="theme-link" href="https://isdux.com">
+    Alan. Alan
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>

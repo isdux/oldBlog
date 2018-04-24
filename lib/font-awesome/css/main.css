@@ -1,0 +1,111 @@
+.share {
+float:none!important;
+
+margin-bottom:1.5em;
+}
+
+#comments {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+h6,html,body {
+font-size:15px;
+}
+
+.author,.f-post-time,.f-post-tags {
+float:none!important;
+}
+}
+
+
+.fa-twitter:before {
+  content: "";
+}
+.fa-github:before {
+  content: "";
+}
+.fa-bitbucket:before {
+  content: "";
+}
+.fa-linkedin:before {
+  content: "";
+}
+
+.label {
+font-size:12px;
+vertical-align: 10%;
+margin: 2px;
+}
+.navigation__item {
+display: inline-block;
+margin: 0 1px 0 0;
+font-size:20px;
+margin: 10px;
+a {
+  display: block;
+  position: relative;
+  @extend .btn;
+  border-color: #FFF;
+  color: #FFF;
+  opacity: .8;
+
+  &:hover {
+    color: #FFF;
+    border-color: #FFF;
+    opacity: 1;
+  }
+
+}
+
+}
+
+
+
+@media max-width 800px{
+#site-header {
+padding-top:4em!important;
+margin-bottom:4em!important;
+}
+
+article {
+margin-bottom:7em!important;
+}
+
+article.li {
+margin-bottom:2em!important;
+}
+
+
+.pagination {
+margin:4em 0 6em!important;
+}
+}
+
+
+#gh-comments {
+  text-align: center;
+}
+
+#gh-comment {
+  text-align: left;
+  color:teal;
+  border:1px solid #b3b3b3;
+  margin:2.5em 0;
+  padding:10px;
+}
+
+#gh-comment-hr {
+  border-top: inset 1px white;
+  margin: 8px 0px;
+}
+
+#gh-comment p {
+  margin:0px;
+}
+
+#gh-comment img {
+  display: inline;
+  vertical-align: middle;
+  margin: 2px 10px 2px 2px;
+}

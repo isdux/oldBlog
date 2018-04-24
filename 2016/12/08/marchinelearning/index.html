@@ -1,0 +1,728 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+
+    
+     
+    
+    <link href="/lib/font-awesome/css/loading.css?v=4.4.4" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+
+
+<link href="/lib/font-awesome/css/main.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="mining,machinelearn," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.0.2" />
+
+
+
+
+
+
+<meta name="description" content="Headline: Introduction to Machine Learning: (Chapter one)摘要:  机器学习导论 （第一章）  By:Ehtem Alpaydm">
+<meta name="keywords" content="mining,machinelearn">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Machine Learn Introduction (Part One)">
+<meta property="og:url" content="http://yoursite.com/2016/12/08/marchinelearning/index.html">
+<meta property="og:site_name" content="IsDux">
+<meta property="og:description" content="Headline: Introduction to Machine Learning: (Chapter one)摘要:  机器学习导论 （第一章）  By:Ehtem Alpaydm">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2017-09-15T07:53:42.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Machine Learn Introduction (Part One)">
+<meta name="twitter:description" content="Headline: Introduction to Machine Learning: (Chapter one)摘要:  机器学习导论 （第一章）  By:Ehtem Alpaydm">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 'undefined',
+      author: 'Author'
+    }
+  };
+</script>
+<script type="text/javascript" src="http://isdux.github.io/js/src/jquery.js"></script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/12/08/marchinelearning/"/>
+
+
+  <title> Machine Learn Introduction (Part One) | IsDux </title>
+</head>
+
+<body itemscope itemtype="//schema.org/WebPage" lang="en">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="container-solar">
+  <div class="solar">
+      <i class="mercury"></i>
+      <i class="venus"></i>
+      <i class="earth"></i>
+      <i class="mars"></i>
+      <i class="belt"></i>
+      <i class="jupiter"></i>
+      <i class="saturn"></i>
+      <i class="uranus"></i>
+      <i class="neptune"></i>
+  </div>
+</div>
+
+<div class="site-meta ">
+  
+
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="site-title">IsDux</span>
+    </a>
+    <div class="site-info">
+      <span class="logo-line-before"><i class="" style="transform: translateX(100%);"></i></span>
+      <span class="site-title-second">MOTTO || The hard part isn’t making the decision. It’s living with it.</span>
+      <span class="logo-line-after"><i class="" style="transform: translateX(-100%);"></i></span> 
+    </div>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule" rel="section">
+            
+            Schedule
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Machine Learn Introduction (Part One)
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-12-08T19:56:19+08:00" content="2016-12-08">
+              2016-12-08
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">tech</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Headline-Introduction-to-Machine-Learning-Chapter-one"><a href="#Headline-Introduction-to-Machine-Learning-Chapter-one" class="headerlink" title="Headline: Introduction to Machine Learning: (Chapter one)"></a><strong><font color="#5A5AAD">Headline: Introduction to Machine Learning: (Chapter one)</font></strong></h1><h2 id="摘要-机器学习导论-（第一章）-By-Ehtem-Alpaydm"><a href="#摘要-机器学习导论-（第一章）-By-Ehtem-Alpaydm" class="headerlink" title="摘要:  机器学习导论 （第一章）  By:Ehtem Alpaydm "></a><font color="#FF5151">摘要: </font> 机器学习导论 （第一章） <font color="#4F9D9D"> By:Ehtem Alpaydm </font></h2><a id="more"></a>
+<p><strong> <font color="red">声明: 本篇博文为本人阅读机器学习导论的读书笔记 </font> </strong></p>
+<h2 id="为什么选择看着本书？"><a href="#为什么选择看着本书？" class="headerlink" title="为什么选择看着本书？"></a>为什么选择看着本书？</h2><p><u>因为之前没有接触过算法以及机器学习的任何东西，所以就先从这本书看起</u></p>
+<h2 id="简介："><a href="#简介：" class="headerlink" title="简介："></a>简介：</h2><h2 id="机器学习导论"><a href="#机器学习导论" class="headerlink" title="机器学习导论"></a>机器学习导论</h2><h3 id="目标"><a href="#目标" class="headerlink" title="目标:"></a>目标:</h3><p>对计算机编程，以便使用样本数据或者以往的经验来解决给定的问题。</p>
+<h3 id="词汇"><a href="#词汇" class="headerlink" title="词汇"></a>词汇</h3><p>拟合：</p>
+<h3 id="主要内容："><a href="#主要内容：" class="headerlink" title="主要内容："></a>主要内容：</h3><p>监督学习， 贝叶斯决策理论， 参数方法， 多元方法，维度规约， 聚类， 非参数方法， 决策树， 线性判别式， 多层感知器， 局部模型， 隐马尔可夫模型， 分类算法评估和比较， 组合多学习器以及增强学习等。</p>
+<h3 id="流程："><a href="#流程：" class="headerlink" title="流程："></a>流程：</h3><p>从已知实例中自动发现规律，建立对未知示例的预测模型；根据经验不断提高，不断改进预测功能以优化性能标准。</p>
+<h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><p>当人们不能直接编写计算机程序来解决给定的问题，而是需要借助实例数据或者经验时，就需要机器来学习。</p>
+<p>需要学习的情况主要分为：</p>
+<blockquote>
+<ul>
+<li>当人们没有专门技术，或者不能解释他们的专门技术。</li>
+<li>要解决的问题随时间而变化或者依赖于特定的环境</li>
+</ul>
+</blockquote>
+<h2 id="第一章-绪论"><a href="#第一章-绪论" class="headerlink" title="第一章 绪论"></a>第一章 绪论</h2><h3 id="第一节-什么是机器学习？"><a href="#第一节-什么是机器学习？" class="headerlink" title="第一节 什么是机器学习？"></a>第一节 什么是机器学习？</h3><p>通过对数据实例或经验的分析，来构造一个好的或者有用的近似–模型，以达到解释数据形成过程的某些部分，帮我们了解过程，并预测过程。</p>
+<p>机器学习的方法在大型数据库中的应用称为数据挖掘（data mining）</p>
+<p>机器学习的过程是不断优化模型的过程，利用训练数据实例或者经验来优化模型的参数。</p>
+<p>模型的作用：</p>
+<blockquote>
+<p>预测性的：用于未来的预测<br>描述性的：从数据中获取知识<br>二者兼备</p>
+</blockquote>
+<h4 id="机器学习应用事例-："><a href="#机器学习应用事例-：" class="headerlink" title="机器学习应用事例 ："></a>机器学习应用事例 ：</h4><h4 id="学习关联性："><a href="#学习关联性：" class="headerlink" title="学习关联性："></a>学习关联性：</h4><p>关联规则（association rule）：</p>
+<blockquote>
+<p>P (Y | X): 购买 X 的用户中，购买 Y 的概率<br>P (Y | X , D): 在满足 D 条件的人群里，购买 X 的用户中，购买 Y 的概率</p>
+<blockquote>
+<p>这就是分域的思想，针对不同的域，提高数据精度，优化模型</p>
+</blockquote>
+</blockquote>
+<h5 id="分类-classification"><a href="#分类-classification" class="headerlink" title="分类 classification"></a>分类 classification</h5><p>创建一个分类器，将分类器获得的输入指派到其中的一个分类作为输出。</p>
+<p>example:</p>
+<blockquote>
+<p>if</p>
+<blockquote>
+<p>condition1 &gt; θ1 and condition2 &gt; θ2 and …<br>then<br>category1<br>else if<br>conditionn….<br>then<br>category2<br>…<br>…<br>else<br>categoryn</p>
+</blockquote>
+</blockquote>
+<p>我们利用拟合过去数据的规则，如果未来的数据与过去类似，那么，我们就可以用拟合的规则对新的实例来作出规则内正确的预测。</p>
+<h5 id="用关联性解释分类"><a href="#用关联性解释分类" class="headerlink" title="用关联性解释分类"></a>用关联性解释分类</h5><blockquote>
+<p>针对只有两个分类: 机器语言表述为  1 / 0<br>P (Y | X):<br>我们把 X 看作某一个域（类似于 D） – 将这个域抽象为某一个属性<br>我们把 Y 看作数据的一个分类 – 将分类抽象为属性<br>公式解释为: 在满足 X 属性的条件下， 进入分类属性 Y 的概率</p>
+</blockquote>
+<p>如果 P (Y | X) = 0.8<br>解释: 在 X 域这个属性的情况下， 属于分类 Y 的概率</p>
+<p>注： 提取实例中的共同的特征进行分类，通过分类来捕获实例的规律, 继而优化特征，捕获更加好的且有用的近似规律 – 规则。</p>
+<p><strong>知识抽取</strong><br>从数据中发现规律提取规则 称为 知识抽取。</p>
+<p><strong>规则</strong><br>一种解释数据的简单模型，可以展示出 潜在数据处理 的解释。</p>
+<h5 id="回归"><a href="#回归" class="headerlink" title="回归"></a>回归</h5><p>回归和分类均为监督学习的问题，及输入到输出的映射。</p>
+<p>简单的拟合函数形式: 输入 X – 输出 Y, Wn 作为参数</p>
+<blockquote>
+<p>线性</p>
+<ul>
+<li>Y = W * X + Wo<br>二次函数</li>
+<li>Y = W2 <em> X </em> X + W1 * X + W0<br>…<br>…<br>高阶多项式<br>其他非线性函数</li>
+</ul>
+</blockquote>
+<p>Example:<br>依赖与一组参数的模型：</p>
+<p><strong>Y = g (X | θ)</strong><br>g (*) 是模型， θ 是模型的参数</p>
+<blockquote>
+<p>对于分类，Y 是类编码（1 / 0），g (*) 为 类判别式<br>对于回归， Y 是数值，g (*) 为 回归函数</p>
+</blockquote>
+<p><strong>响应面设计 – response surface design</strong></p>
+<p>在回归模型中选择最优的样本，根据靠近最有样本的最新实例，加入训练数据，优化参数，拟合新的模型。</p>
+<h5 id="非监督式学习"><a href="#非监督式学习" class="headerlink" title="非监督式学习"></a>非监督式学习</h5><p>当我们只有输入数据，没有任何前置的条件判断，而要通过对输入数据的观察，自己来发现输入数据隐藏的规律以及某种结构，使特定的模式比其他模式更常出现，使我们知道，在某些条件下，哪些经常发生，哪些不经常发生，在统计学中也叫 <strong>密度估计</strong></p>
+<p>密度估计的一种方法叫做 <strong>聚类</strong>，目标是发现输入数据的簇或者分组</p>
+<blockquote>
+<p>聚类的分组可以用来识别 <strong>离群点</strong></p>
+<ul>
+<li>发现异常或者筛选错误数据</li>
+<li>发现新的市场或者新的机会</li>
+</ul>
+</blockquote>
+<h5 id="增强学习"><a href="#增强学习" class="headerlink" title="增强学习"></a>增强学习</h5><p>在某些应用情况中，系统的输出是一系列动作的序列，这个序列成为策略。<br>我们只在策略的层面上评判，如果策略是好的策略，那么这个策略中的一系列动作我们都认为是好的动作，这个策略也称为 <strong>达到目标的正确动作的序列</strong></p>
+<p>能够评估策略的好坏程度，并从以往好的动作序列 (即策略) 中学习，以便能够产生策略的这种方法叫做增强学习 (reinforcement learin) 算法</p>
+<h4 id="综述"><a href="#综述" class="headerlink" title="综述"></a>综述</h4><p><em>看到这一节，书籍翻译是注释，可是我觉得不是，所以我根据自己的理解起名为综述</em><br><strong>这一节，第一段话我觉得很赞，就摘录修改如下</strong></p>
+<font color="red">进化是形成我们的身体形状和我们内在本能的主要力量, 他赋予我们大脑和学习机制，使我们可以根据经验实现自我更新。我们还需要终生学习，以改变我们的行为，从而适应包括进化论还不能预测的和可预测的各种环境。</font>
+
+<p>几乎所有的科学领域都在用模型拟合数据。科学家设计实验、进行观测并收集数据。然后，通过寻找解释所观测数据的简单模型，尝试抽取知识。该过程称为归纳（induction），它是从一组特别的示例中提取通用规则的过程。</p>
+<p>全书一共 16 章，希望我能够用半个月至一个月完成，然后开始来干货操作，敬请监督，我这个就是机器学习中的监督学习，哈哈。</p>
+<div class="title-line" value="21">真孒今将命</div><br><div class="person"><br>    <div class="line0">此致: 敬礼!</div><br>    <div class="line1">送赵法师还蜀因名山奠简</div><br>    <div class="line2">作者: 李隆基</div><br>    <div class="line3">摘自: 《全唐诗》</div><br>    <div class="line4">道家奠灵简, 自昔仰神仙</div><br>    <div class="line5"><font color="red">真孒今将命</font>, 苍生福可传</div><br>    <div class="line6">江山寻故国, 城郭信依然</div><br>    <div class="line7">二室遥相望, 云回洞里天</div><br></div>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/mining/" rel="tag">#mining</a>
+          
+            <a href="/tags/machinelearn/" rel="tag">#machinelearn</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/12/01/markdownUseApi/" rel="next" title="blog template for markdown">
+                <i class="fa fa-chevron-left"></i> blog template for markdown
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/12/09/itmlSeriesForeword/" rel="prev" title="(1) Machine Learn Introduction">
+                (1) Machine Learn Introduction <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    <div id="gh-comments">
+        <h6>COMMENTS</h6>
+        <div id="gh-comments-list"></div>
+        <a href="javascript:void(0)" id="gh-load-comments" class="btn" style="display:none">Load more comments</a>
+    </div>
+  </div>
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Alan Cong" />
+          <p class="site-author-name" itemprop="name">Alan Cong</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">31</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">categories</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Headline-Introduction-to-Machine-Learning-Chapter-one"><span class="nav-number">1.</span> <span class="nav-text">Headline: Introduction to Machine Learning: (Chapter one)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#摘要-机器学习导论-（第一章）-By-Ehtem-Alpaydm"><span class="nav-number">1.1.</span> <span class="nav-text">摘要:  机器学习导论 （第一章）  By:Ehtem Alpaydm </span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么选择看着本书？"><span class="nav-number">1.2.</span> <span class="nav-text">为什么选择看着本书？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#简介："><span class="nav-number">1.3.</span> <span class="nav-text">简介：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#机器学习导论"><span class="nav-number">1.4.</span> <span class="nav-text">机器学习导论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#目标"><span class="nav-number">1.4.1.</span> <span class="nav-text">目标:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#词汇"><span class="nav-number">1.4.2.</span> <span class="nav-text">词汇</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主要内容："><span class="nav-number">1.4.3.</span> <span class="nav-text">主要内容：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#流程："><span class="nav-number">1.4.4.</span> <span class="nav-text">流程：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#前言："><span class="nav-number">1.5.</span> <span class="nav-text">前言：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第一章-绪论"><span class="nav-number">1.6.</span> <span class="nav-text">第一章 绪论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一节-什么是机器学习？"><span class="nav-number">1.6.1.</span> <span class="nav-text">第一节 什么是机器学习？</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#机器学习应用事例-："><span class="nav-number">1.6.1.1.</span> <span class="nav-text">机器学习应用事例 ：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#学习关联性："><span class="nav-number">1.6.1.2.</span> <span class="nav-text">学习关联性：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#分类-classification"><span class="nav-number">1.6.1.2.1.</span> <span class="nav-text">分类 classification</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#用关联性解释分类"><span class="nav-number">1.6.1.2.2.</span> <span class="nav-text">用关联性解释分类</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#回归"><span class="nav-number">1.6.1.2.3.</span> <span class="nav-text">回归</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#非监督式学习"><span class="nav-number">1.6.1.2.4.</span> <span class="nav-text">非监督式学习</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#增强学习"><span class="nav-number">1.6.1.2.5.</span> <span class="nav-text">增强学习</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#综述"><span class="nav-number">1.6.1.3.</span> <span class="nav-text">综述</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        
+
+<script type="text/javascript" src="http://isdux.github.io/js/src/github-comments.js"></script>
+<script type="text/javascript">
+    var ghcommentid = 0;
+
+    if($(".title-line").attr("value") != null) {
+      ghcommentid = $(".title-line").attr("value");
+      DoGithubComments(ghcommentid);
+    }
+</script>
+
+<div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Alan Cong</span>
+</div>
+
+<div class="powered-by">
+  Alan <a class="theme-link" href="https://isdux.com">Alan</a>
+</div>
+
+
+<div class="theme-info">
+  Alan -
+  <a class="theme-link" href="https://isdux.com">
+    Alan. Alan
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>

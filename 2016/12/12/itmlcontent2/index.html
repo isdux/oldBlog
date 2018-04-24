@@ -1,0 +1,945 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+
+    
+     
+    
+    <link href="/lib/font-awesome/css/loading.css?v=4.4.4" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+
+
+<link href="/lib/font-awesome/css/main.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="mining,machinelearn," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.0.2" />
+
+
+
+
+
+
+<meta name="description" content="Headline: [4]Introduction to Machine Learning: (chapter one[2])Introduction:  Examples of Machine Learning Applications (第一章[2])">
+<meta name="keywords" content="mining,machinelearn">
+<meta property="og:type" content="article">
+<meta property="og:title" content="(4) Machine Learn Introduction">
+<meta property="og:url" content="http://yoursite.com/2016/12/12/itmlcontent2/index.html">
+<meta property="og:site_name" content="IsDux">
+<meta property="og:description" content="Headline: [4]Introduction to Machine Learning: (chapter one[2])Introduction:  Examples of Machine Learning Applications (第一章[2])">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://yoursite.com/images/figure1.1.png">
+<meta property="og:image" content="http://yoursite.com/images/figure1.2.png">
+<meta property="og:updated_time" content="2017-09-15T07:51:38.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="(4) Machine Learn Introduction">
+<meta name="twitter:description" content="Headline: [4]Introduction to Machine Learning: (chapter one[2])Introduction:  Examples of Machine Learning Applications (第一章[2])">
+<meta name="twitter:image" content="http://yoursite.com/images/figure1.1.png">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 'undefined',
+      author: 'Author'
+    }
+  };
+</script>
+<script type="text/javascript" src="http://isdux.github.io/js/src/jquery.js"></script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/12/12/itmlcontent2/"/>
+
+
+  <title> (4) Machine Learn Introduction | IsDux </title>
+</head>
+
+<body itemscope itemtype="//schema.org/WebPage" lang="en">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="container-solar">
+  <div class="solar">
+      <i class="mercury"></i>
+      <i class="venus"></i>
+      <i class="earth"></i>
+      <i class="mars"></i>
+      <i class="belt"></i>
+      <i class="jupiter"></i>
+      <i class="saturn"></i>
+      <i class="uranus"></i>
+      <i class="neptune"></i>
+  </div>
+</div>
+
+<div class="site-meta ">
+  
+
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="site-title">IsDux</span>
+    </a>
+    <div class="site-info">
+      <span class="logo-line-before"><i class="" style="transform: translateX(100%);"></i></span>
+      <span class="site-title-second">MOTTO || The hard part isn’t making the decision. It’s living with it.</span>
+      <span class="logo-line-after"><i class="" style="transform: translateX(-100%);"></i></span> 
+    </div>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule" rel="section">
+            
+            Schedule
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                (4) Machine Learn Introduction
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-12-12T14:44:44+08:00" content="2016-12-12">
+              2016-12-12
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">tech</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Headline-4-Introduction-to-Machine-Learning-chapter-one-2"><a href="#Headline-4-Introduction-to-Machine-Learning-chapter-one-2" class="headerlink" title="Headline: [4]Introduction to Machine Learning: (chapter one[2])"></a><strong><font color="#5A5AAD">Headline: [4]Introduction to Machine Learning: (chapter one[2])</font></strong></h1><h2 id="Introduction-Examples-of-Machine-Learning-Applications-第一章-2"><a href="#Introduction-Examples-of-Machine-Learning-Applications-第一章-2" class="headerlink" title="Introduction:  Examples of Machine Learning Applications (第一章[2])"></a><font color="#FF5151">Introduction: </font> Examples of Machine Learning Applications (第一章[2])</h2><a id="more"></a>
+<p><strong> <font color="red">声明: 本篇博文为本人阅读机器学习导论的读书笔记 </font> </strong></p>
+<h2 id="为什么选择英文版？Why-am-i-rewrite"><a href="#为什么选择英文版？Why-am-i-rewrite" class="headerlink" title="为什么选择英文版？Why  am i rewrite?"></a>为什么选择英文版？Why  am i rewrite?</h2><p><u>由于本人惨不忍睹的英语，于是首先选择了中文版，可是，昨天突发奇想，反正机器学习也是不会，英语也是不会，不如省事一点一起学，于是，我选择了英文版</u></p>
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><h3 id="Examples-of-Machine-Learning-Applications"><a href="#Examples-of-Machine-Learning-Applications" class="headerlink" title="Examples of Machine Learning Applications"></a>Examples of Machine Learning Applications</h3><h4 id="Learning-Association"><a href="#Learning-Association" class="headerlink" title="Learning Association"></a>Learning Association</h4><p>In the case of retail—for example, a supermarket chain—one application of machine learning is basket analysis, which is finding associations between products bought by customers: If people who buy X typically also buy Y, and if there is a customer who buys X and does not buy Y, he or she is a potential Y customer. Once we find such customers, we can target them for cross-selling.</p>
+<pre><code>association [əsəʊsɪ&apos;eɪʃ(ə)n; -ʃɪ-] 协会，联盟，社团，联合，联想
+potential [pəˈtenʃl] 潜能，可能性，潜在的，可能的，电势
+</code></pre><p>In finding an association rule, we are interested in learning a conditional probability of the form P(Y| X) where Y is the product we would like to condition on X, which is the product or the set of products which we know that the customer has already purchased.</p>
+<pre><code>probability [prɒbə&apos;bɪlɪtɪ] 可能性，机率，概率
+</code></pre><blockquote>
+<p>Let us say, going over our data, we calculate that P(chips| beer) = 0.7.<br>  Then, we can define the rule:<br>  70 percent of customers who buy beer also buy chips.</p>
+</blockquote>
+<p>We may want to make a distinction among customers and toward this, estimate P(Y| X, D) where D is the set of customer attributes, for example, gender, age, marital status, and so on, assuming that we have access to this information. If this is a bookseller instead of a supermarket, products can be books or authors. In the case of a web portal, items correspond to links to web pages, and we can estimate the links a user is likely to click and use this information to download such pages in advance for faster access</p>
+<pre><code>distinct [dɪ&apos;stɪŋ(k)t] 明显的，独特的，有区别的，清楚的
+distinction [dɪ&apos;stɪŋ(k)ʃ(ə)n] 区别，差别，特性，荣誉，勋章
+gender [&apos;dʒendə] 性，性别，性交，生
+marital [&apos;mærɪt(ə)l] 婚姻的，夫妇间的
+protal 先天的，门户，入口网站
+correspond [kɒrɪ&apos;spɒnd] 符合，一致，相应，通信
+</code></pre><h4 id="Classification"><a href="#Classification" class="headerlink" title="Classification"></a>Classification</h4><p><strong>A credit is an amount of money loaned by a financial institution, for example, a bank, to be paid back with interest, generally in installments.</strong></p>
+<p><strong>信用度决定了金融机构的贷款数额，例如，在分期付款中银行允许的分期金额取决于你的偿还能力。</strong></p>
+<p>It is important for the bank to be able to predict in advance the risk associated with a loan, which is the probability that the customer will default and not pay the whole amount back. </p>
+<p><strong>This is both to make sure that the bank will make a profit and also to not inconvenience a customer with a loan over his or her financial capacity.</strong></p>
+<p><strong>我们既要保证银行能够获得利益，又要确保不会因为给用户提供超出他们经济实力的贷款而带来的不变(恶性后果)。</strong></p>
+<p>In credit scoring (Hand 1998), the bank calculates the risk given the amount of credit and the information about the customer. The information about the customer includes data we have access to and is relevant in calculating his or her financial capacity—namely, income, savings, collaterals, profession, age, past financial history, and so forth. The bank has a record of past loans containing such customer data and whether the loan was paid back or not. From this data of particular applications, the aim is to infer a general rule coding the association between a customer’s attributes and his risk. That is, the machine learning system fits a model to the past data to be able to calculate the risk for a new application and then decides to accept or refuse it accordingly.</p>
+<pre><code>loan [ləʊn] 贷款，借款，借出，借给
+institute [&apos;ɪnstɪtjuːt] 开始(调查)，制定，创立，提起(诉讼)，学会，协会，学院
+general [&apos;dʒen(ə)r(ə)l] 一般的，普通的，综合的，大体的，一般，常规，将军，上将
+installment [ɪn&apos;stɔ:lmənt] 安装，分期付款，部分，就职
+risk [rɪsk] 风险，危险，冒险，冒…的危险
+inconvenience [ɪnkən&apos;viːnɪəns] 不便，麻烦，打扰
+fit [fɪt] 安装，使…适应，符合，配合，适合，合身，拟合
+collateral [kə&apos;læt(ə)r(ə)l] 并行的，附属的，抵押品，担保品
+application [ˌæplɪ&apos;keɪʃ(ə)n] 应用，申请，应用程序
+</code></pre><p>This is an example of a classification problem where there are two classes: low-risk and high-risk customers. The information about a customer makes up the input to the classifier whose task is to assign the input to one of the two classes.</p>
+<pre><code>classifier [&apos;klæsɪfaɪɚ] 分类器
+assign [ə&apos;saɪn] 分配，指派，赋值，将财产过户
+</code></pre><p>After training with the past data, a classification rule learned may be of the form</p>
+<p>IF income &gt; θ1 AND savings &gt; θ2 THEN low-risk ELSE high-risk</p>
+<h5 id="Figure-1-1"><a href="#Figure-1-1" class="headerlink" title="Figure 1.1"></a>Figure 1.1</h5><p><img src="../../../../images/figure1.1.png" alt="Figure 1.1" title="Figure 1.1"></p>
+<pre><code>**Figure 1.2** Example of a training dataset where each circle corresponds to one data instance with input values in the corresponding axes and its sign indicates the class.
+For simplicity, only two customer attributes, income and savings, are taken as input and the two classes are low-risk (‘+’) and high-risk (‘−’). An example discriminant that separates the two types of examples is also shown.
+</code></pre><p>for suitable values of θ1 and θ2 <strong>(see figure 1.1)</strong>. This is an example of a discriminant; it is a function that separates the examples of different classes.</p>
+<pre><code>discriminant [dɪ&apos;skrɪmɪnənt] 判别式
+</code></pre><p>Having a rule like this, the main application is prediction: Once we have a rule that fits the past data, if the future is similar to the past, then we can make correct predictions for novel instances. Given a new application with a certain income and savings, we can easily decide whether it is lowrisk or high-risk.</p>
+<pre><code>novel [&apos;nɒv(ə)l] 新奇的，异常的，小说
+instance [&apos;ɪnst(ə)ns] 实例，情况，建议，举…为例
+</code></pre><p>In some cases, instead of making a 0/1 (low-risk/high-risk) type decision, we may want to calculate a probability, namely, P(Y| X), where X are the customer attributes and Y is 0 or 1 respectively for low-risk and high-risk. From this perspective, we can see classification as learning an association from X to Y. Then for a given X = x, if we have P(Y = 1|X = x) = 0.8, we say that the customer has an 80 percent probability of being high-risk, or equivalently a 20 percent probability of being low-risk. We then decide whether to accept or refuse the loan depending on the possible gain and loss.</p>
+<pre><code>equivalent [ɪ&apos;kwɪv(ə)l(ə)nt] 等价的，相等的，同意义的，等价物，相等物
+gain and loss 损益，得失，盈亏
+</code></pre><p>There are many applications of machine learning in pattern recognition. One is optical character recognition, which is recognizing character codes from their images. This is an example where there are multiple classes, as many as there are characters we would like to recognize. Especially interesting is the case when the characters are handwritten—for example, to read zip codes on envelopes or amounts on checks. People have different handwriting styles; characters may be written small or large, slanted, with a pen or pencil, and there are many possible images corresponding to the same character. Though writing is a human invention, we do not have any system that is as accurate as a human reader. </p>
+<p><strong>We do not have a formal description of ‘A’ that covers all ‘A’s and none of the non-‘A’s.</strong></p>
+<p><strong>我们没有涵盖什么是A什么不是A的规范描述。</strong></p>
+<p>Not having it, we take samples from writers and learn a definition of A-ness from these examples. But though we do not know what it is that makes an image an ‘A’, we are certain that all those distinct ‘A’s have something in common, which is what we want to extract from the examples. We know that a character image is not just a collection of random dots; it is a collection of strokes and has a regularity that we can capture by a learning program.</p>
+<pre><code>optical [&apos;ɒptɪk(ə)l] 光学的，眼睛的，视觉的
+envelope [&apos;envələʊp; &apos;ɒn-] 信封，封皮，包膜，包迹
+zip [zɪp] 拉链，活力，精力，尖啸声，撕裂声，一种程序压缩的档案文件格式
+check [tʃek] 检查，核对，制止，抑制，支票，检验
+slant [slɑːnt] 倾斜，观点，偏见，有倾向
+slanted [&apos;slæntɪd] 斜的，有倾向的，使倾斜
+invention [ɪn&apos;venʃ(ə)n] 发明，发明物，虚构，发明才能
+definition [defɪ&apos;nɪʃ(ə)n] 定义，清晰度，解说
+dot [dɒt] 点，圆点，嫁妆，打上点，加小点与
+stroke [strəʊk] 划，中风，冲程，尝试，敲击，划掉，画，击打键盘
+formal [&apos;fɔːm(ə)l] 正式的，拘谨的，有条理的，正式的社交活动
+ness [nes] 海角，突端，名词后缀
+</code></pre><p>If we are reading a text, one factor we can make use of is the redundancy in human languages. </p>
+<p><strong>A word is a sequence of characters and successive characters are not independent but are constrained by the words of the language.</strong></p>
+<p><strong>词是一些符号的序列，序列里的符号受语言中词汇的约束而连续并非独立。</strong></p>
+<p>This has the advantage that even if we cannot recognize a character, we can still read the word. </p>
+<p><strong>Such contextual dependencies may also occur in higher levels, between words and sentences, through the syntax and semantics of the language.</strong></p>
+<p><strong>通过语言的语法和语义，这种上下文的依赖关系还可能出现在词与句子之间的更高的级别上。</strong></p>
+<p>There are machine learning algorithms to learn sequences and model such dependencies.</p>
+<pre><code>redundancy [rɪ&apos;dʌnd(ə)nsɪ] 冗余，裁员，人浮于事
+successive [sək&apos;sesɪv] 连续的，继承的，依次的，接替的
+independent [,ɪndɪ&apos;pendənt] 独立的，单独的，无党派的，不受约束的，无党派者
+constrain [kən&apos;streɪn] 驱使，强迫，束缚
+context [&apos;kɒntekst] 环境，上下文，来龙去脉
+contextual [kɒn&apos;tekstjʊəl] 上下文的，前后关系的
+dependencies [dɪ&apos;pɛndənsi] 依赖性，相关性，管理，依赖关系
+occur [ə&apos;kɜː] 发生，出现，存在
+syntax [&apos;sɪntæks] 语法，句法，有秩序的排列
+semantics [sɪ&apos;mæntɪks] 语义学，语义论
+</code></pre><p>In the case of face recognition, the input is an image, the classes are people to be recognized, and the learning program should learn to associate the face images to identities. This problem is more difficult than optical character recognition because there are more classes, input image is larger, and a face is three-dimensional and differences in pose and lighting cause significant changes in the image. There may also be occlusion of certain inputs; for example, glasses may hide the eyes and eyebrows, and a beard may hide the chin.</p>
+<pre><code>identity [aɪ&apos;dentɪtɪ] 身份，同一性，一致，特性，恒等式
+occlusion [ə&apos;kluːʒ(ə)n] 闭塞，吸收，包藏，剔除，遮挡
+eyebrow [&apos;aɪbraʊ] 眉毛，为…描眉
+chin [tʃɪn] 下巴，聊天，引体向上动作
+</code></pre><p>In medical diagnosis, the inputs are the relevant information we have about the patient and the classes are the illnesses. The inputs contain the patient’s age, gender, past medical history, and current symptoms. Some tests may not have been applied to the patient, and thus these inputs would be missing. Tests take time, may be costly, and may inconvenience the patient so we do not want to apply them unless we believe that they will give us valuable information. In the case of a medical diagnosis, a wrong decision may lead to a wrong or no treatment, and in cases of doubt it is preferable that the classifier reject and defer decision to a human expert.</p>
+<pre><code>patient [&apos;peɪʃ(ə)nt] 有耐心的，能容忍的，病人，患者
+symptom [&apos;sɪm(p)təm] [临床]症状，征兆
+thus [ðʌs] 因此，从而，这样，如此，因此，乳香
+doubt [daʊt] 怀疑，疑问，疑惑，恐怕，拿不准，不信
+reject [rɪ&apos;dʒekt] 拒绝，排斥，抵制，丢弃，次品，被弃之物或人
+defer [dɪ&apos;fɜː] 推迟，延期，服从
+</code></pre><p>In speech recognition, the input is acoustic and the classes are words that can be uttered. This time the association to be learned is from an acoustic signal to a word of some language. Different people, because of differences in age, gender, or accent, pronounce the same word differently, which makes this task rather difficult. </p>
+<p><strong>Another difference of speech is that the input is temporal; words are uttered in time as a sequence of speech phonemes and some words are longer than others.</strong></p>
+<p><strong>语音识别的另外一个不同就是他的输入是具有时态性的，单词作为实时发出的一个语音音节序列，同样的一些词，这次的发音可能比其他时候的发音音节更长。</strong></p>
+<pre><code>acoustic [ə&apos;kuːstɪk] 声学的，音响的，听觉的，原声乐器
+utter [&apos;ʌtə] 发出，表达，发射，完全的，彻底的，无条件的
+rather [&apos;rɑːðə] 宁可，宁愿，相当，当然
+temporal [&apos;temp(ə)r(ə)l] 暂时的，当时的，现世的，世间万物，时效性
+in time 及时，适时
+phoneme [&apos;fəʊniːm] 因素，音位
+</code></pre><p><strong>Acoustic information only helps up to a certain point, and as in optical character recognition, the integration of a “language model” is critical in speech recognition, and the best way to come up with a language model is again by learning it from some large corpus of example data.</strong></p>
+<p><strong>如同光学字符识别，声学信息在识别上也仅仅是提供一些点上的帮助，语音识别里我们需要一个关键的集成的语言模型，而建立语言模型最好的方法是从一些大量的语料库中通过重复的训练学习获得。</strong></p>
+<pre><code>up to 一直到，相当于，忙于…，在做…，由...决定的
+integration [ɪntɪ&apos;greɪʃ(ə)n] 集成，综合
+integrate [&apos;ɪntɪgreɪt] 使…完成，求…的积分，求积分，成为一体，一体化，集成体
+critical [&apos;krɪtɪk(ə)l] 鉴定的，临界的，批评的，爱挑剔的，危险的，决定性的，评论的
+corpus [&apos;kɔːpəs] 语料库，文集，本金 复数[corpora]
+</code></pre><p>The applications of machine learning to natural language processing is constantly increasing. </p>
+<p><strong>Spam filtering is one where spam generators on one side and filters on the other side keep finding more and more ingenious ways to outdo each other.</strong></p>
+<p><strong>垃圾邮件过滤由垃圾邮件生成器和垃圾邮件过滤器两部分组成来寻找更多巧妙创新的方法来互相超越对方。（以己之矛攻己之盾）</strong></p>
+<p><strong>Summarizing large documents is another interesting example, yet another is analyzing blogs or posts on social networking sites to extract “trending” topics or to determine what to advertise.</strong></p>
+<p><strong>大型文档的总结概括是另外一个有趣的例子，还有其他的例子比如分析社交网络上的博客或者文章来提取“热点”标题或者是确定宣传的内容方向。</strong></p>
+<p>Perhaps the most impressive would be machine translation. </p>
+<p><strong>After decades of research on hand-coded translation rules, it has become apparent that the most promising way is to provide a very large number of example pairs of texts in both languages and have a program figure out automatically the rules to map one to the other.</strong></p>
+<p><strong>通过对手写编码数十年的研究，显而易见的是，最有望的方式是提供一个在两种语言里非常大的成对的文本样例库，然后通过程序自动计算出从一个映射到另一个的规则。</strong></p>
+<pre><code>ingenious [ɪn&apos;dʒiːnɪəs] 有独创性的，机灵的，精致的，心灵手巧的
+outdo [aʊt&apos;duː] 超过，胜过
+summarize [&apos;sʌməraɪz] 总结，概述，作总结，作概括
+trend [trend] 趋势，倾向，走向，趋向，伸向，热门
+impress [ɪm&apos;pres] 盖印，强征，传送，给予某人深刻印象，给人印象，印象，印记，特征
+impressive [ɪm&apos;presɪv] 感人的，令人钦佩的，给人以深刻印象的
+apparent [ə&apos;pær(ə)nt] 显然的，表面上的
+promise [&apos;prɒmɪs] 许诺，允诺，希望，有前途，有指望
+decade [&apos;dekeɪd; dɪ&apos;keɪd] 十年，十年期，十
+figure out 解决，算出，想出，理解，断定
+post [pəʊst] 岗位，邮件，文章
+</code></pre><p>Biometrics is recognition or authentication of people using their physiological and/or behavioral characteristics that requires an integration of inputs from different modalities. Examples of physiological characteristics are images of the face, fingerprint, iris, and palm; examples of behavioral characteristics are dynamics of signature, voice, gait, and key stroke. As opposed to the usual identification procedures—photo, printed signature, or password—when there are many different (uncorrelated) inputs, forgeries (spoofing) would be more difficult and the system would be more accurate, hopefully without too much inconvenience to the users.</p>
+<pre><code>biometrics [,baɪəʊ&apos;metrɪks] 生物统计学，生物测定学，寿命统计
+authentication [ɔː,θentɪ&apos;keɪʃən] 证明，鉴定，证实，身份验证
+physiological [,fɪzɪə&apos;lɒdʒɪkəl] 生理的，生理学的，需求
+characteristics [,kærəktə&apos;rɪstɪks] 特性，特征，特色，特指
+require [rɪ&apos;kwaɪə] 需求，要求，命令
+iris [&apos;aɪrɪs] 虹膜，鸢尾属植物
+fingerprint [&apos;fɪŋgəprɪnt] 指纹，手印，采指纹
+plam [pa:m] 手掌，一个PDA操作系统(personal digital assitstant)
+signature [&apos;sɪgnətʃə] 署名，签名，信号
+gait [geɪt] 步法，步态，训练步法
+oppose [ə&apos;pəʊz] 反对，对抗，抗争
+opposite [&apos;ɒpəzɪt; -sɪt] 相反的，对面的，对立的，反义词，在对面，在…的对面
+uncorrelated [ʌn&apos;kɔrileitid] 不相关的
+correlate [&apos;kɒrəleɪt; -rɪ-] 关联，使有相互关系，互相有关系，相关物，相关联的人
+forgery [&apos;fɔːdʒ(ə)rɪ] 伪造，伪造罪，伪造物
+spoof [spuːf] 哄骗，戏弄，对…作幽默讽刺，行骗，开玩笑
+</code></pre><p><strong>Machine learning is used both in the separate recognizers for these different modalities and in the combination of their decisions to get an overall accept/reject decision, taking into account how reliable these different sources are.</strong></p>
+<p><strong>机器学习被用于(通过)两个方式来考虑不同来源信息的可信赖性，一个是不同形式的分类识别器，一个是整合所有的接受/拒绝的决定。</strong></p>
+<pre><code>overall [&apos;əʊvərɔːl] 全部的，全体的，一切在内的，全部地，总的来说，工装裤，罩衫
+reliable [rɪ&apos;laɪəb(ə)l] 可靠的，可信赖的，可靠的人
+take into 考虑到，说服
+take into account 考虑，重视，体谅，估及，顾及
+</code></pre><p>Learning a rule from data also allows knowledge extraction. The rule is a simple model that explains the data, and looking at this model we have an explanation about the process underlying the data. For example, once we learn the discriminant separating low-risk and high-risk customers, we have the knowledge of the properties of low-risk customers. We can then use this information to target potential low-risk customers more efficiently, for example, through advertising. </p>
+<p><strong>Learning also performs compression in that by ﬁtting a rule to the data, we get an explanation that is simpler than the data, requiring less memory to store and less computation to process. Once you have the rules of addition, you do not need to remember the sum of every possible pair of numbers.</strong></p>
+<p><strong>机器学习也能通过一个合适的规则来进行数据的压缩，让我们得到比数据更小更简单的解释，需要更少的内存来存储或者执行更少的计算。一旦你有了一个加法的规则，你就不再需要记忆每一对可能的数字相加的和。</strong></p>
+<pre><code>explanation [eksplə&apos;neɪʃ(ə)n] 说明，解释，辩解
+underlie [ʌndə&apos;laɪ] 成为…的基础，位于…之下
+underlying [ʌndə&apos;laɪɪŋ] 潜在的，根本的，在下面的，优先的，放在…的下面
+property [&apos;prɒpətɪ] 性质，性能，财产，所有权
+target [&apos;tɑːgɪt] 目标，靶子，把…作为目标，规定…指标，瞄准某物
+compress [kəm&apos;pres] 受压缩下，压缩，压紧，精简
+</code></pre><p>Another use of machine learning is outlier detection, which is ﬁnding outlier detection the instances that do not obey the rule and are exceptions. In this case, after learning the rule, we are not interested in the rule but the exceptions not covered by the rule, which may imply anomalies requiring attention—for example, fraud.</p>
+<pre><code>obey [ə(ʊ)&apos;beɪ] 服从，听从，按照…行动，听话
+anomaly [ə&apos;nɒm(ə)lɪ] 异常，不规则，反常事物
+</code></pre><h4 id="Regression"><a href="#Regression" class="headerlink" title="Regression"></a>Regression</h4><p>Let us say we want to have a system that can predict the price of a used car. Inputs are the car attributes—brand, year, engine capacity, mileage, and other information—that we believe affect a car’s worth. The output is the price of the car. Such problems where the output is a number are regression problems.</p>
+<pre><code>brand [brænd] 商标，牌子，烙印，铭刻于，铭记，印…商标于
+mileage [&apos;maɪlɪdʒ] 英里数
+</code></pre><p>Let $x$ denote the car attributes and $y$ be the price of the car. Again surveying the past transactions, we can collect a training data and the machine learning program ﬁts a function to this data to learn Y as a function of X. An example is given in ﬁgure 1.2 where the ﬁtted function is of the form</p>
+<pre><code>denote [dɪ&apos;nəʊt] 表示，指示
+survey [ˈsəːveɪ; (for v.) səˈveɪ] 调查，测量，审视，纵览，勘测，俯瞰，测量土地
+surveying [sə&apos;veɪɪŋ] 测量，考察
+</code></pre><h5 id="Figure-1-2"><a href="#Figure-1-2" class="headerlink" title="Figure 1.2"></a>Figure 1.2</h5><p><img src="../../../../images/figure1.2.png" alt="Figure 1.2" title="Figure 1.2"></p>
+<pre><code>**Figure 1.2** A training dataset of used cars and the function ﬁtted. For simplicity, mileage is taken as the only input attribute and a linear model is used.
+</code></pre><p>$y = w<em>{x} + w</em>{0}$</p>
+<pre><code>simplicity [sɪm&apos;plɪsɪtɪ] 朴素，简易，天真，愚蠢，单纯
+for simplicity 为简单起见
+</code></pre><p>for suitable values of $w$ and $w_{0}$.</p>
+<p>Both regression and classiﬁcation are supervised learning problems where there is an input, X, an output, Y , and the task is to learn the mapping from the input to the output. The approach in machine learning is that we assume a model deﬁned up to a set of parameters:</p>
+<p>$y = g(x|θ)$</p>
+<p>where g(·) is the model and θ are its parameters. Y is a number in regression and is a class code (e.g., 0/1) in the case of classiﬁcation. g(·) is the regression function or in classiﬁcation, it is the discriminant function separating the instances of different classes. The machine learning program optimizes the parameters, θ, such that the approximation error is minimized, that is, our estimates are as close as possible to the correct values given in the training set. For example in ﬁgure 1.2, the model is linear and $w$ and $w_{0}$ are the parameters optimized for best ﬁt to the training data. In cases where the linear model is too restrictive, one can use for example a quadratic</p>
+<p>$y = w<em>{2}x^2 +w</em>{1}x+w_{0}$</p>
+<p>or a higher-order polynomial, or any other nonlinear function of the input, this time optimizing its parameters for best ﬁt. Another example of regression is navigation of a mobile robot, for example, an autonomous car, where the output is the angle by which the steering wheel should be turned at each time, to advance without hitting obstacles and deviating from the route. Inputs in such a case are provided by sensors on the car—for example, a video camera, GPS, and so forth. Training data can be collected by monitoring and recording the actions of a human driver.</p>
+<pre><code>approximation [ə,prɒksɪ&apos;meɪʃn] 近似法，接近，近似值
+minimize [ˈmɪnɪˌmaɪz] 使减到最少，小看，极度轻视，最小化
+restrictive [rɪ&apos;strɪktɪv] 限制的，限制性的，约束的，限制词
+quadratic [kwɒ&apos;drætɪk] 二次的，二次方程式的
+high-order 高级的，高阶的，高层次的
+polynomial [,pɒlɪ&apos;nəʊmɪəl] 多项式，由2字以上组成的学名，多项式的
+navigation [nævɪ&apos;geɪʃ(ə)n] 航行，航海，导航
+robot [&apos;rəʊbɒt] 机器人，遥控设备，自动机械，机械般工作的人
+autonomous [ɔː&apos;tɒnəməs] 自治的，自主的，自发的，自备的
+angle [&apos;æŋg(ə)l] 钓鱼，谋取，角度，方面，角
+steer [stɪə] 控制，引导，驾驶，掌舵，行驶，操纵
+wheel [wiːl] 车轮，方向盘，转动，使变换方向，旋转
+each time 每次，每当，每时每刻
+obstacle [&apos;ɒbstək(ə)l] 障碍，干扰，妨害物
+deviate [&apos;diːvɪeɪt] 脱离，越轨，使偏离
+</code></pre><p>One can envisage other applications of regression where one is trying to optimize a function. Let us say we want to build a machine that roasts coffee. The machine has many inputs that affect the quality: various settings of temperatures, times, coffee bean type, and so forth. We make a number of experiments and for different settings of these inputs, we measure the quality of the coffee, for example, as consumer satisfaction.</p>
+<pre><code>visage [&apos;vɪzɪdʒ] 面貌，容貌，外表
+envisage [ɪn&apos;vɪzɪdʒ; en-] 正视，面对，想象
+roast [rəʊst] 烤，，焙；烘，烘烤；暴露于某种热力下以得温暖，煮
+</code></pre><p>To ﬁnd the optimal setting, we ﬁt a regression model linking these inputs to coffee quality and choose new points to sample near the optimum of the current model to look for a better conﬁguration. We sample these points, check quality, and add these to the data and ﬁt a new model. This is generally called response surface design.</p>
+<pre><code>sample [&apos;sɑːmp(ə)l] 取样，尝试，抽样检查，样本，样本，例子
+configure [kən&apos;fɪgə] 安装，使成形，配置
+configuration [kən,fɪgə&apos;reɪʃ(ə)n; -gjʊ-] 配置，结构，外形
+surface [&apos;sɜːfɪs] 表面，表层，外观，表面的，肤浅的，平面
+</code></pre><h4 id="Unsupervised-learning"><a href="#Unsupervised-learning" class="headerlink" title="Unsupervised learning"></a>Unsupervised learning</h4><p>In supervised learning, the aim is to learn a mapping from the input to an output whose correct values are provided by a supervisor. In unsupervised learning, there is no such supervisor and we only have input data. The aim is to find the regularities in the input. There is a structure to the input space such that certain patterns occur more often than others, and we want to see what generally happens and what does not. In statistics, this is called density estimation.</p>
+<pre><code>density [&apos;densɪtɪ] 密度
+</code></pre><p>One method for density estimation is clustering where the aim is to find clusters or groupings of input. In the case of a company with a data of past customers, the customer data contains the demographic information as well as the past transactions with the company, and the company may want to see the distribution of the profile of its customers, to see what type of customers frequently occur. In such a case, a clustering model allocates customers similar in their attributes to the same group, providing the company with natural groupings of its customers; this is called customer segmentation. Once such groups are found, the company may decide strategies, for example, services and products, specific to different groups; this is known as customer relationship management. Such a grouping also allows identifying those who are outliers, namely, those who are different from other customers, which may imply a niche in the market that can be further exploited by the company.</p>
+<pre><code>clustering [&apos;klʌstərɪŋ] 聚集，聚合，收集，分类归并，使成群
+demographic [,demə&apos;græfɪk] 人口统计学的，人口学的
+profile [&apos;prəʊfaɪl] 侧面，轮廓，简况，外形，剖面，户资料，属性
+allocate [&apos;æləkeɪt] 分配，拨出，使坐落于，指定，配置，配给
+segmentation [,seɡmən&apos;teɪʃən] 分割，割断，细胞分裂，分段，市场划分，市场细分
+strategy [ˈstrætədʒɪ] 战略，策略
+specific [spə&apos;sɪfɪk] 特殊的，特定的，明确的，详细的，特性，细节
+exploit [ɪk&apos;splɒɪt; ek-] 开发，开拓，剥削，开采，勋绩，功绩
+</code></pre><p>An interesting application of clustering is in image compression. </p>
+<p><strong>In this case, the input instances are image pixels represented as RGB values.</strong></p>
+<p><strong>在这种情况，输入的实例是由RGB值表示的图片像素。</strong></p>
+<p>A clustering program groups pixels with similar colors in the same group, and such groups correspond to the colors occurring frequently in the image. </p>
+<p><strong>If in an image, there are only shades of a small number of colors, and if we code those belonging to the same group with one color, for example, their average, then the image is quantized.</strong></p>
+<p><strong>如果一张图片只是少量颜色的渐变，如果我们对这张图片中属于同一分组的像素分别用一种颜色编码，例如，他们的平均值，那么，这个图片就被我们量化处理了。</strong></p>
+<p>Let us say the pixels are 24 bits to represent 16 million colors, but if there are shades of only 64 main colors, for each pixel we need 6 bits instead of 24. For example, if the scene has various shades of blue in different parts of the image, and if we use the same average blue for all of them, we lose the details in the image but gain space in storage and transmission. Ideally, we would like to identify higher-level regularities by analyzing repeated image patterns, for example, texture, objects, and so forth. This allows a higher-level, simpler, and more useful description of the scene, and for example, achieves better compression than compressing at the pixel level.</p>
+<pre><code>shade [ʃeɪd] 树荫，阴影，(照片等)明暗度，细微的差别，(颜色)渐变
+code [kəʊd] 代码，密码，编码，法典
+belong [bɪ&apos;lɒŋ] 属于，应归入，居住，适宜，应被放置
+quantize [&apos;kwɒntaɪz] 使量子化，数字转换，数值化
+scene [siːn] 场景，情景，景象，事件，现场，场面
+detail [&apos;diːteɪl] 细节，详情，详述，选派，画详图
+transmission [trænz&apos;mɪʃ(ə)n; trɑːnz-; -ns-] 转动装置，[机]变速器，传递，传送，播送
+ideally [aɪ&apos;dɪəl(l)ɪ; aɪ&apos;diːəl(l)ɪ] 理想的，观念上的，合乎理想的
+regularity [reɡjʊ&apos;lærətɪ] 规则性，整齐，正规，匀称
+texture [&apos;tekstʃə] 质地，纹理，结构，本质，实质
+description [dɪ&apos;skrɪpʃ(ə)n] 描述，描写，类型，说明书
+</code></pre><p>If we have scanned document pages, we do not have random on/off pixels but bitmap images of characters. There is structure in the data, and we make use of this redundancy by finding a shorter description of the data: 16 × 16 bitmap of ‘A’ takes 32 bytes; its ASCII code is only 1 byte.</p>
+<pre><code>scan [skæn] 扫描，浏览，细看，详细调查，标出格律，审视
+scanned [skænd] 已扫描的，扫描，浏览
+bitmap [&apos;bɪtmæp] 位图，位映像
+</code></pre><p>In document clustering, the aim is to group similar documents. For example, news reports can be subdivided as those related to politics, sports, fashion, arts, and so on. </p>
+<p><strong>Commonly, a document is represented as a bag of words—that is, we predefine a lexicon of N words, and each document is an N-dimensional binary vector whose element i is 1 if word i appears in the document; suffixes “–s” and “–ing” are removed to avoid duplicates and words such as “of,” “and,” and so forth, which are not informative, are not used.</strong> </p>
+<p><strong>通常的，一个文档表现为一个词汇包，我们预先定义一个有N个词汇的词典，每一个文档都将是关于N个词汇的多维二进制矢量，当N中的词汇i出现在文档里，我们就给这个文档的元素i记录一次；后缀-s,-ing将被去掉避免重复，类似of，and等不能提供信息的词汇将不被使用。</strong></p>
+<p>Documents are then grouped depending on the number of shared words. It is of course critical how the lexicon is chosen.</p>
+<pre><code>subdivide [sʌbdɪ&apos;vaɪd] 细分，再分，把…再分，把…细分
+predefine [&apos;pri:di&apos;fain] 预先确定，预定义，预先确定
+lexicon [&apos;leksɪk(ə)n] 词典，辞典，词汇
+binary [&apos;baɪnərɪ] 二进制的，二元的，二态的
+vector [&apos;vektə] 矢量，带菌者，航线，用无线电导航，载体，向量
+suffix [&apos;sʌfɪks] 添后缀，后缀，下标
+duplicate [ˈdjuːplɪkeɪt] 复制，使加倍，副本，复制品，二重的，重复
+informative [ɪn&apos;fɔːmətɪv] 教育性的，有益的，情报的，见闻广博的，信息量大的，提供信息的
+</code></pre><p>Machine learning methods are also used in bioinformatics. DNA in our genome is the “blueprint of life” and is a sequence of bases, namely, A, G, C, and T. RNA is transcribed from DNA, and proteins are translated from the RNA. Proteins are what the living body is and does. Just as a DNA is a sequence of bases, a protein is a sequence of amino acids (as defined by bases). One application area of computer science in molecular biology is alignment, which is matching one sequence to another. This is a difficult string matching problem because strings may be quite long, there are many template strings to match against, and there may be deletions, insertions, and substitutions. </p>
+<pre><code>genome [&apos;dʒiːnəʊm] 基因组，染色体组，基因图谱
+blueprint [&apos;bluːprɪnt] 计划，制成蓝图，设计图，蓝图
+transcribe [træn&apos;skraɪb; trɑːn-] 转录，抄写，改编
+protein [&apos;prəʊtiːn] 蛋白质，蛋白质的
+amino [ə&apos;miːnəʊ; ə&apos;maɪnəʊ] 氨基的，氨基，氨基酸
+molecular [mə&apos;lekjʊlə] 分子的，分子式的
+alignment [ə&apos;laɪnm(ə)nt] 列队，成直线，校准，结盟，匹配
+quite [kwaɪt] 很，相当，完全
+against [ə&apos;genst; ə&apos;geɪnst] 反对，违反，靠，倚，防备，不利的，对立的
+deletion [dɪ&apos;liːʃən] 删除
+substitution [sʌbstɪ&apos;tjuːʃn] 代替，替换，置换，代替物
+match against 与…相竞争，匹配
+</code></pre><p>Clustering is used in learning motifs, which are sequences of amino acids that occur repeatedly in proteins. Motifs are of interest because they may correspond to structural or functional elements within the sequences they characterize. The analogy is that if the amino acids are letters and proteins are sentences, motifs are like words, namely, a string of letters with a particular meaning occurring frequently in different sentences.</p>
+<pre><code>motif [məʊ&apos;tiːf] 主题，动机，主旨，图形，意念，模体
+characterize [&apos;kærəktə&apos;raɪz] 描绘…的特性，具有…的特征，塑造人物
+letter [&apos;letə] 信，字母，文字，证书，文学，学问
+</code></pre><h4 id="Reinforcement-Learning"><a href="#Reinforcement-Learning" class="headerlink" title="Reinforcement Learning"></a>Reinforcement Learning</h4><p>In some applications, the output of the system is a sequence of actions. In such a case, a single action is not important; what is important is the policy that is the sequence of correct actions to reach the goal. There is no such thing as the best action in any intermediate state; an action is good if it is part of a good policy. In such a case, the machine learning program should be able to assess the goodness of policies and learn from past good action sequences to be able to generate a policy. Such learning reinforcement methods are called learning algorithms.</p>
+<pre><code>intermediate [,ɪntə&apos;miːdɪət] 起媒介作用，中间的，中级的，中间物，媒介
+assess [ə&apos;ses] 评定，估价，对…征税
+</code></pre><p>A good example is game playing where a single move by itself is not that important; it is the sequence of right moves that is good. A move is good if it is part of a good game playing policy. Game playing is an important research area in both artificial intelligence and machine learning. This is because games are easy to describe and at the same time, they are quite difficult to play well. A game like chess has a small number of rules but it is very complex because of the large number of possible moves at each state and the large number of moves that a game contains. Once we have good algorithms that can learn to play games well, we can also apply them to applications with more evident economic utility.</p>
+<pre><code>economic [,iːkə&apos;nɒmɪk; ek-] 经济的，经济上的，经济学的
+utility [juːˈtɪlɪtɪ] 实用，效用，公共设施，功用，实用的，通用的，有多种用途的
+</code></pre><p>A robot navigating in an environment in search of a goal location is another application area of reinforcement learning. At any time, the robot can move in one of a number of directions. After a number of trial runs, it should learn the correct sequence of actions to reach to the goal state from an initial state, doing this as quickly as possible and without hitting any of the obstacles.</p>
+<pre><code>direction [dɪˈrɛkʃən; daɪ-] 方向，指导，趋势，用法说明
+trial [&apos;traɪəl] 试验，审讯，努力，磨练，试验的，审讯的
+initial [ɪ&apos;nɪʃəl] 最初的，字首的，词首大写字母
+</code></pre><p>One factor that makes reinforcement learning harder is when the system has unreliable and partial sensory information. For example, a robot equipped with a video camera has incomplete information and thus at any time is in a partially observable state and should decide on its action taking into account this uncertainty; for example, it may not know its exact location in a room but only that there is a wall to its left. A task may also require a concurrent operation of multiple agents that should interact and cooperate to accomplish a common goal. An example is a team of robots playing soccer.</p>
+<pre><code>sensory [&apos;sens(ə)rɪ] 感觉的，知觉的，传递感觉的
+incomplete [ɪnkəm&apos;pliːt] 不完全的，不完备的，残缺不全的
+certainty [&apos;sɜːt(ə)ntɪ; -tɪn-] 必然，确实，确实的事情
+take into account 考虑到，考虑，重视，体谅
+concurrent [kən&apos;kʌr(ə)nt] 并发的，一致的，同时发生的，并行
+interact [ɪntər&apos;ækt] 互相影响，互相作用，幕间休息，交互，互动
+cooperate [kəʊ&apos;ɒpəreɪt] 合作，配合，协力
+accomplish [ə&apos;kʌmplɪʃ; ə&apos;kɒm-] 完成，实现，达到
+soccer [&apos;sɒkə] 足球，英式足球
+operation [ɒpə&apos;reɪʃ(ə)n] 操作，经营，运算
+</code></pre><p>2016.12.28终于完整看完第二节。</p>
+<p>好了，今天的分享就到这里，我们明天继续。谢谢大家。</p>
+<div class="title-line" value="11">真孒今将命</div><br><div class="person"><br>    <div class="line0">此致: 敬礼!</div><br>    <div class="line1">送赵法师还蜀因名山奠简</div><br>    <div class="line2">作者: 李隆基</div><br>    <div class="line3">摘自: 《全唐诗》</div><br>    <div class="line4">道家奠灵简, 自昔仰神仙</div><br>    <div class="line5"><font color="red">真孒今将命</font>, 苍生福可传</div><br>    <div class="line6">江山寻故国, 城郭信依然</div><br>    <div class="line7">二室遥相望, 云回洞里天</div><br></div>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/mining/" rel="tag">#mining</a>
+          
+            <a href="/tags/machinelearn/" rel="tag">#machinelearn</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/12/11/itmlcontent1/" rel="next" title="(3) Machine Learn Introduction">
+                <i class="fa fa-chevron-left"></i> (3) Machine Learn Introduction
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/12/14/itmlcontent3/" rel="prev" title="(5) Machine Learn Introduction">
+                (5) Machine Learn Introduction <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    <div id="gh-comments">
+        <h6>COMMENTS</h6>
+        <div id="gh-comments-list"></div>
+        <a href="javascript:void(0)" id="gh-load-comments" class="btn" style="display:none">Load more comments</a>
+    </div>
+  </div>
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Alan Cong" />
+          <p class="site-author-name" itemprop="name">Alan Cong</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">31</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">categories</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Headline-4-Introduction-to-Machine-Learning-chapter-one-2"><span class="nav-number">1.</span> <span class="nav-text">Headline: [4]Introduction to Machine Learning: (chapter one[2])</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction-Examples-of-Machine-Learning-Applications-第一章-2"><span class="nav-number">1.1.</span> <span class="nav-text">Introduction:  Examples of Machine Learning Applications (第一章[2])</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么选择英文版？Why-am-i-rewrite"><span class="nav-number">1.2.</span> <span class="nav-text">为什么选择英文版？Why  am i rewrite?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction"><span class="nav-number">1.3.</span> <span class="nav-text">Introduction</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Examples-of-Machine-Learning-Applications"><span class="nav-number">1.3.1.</span> <span class="nav-text">Examples of Machine Learning Applications</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Learning-Association"><span class="nav-number">1.3.1.1.</span> <span class="nav-text">Learning Association</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Classification"><span class="nav-number">1.3.1.2.</span> <span class="nav-text">Classification</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Figure-1-1"><span class="nav-number">1.3.1.2.1.</span> <span class="nav-text">Figure 1.1</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Regression"><span class="nav-number">1.3.1.3.</span> <span class="nav-text">Regression</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Figure-1-2"><span class="nav-number">1.3.1.3.1.</span> <span class="nav-text">Figure 1.2</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Unsupervised-learning"><span class="nav-number">1.3.1.4.</span> <span class="nav-text">Unsupervised learning</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Reinforcement-Learning"><span class="nav-number">1.3.1.5.</span> <span class="nav-text">Reinforcement Learning</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        
+
+<script type="text/javascript" src="http://isdux.github.io/js/src/github-comments.js"></script>
+<script type="text/javascript">
+    var ghcommentid = 0;
+
+    if($(".title-line").attr("value") != null) {
+      ghcommentid = $(".title-line").attr("value");
+      DoGithubComments(ghcommentid);
+    }
+</script>
+
+<div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Alan Cong</span>
+</div>
+
+<div class="powered-by">
+  Alan <a class="theme-link" href="https://isdux.com">Alan</a>
+</div>
+
+
+<div class="theme-info">
+  Alan -
+  <a class="theme-link" href="https://isdux.com">
+    Alan. Alan
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>

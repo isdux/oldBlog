@@ -1,0 +1,755 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+
+    
+     
+    
+    <link href="/lib/font-awesome/css/loading.css?v=4.4.4" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+
+
+<link href="/lib/font-awesome/css/main.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="record,markdown," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.0.2" />
+
+
+
+
+
+
+<meta name="description" content="Headline: Blog template for markdown摘要: 使用 Markdown 制作一个简单的 博客文章模板 (.md)">
+<meta name="keywords" content="record,markdown">
+<meta property="og:type" content="article">
+<meta property="og:title" content="blog template for markdown">
+<meta property="og:url" content="http://yoursite.com/2016/12/01/markdownUseApi/index.html">
+<meta property="og:site_name" content="IsDux">
+<meta property="og:description" content="Headline: Blog template for markdown摘要: 使用 Markdown 制作一个简单的 博客文章模板 (.md)">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://assets-cdn.github.com/images/modules/site/home-ill-build.png?sn"home"">
+<meta property="og:updated_time" content="2017-09-20T05:34:04.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="blog template for markdown">
+<meta name="twitter:description" content="Headline: Blog template for markdown摘要: 使用 Markdown 制作一个简单的 博客文章模板 (.md)">
+<meta name="twitter:image" content="https://assets-cdn.github.com/images/modules/site/home-ill-build.png?sn"home"">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 'undefined',
+      author: 'Author'
+    }
+  };
+</script>
+<script type="text/javascript" src="http://isdux.github.io/js/src/jquery.js"></script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/12/01/markdownUseApi/"/>
+
+
+  <title> blog template for markdown | IsDux </title>
+</head>
+
+<body itemscope itemtype="//schema.org/WebPage" lang="en">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="container-solar">
+  <div class="solar">
+      <i class="mercury"></i>
+      <i class="venus"></i>
+      <i class="earth"></i>
+      <i class="mars"></i>
+      <i class="belt"></i>
+      <i class="jupiter"></i>
+      <i class="saturn"></i>
+      <i class="uranus"></i>
+      <i class="neptune"></i>
+  </div>
+</div>
+
+<div class="site-meta ">
+  
+
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="site-title">IsDux</span>
+    </a>
+    <div class="site-info">
+      <span class="logo-line-before"><i class="" style="transform: translateX(100%);"></i></span>
+      <span class="site-title-second">MOTTO || The hard part isn’t making the decision. It’s living with it.</span>
+      <span class="logo-line-after"><i class="" style="transform: translateX(-100%);"></i></span> 
+    </div>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule" rel="section">
+            
+            Schedule
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                blog template for markdown
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-12-01T17:56:19+08:00" content="2016-12-01">
+              2016-12-01
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index">
+                    <span itemprop="name">tech</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Headline-Blog-template-for-markdown"><a href="#Headline-Blog-template-for-markdown" class="headerlink" title="Headline: Blog template for markdown"></a><strong><font color="#5A5AAD">Headline: Blog template for markdown</font></strong></h1><h2 id="摘要-使用-Markdown-制作一个简单的-博客文章模板-md"><a href="#摘要-使用-Markdown-制作一个简单的-博客文章模板-md" class="headerlink" title="摘要: 使用 Markdown 制作一个简单的 博客文章模板 (.md)"></a><font color="#FF5151">摘要:</font> 使用 Markdown 制作一个简单的 <font color="#4F9D9D">博客文章模板</font> (.md)</h2><a id="more"></a>
+<p><strong> <font color="red">声明: 所有[内容]代表的意义为:内容;  实际使用请不要写括号</font> </strong></p>
+<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><h2 id="对于一篇文章，最重要的首先是标题，markdown-定义了几种方式来自动生成常规大小的文字。"><a href="#对于一篇文章，最重要的首先是标题，markdown-定义了几种方式来自动生成常规大小的文字。" class="headerlink" title="对于一篇文章，最重要的首先是标题，markdown 定义了几种方式来自动生成常规大小的文字。"></a>对于一篇文章，最重要的首先是标题，markdown 定义了几种方式来自动生成常规大小的文字。</h2><ul>
+<li><p>第一种Setext方式:在你写好的标题下一行写上<font color="#B87070">====</font> 或者 <font color="#B87070">—-</font></p>
+<ul>
+<li><blockquote>
+<p>你自己文章的标题<br>====    [符号:= 的多少没有规范，但是至少大于3个，我喜欢数字4，所以我用4个]</p>
+<blockquote>
+<p>采用这种方式，只有2种字号大小的标题</p>
+</blockquote>
+</blockquote>
+</li>
+<li>注: = 代表大标题， - 代表小标题</li>
+</ul>
+</li>
+<li><p>第二种Atx方式: 这种方式定义了6种字号大小的标题，只需要在不同数目的 # 后空格再加上标题: #[空格][标题]</p>
+<blockquote>
+<ul>
+<li># 一级标题<pre><code>* \## 二级标题
+    + \### 三级标题
+        - \#### 四级标题
+            * \##### 五级标题
+                + \###### 六级标题
+</code></pre></li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<font color="#FF0080">注: 在每一个块级菜单里，最大的标题之上不能有内容，否则 ==== 有可能失效, 并且 # 后空格不可少。</font>
+
+<h2 id="引用和列表"><a href="#引用和列表" class="headerlink" title="引用和列表"></a>引用和列表</h2><font color="#FF0080">在上面博客文章标题的叙述之中，我们发现了引用和列表，下面就来探讨一下:</font>
+
+<blockquote>
+<p>引用：上述标题的每一种方式，左边都有一个竖线来按照块级包裹，这就是引用。<br>引用的使用方式为：<br>>[空格][引用内容]<br>多层级引用使用多个 > (格式如下：)<br>>>[空格][引用内容]</p>
+<p>  列表 (多层列表嵌套使用缩进)</p>
+<blockquote>
+<p> 无序列表</p>
+<blockquote>
+<p>-[空格][内容]<br>-[空格][内容]</p>
+</blockquote>
+<p> 有序列表</p>
+<blockquote>
+<p> 1.[空格][内容]<br> 2.[空格][内容]</p>
+<blockquote>
+<p>注: 数字和点之间不要空格，再引用之后使用有时不生效<br>注: - + * 这三个符号在用作无序列表时作用功能一致，多层嵌套建议切换使用</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="字体大小与样式"><a href="#字体大小与样式" class="headerlink" title="字体大小与样式"></a>字体大小与样式</h2><p>列表之后就是写正文了，关于正文，无非就是字体大小与样式。</p>
+<p>斜体<br>将需要设置为斜体的文字两端使用1个“<em>”或者“_”夹起来<br>格式Example: \</em>[内容]*    或者     -[内容]-</p>
+<p>粗体<br>将需要设置为斜体的文字两端使用2个“<em>”或者“_”夹起来<br>格式Example: \</em>*[内容]**    或者     --[内容]--</p>
+<font size="5">样式：色彩    |    字号    |    字体</font>
+
+<p>方式一:</p>
+<pre><code>&lt;font color=&quot;色彩代码&quot;&gt;&lt;/font&gt;
+&lt;font size=&quot;4&quot;&gt;&lt;/font&gt;
+&lt;font face=&quot;微软雅黑&quot;&gt;&lt;/font&gt;
+</code></pre><p>方式二:</p>
+<pre><code>&lt;font style=&quot;color: &apos;色彩代码&apos;; font-size: 20px; font-family: &apos;微软雅黑&apos;&quot;&gt;&lt;/font&gt;
+</code></pre><p><strong><font color="#5A5AAD">注: 第二种的font-size后的数值要带单位 px</font></strong></p>
+<h2 id="超链接-图片-网站"><a href="#超链接-图片-网站" class="headerlink" title="超链接 (图片, 网站)"></a>超链接 (图片, 网站)</h2><p>接下来在我们文章书写之中，如果遇到了需要引用外部链接或者图片的情况呢？</p>
+<pre><code>More info: [home](https://isdux.com)
+</code></pre><p>如此写法，就会将文字 home 指向一个外部的链接，效果如下:</p>
+<h2 id="More-info-home"><a href="#More-info-home" class="headerlink" title="More info: home"></a>More info: <a href="https://isdux.com" target="_blank" rel="external">home</a></h2><h2 id="如果是图片的话，我们只需要将上面的代码稍作修改"><a href="#如果是图片的话，我们只需要将上面的代码稍作修改" class="headerlink" title="如果是图片的话，我们只需要将上面的代码稍作修改"></a>如果是图片的话，我们只需要将上面的代码稍作修改</h2><pre><code>[home](https://isdux.com) 格式改为:
+![home](&quot;https://isdux.com &quot;home&quot;)
+将 https://isdux.com 更换为真实的图片地址之后
+![home](https://assets-cdn.github.com/images/modules/site/home-ill-build.png?sn&quot;home&quot;)
+</code></pre><p>前面加一个感叹号，后面加一个双引号</p>
+<p><img src="https://assets-cdn.github.com/images/modules/site/home-ill-build.png?sn&quot;home&quot;" alt="home"></p>
+<p>这样就实现了对 github 官网上一个图片的引用。</p>
+<p>可是如果这个图片是某个项目文件里自带的呢？</p>
+<pre><code>![Some_Text](url_to_image &quot;Some_Text&quot;)
+</code></pre><p>那么同样的，只需要 url_to_image 换成相对的路径(/path/to/img.jpg)<br>注: 这里的 path 代表当前文件的位置。</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>特殊的，我们作为技术达人在分享代码时候，如何和其他文字区分？<br>我们以一个基本的 html dom 为例，这有两种后方式:</p>
+<p>第一种:<br>采用两个`` (注: 这里的`不是分号，而是 Exc 下面的~的英文输入形式)<br>格式: ‘[代码内容]’</p>
+<p>类似如下格式书写:<br>`&lt;!DOCTYPE html&gt;`</p>
+<p>页面输出为:<br><code>&lt;!DOCTYPE html&gt;</code><br><code>&lt;html lang=&quot;en&quot;&gt;</code><br><code>&lt;head&gt;</code><br><code>&lt;meta charset=&quot;UTF-8&quot;&gt;</code><br><code>&lt;title&gt;Example&lt;/title&gt;</code><br><code>&lt;/head&gt;</code><br><code>&lt;body&gt;</code><br><code>&lt;a href=&quot;&quot;&gt;&lt;/a&gt;</code><br><code>&lt;/body&gt;</code><br><code>&lt;/html&gt;</code></p>
+<font color="#5A5AAD">第一种方式通常应用在单行或者少量代码的时候使用。</font>
+
+<p>我们注意到，这种方式没有高亮和缩进，可是如果我想展示很好的缩进并且自动高亮呢？<br>那么我们就必须采用第二种方式：<br>这就需要 换行， tab 或者 space。</p>
+<p>首先，必须出现一个空白行，然后在第二行使用 tab, 然后就可以输入你要输入的代码，在markdown 编辑器里文字会自动变成灰色块区。<br>然后，你也可以使用 space 控制，不过，这里你需要 4个 space 才能达到 tab 的效果。默认回车时缩进为上一行设置的。<br>注: 代码上一行必须为空白或者 — 等无意义的标识。</p>
+<hr>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;a href=&quot;&quot;&gt;&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><font color="#5A5AAD">第二种方式通常应用在多行或者大量代码引用时。</font>
+
+<h2 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h2><p>最后，我们如果遇到某个需要告诉大家已经落伍的或者淘汰了的技术，我们可以使用删除线。</p>
+<pre><code>&lt;del&gt;Underlined Text&lt;/del&gt;
+</code></pre><p>代码效果如下:<br><del>Underlined Text</del></p>
+<h2 id="下划线"><a href="#下划线" class="headerlink" title="下划线"></a>下划线</h2><p>同样的，我们需要类似宣传最新技术的时候需要下划线引起注意，我们可以使用:</p>
+<pre><code>&lt;u&gt;Underlined Text&lt;/u&gt;
+</code></pre><p>代码效果如下:<br><u>Underlined Text</u></p>
+<p>以上就是我昨天开始使用 markdown 写博客使用的模版所遇到的技术，如果不是格式控，我想够用了，所以就分享到这里。</p>
+<div class="title-line" value="22">真孒今将命</div><br><div class="person"><br>    <div class="line0">此致: 敬礼!</div><br>    <div class="line1">送赵法师还蜀因名山奠简</div><br>    <div class="line2">作者: 李隆基</div><br>    <div class="line3">摘自: 《全唐诗》</div><br>    <div class="line4">道家奠灵简, 自昔仰神仙</div><br>    <div class="line5"><font color="red">真孒今将命</font>, 苍生福可传</div><br>    <div class="line6">江山寻故国, 城郭信依然</div><br>    <div class="line7">二室遥相望, 云回洞里天</div><br></div>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/record/" rel="tag">#record</a>
+          
+            <a href="/tags/markdown/" rel="tag">#markdown</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/11/30/IntroduceMyself/" rel="next" title="About me">
+                <i class="fa fa-chevron-left"></i> About me
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/12/08/marchinelearning/" rel="prev" title="Machine Learn Introduction (Part One)">
+                Machine Learn Introduction (Part One) <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    <div id="gh-comments">
+        <h6>COMMENTS</h6>
+        <div id="gh-comments-list"></div>
+        <a href="javascript:void(0)" id="gh-load-comments" class="btn" style="display:none">Load more comments</a>
+    </div>
+  </div>
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Alan Cong" />
+          <p class="site-author-name" itemprop="name">Alan Cong</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">31</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">categories</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Headline-Blog-template-for-markdown"><span class="nav-number">1.</span> <span class="nav-text">Headline: Blog template for markdown</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#摘要-使用-Markdown-制作一个简单的-博客文章模板-md"><span class="nav-number">1.1.</span> <span class="nav-text">摘要: 使用 Markdown 制作一个简单的 博客文章模板 (.md)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标题"><span class="nav-number">1.2.</span> <span class="nav-text">标题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对于一篇文章，最重要的首先是标题，markdown-定义了几种方式来自动生成常规大小的文字。"><span class="nav-number">1.3.</span> <span class="nav-text">对于一篇文章，最重要的首先是标题，markdown 定义了几种方式来自动生成常规大小的文字。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#引用和列表"><span class="nav-number">1.4.</span> <span class="nav-text">引用和列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字体大小与样式"><span class="nav-number">1.5.</span> <span class="nav-text">字体大小与样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#超链接-图片-网站"><span class="nav-number">1.6.</span> <span class="nav-text">超链接 (图片, 网站)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#More-info-home"><span class="nav-number">1.7.</span> <span class="nav-text">More info: home</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如果是图片的话，我们只需要将上面的代码稍作修改"><span class="nav-number">1.8.</span> <span class="nav-text">如果是图片的话，我们只需要将上面的代码稍作修改</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#代码"><span class="nav-number">1.9.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除线"><span class="nav-number">1.10.</span> <span class="nav-text">删除线</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#下划线"><span class="nav-number">1.11.</span> <span class="nav-text">下划线</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        
+
+<script type="text/javascript" src="http://isdux.github.io/js/src/github-comments.js"></script>
+<script type="text/javascript">
+    var ghcommentid = 0;
+
+    if($(".title-line").attr("value") != null) {
+      ghcommentid = $(".title-line").attr("value");
+      DoGithubComments(ghcommentid);
+    }
+</script>
+
+<div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Alan Cong</span>
+</div>
+
+<div class="powered-by">
+  Alan <a class="theme-link" href="https://isdux.com">Alan</a>
+</div>
+
+
+<div class="theme-info">
+  Alan -
+  <a class="theme-link" href="https://isdux.com">
+    Alan. Alan
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
